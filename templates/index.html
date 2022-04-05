@@ -1,707 +1,667 @@
 <!DOCTYPE html>
 {% load static %}
+<!--
+	Be by TEMPLATE STOCK
+	templatestock.co @templatestock
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
 <html lang="en">
-   
-<!-- Mirrored from themeforest.kreativdev.com/transpix/transpix/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Mar 2022 11:51:30 GMT -->
+
 <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Transpix - Transport & Logistic HTML Template</title>
-      <!-- favicon -->
-      <link rel="shortcut icon" href="{% static 'assets/img/favicon.png' %}" type="image/x-icon">
-      <!-- bootstrap css -->
-      <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
-      <!-- fontawesome css -->
-      <link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
-      <!-- fontawesome css -->
-      <link rel="stylesheet" href="{% static 'assets/css/fontawesome.min.css' %}">
-      <!-- owl carousel css -->
-      <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
-      <!-- owl carousel theme css -->
-      <link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css' %}">
-      <!-- slicknav css -->
-      <link rel="stylesheet" href="{% static 'assets/css/slicknav.css' %}">
-      <!-- animate css -->
-      <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
-      <!-- main css -->
-      <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
-      <!-- responsive css -->
-      <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
-      <!-- jquery js -->
-      <script src="{% static 'assets/js/jquery-3.3.1.min.js' %}"></script>
-   </head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Be Free HTML5 Responsive Template | Template Stock</title>
 
+    <!-- =============== Bootstrap Core CSS =============== -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" type="text/css">
+    <!-- =============== fonts awesome =============== -->
+    <link rel="stylesheet" href="{% static 'assets/font/css/font-awesome.min.css' %}" type="text/css">
+    <!-- =============== Plugin CSS =============== -->
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}" type="text/css">
+    <!-- =============== Custom CSS =============== -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" type="text/css">
+    <!-- =============== Owl Carousel Assets =============== -->
+    <link href="{% static 'assets/owl-carousel/owl.carousel.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/owl-carousel/owl.theme.css' %}" rel="stylesheet">
+	
+	 <link rel="stylesheet" href="{% static 'assets/css/isotope-docs.css' %}" media="screen">
+	  <link rel="stylesheet" href="{% static 'assets/css/baguetteBox.css' %}">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+</head>
 
-   
-   <body>
-      <!--   header area start   -->
-      <div class="header-area">
-         <div class="info-bar">
-            <div class="container">
-               <div class="row">
-                  <div class="col-lg-4 col-8">
-                     <ul class="social-links">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                     </ul>
-                  </div>
-                  <div class="col-lg-8 col-4">
-                     <div class="right-content">
-                        <span class="working-time">Opening Hours : Monday - Saturday 9 am to 5 pm</span>
-                        <div class="language">
-                           <a href="#" class="dropdown-btn">EN <i class="flaticon-down-arrow"></i></a>
-                           <ul class="language-dropdown">
-                              <li>
-                                 <a href="#">English</a>
-                              </li>
-                              <li>
-                                 <a href="#">French</a>
-                              </li>
-                              <li>
-                                 <a href="#">Spanish</a>
-                              </li>
-                              <li>
-                                 <a href="#">Arabic</a>
-                              </li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+<body>
+    <!-- =============== Preloader =============== -->
+    <div id="preloader">
+        <div id="loading">
+		<img width="256" height="32" src="{% static 'assets/img/loading-cylon-red.svg' %}">
+        </div>
+    </div>
+    <!-- =============== nav =============== -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a id="logo" class="navbar-brand" href="#"><img src="{% static 'assets/img/adsk.png' %}" alt="Logo">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+						<li>
+                            <a class="page-scroll" href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#Services">Services</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#Gallery">Gallery</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#blog">Blog</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- =============== navbar-collapse =============== -->
+
             </div>
-         </div>
-         <div class="support-nav-area">
-            <div class="container">
-               <div class="row">
-                  <div class="col-lg-3 col-6">
-                     <div class="logo-wrapper">
-                        <div class="logo-wrapper-inner">
-                           <a href="{{home}}"><img src="{% static 'assets/img/logo.png'%}" alt=""></a>
+        </div>
+        <!-- =============== container-fluid =============== -->
+    </nav>
+    <!-- =============== header =============== -->
+    <header id="home" class="header">
+		<!-- =============== container =============== -->
+        <div class="container">
+            <div class="header-content row">
+				
+
+				<div id="owl-demo" class="owl-carousel header1">
+				  <div>
+				  <div class="col-xs-12 col-sm-6 col-md-6 header-text">
+                    <h2 class="wow bounceIn animated" data-wow-delay=".40s">FRIENDLY <span>TEMPLATE</span> FOR <br/>YOUR WEBSITE</h2>
+                    <h3 class="wow bounceIn animated" data-wow-delay=".50s">FOR YOUR WEBSITE </h3>
+                    <p class="wow bounceIn animated" data-wow-delay=".60s">Lorem ipsum dolor sit amet, consectetur adipiscing elit.We ensure sit amet, consectetur adipiscing elit</p>
+                    <p>
+                        <div class="btn btn-primary btn-lg btn-ornge wow bounceIn animated" data-wow-delay="1s"><i class="hbtn"></i> <span>Click Here</span></i>
                         </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-9 col-6 position-lg-relative position-static">
-                     <div class="support-bar">
-                        <div class="row">
-                           <div class="offset-xl-4 col-xl-8 offset-2 col-10">
-                              <div class="row">
-                                 <div class="col-lg-4">
-                                    <div class="support-info">
-                                       <div class="left-content"><i class="flaticon-call"></i></div>
-                                       <div class="right-content">
-                                          <div class="right-content-inner">
-                                             <h5>Контакный номер</h5>
-                                             <p>+ 00 12 123 456</p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="col-lg-4">
-                                    <div class="support-info">
-                                       <div class="left-content"><i class="flaticon-email"></i></div>
-                                       <div class="right-content">
-                                          <h5>Электронная почта</h5>
-                                          <p>Support@mail.com </p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
+                    </p>
+					</div>               
+				</div>
+				 <div>
+				  <div class="col-xs-12 col-sm-6 col-md-6 header-text">
+                    <h2 class="wow bounceIn animated" data-wow-delay=".40s">FRIENDLY <span>THIS</span> FOR <br/>YOUR WEBSITE</h2>
+                    <h3 class="wow bounceIn animated" data-wow-delay=".50s">FOR YOUR WEBSITE </h3>
+                    <p class="wow bounceIn animated" data-wow-delay=".60s">Lorem ipsum dolor sit amet, consectetur adipiscing elit.We ensure sit amet, consectetur adipiscing elit</p>
+                    <p>
+                        <div class="btn btn-primary btn-lg btn-ornge wow bounceIn animated" data-wow-delay="1s"><i class="hbtn"></i> <span>Click Here</span></i>
                         </div>
-                     </div>
-                     <div class="navbar-area">
-                        <div class="row">
-                           <div class="col-lg-9 d-lg-block d-none">
-                              <nav class="main-menu" id="mainMenu">
-                                 <ul>
-<!--                                    <li class="dropdown active">-->
-<!--                                       <a href="#">Главная</a>-->
-<!--                                       <ul>-->
-<!--                                          <li class="active dropdown-submenus"><a href="#">Миссия <i class="fas fa-chevron-right"></i></a>-->
-<!--                                              <ul>-->
-<!--                                                  <li class="active"><a href="index.html">Home 1</a></li>-->
-<!--                                                  <li><a href="index-2.html">Home 2</a></li>-->
-<!--                                                  <li><a href="index-3.html">Home 3</a></li>-->
-<!--                                              </ul>-->
-<!--                                          </li>-->
-<!--                                          <li class="dropdown-submenus"><a href="#">Введение <i class="fas fa-chevron-right"></i></a>-->
-<!--                                              <ul>-->
-<!--                                                  <li><a href="index-4.html">Home 4</a></li>-->
-<!--                                                  <li><a href="index-5.html">Home 5</a></li>-->
-<!--                                                  <li><a href="index-6.html">Home 6</a></li>-->
-<!--                                              </ul>-->
-<!--                                          </li>-->
-<!--                                       </ul>-->
-<!--                                    </li>-->
-<!--                                    <li>-->
-                                       <a href="about.html">О нас</a>
-                                    </li>
-                                    <li class="dropdown">
-                                       <a href="#">Команда</a>
-                                       <ul>
-                                          <li><a href="services.html">Портфолио компаний с лого</a></li>
-                                          <li><a href="service-details.html">Стать членом АДСК КР</a></li>
-                                          <li><a href="service-details.html">Кодекс</a></li>
-
-                                       </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                       <a href="#">Пресс центр</a>
-                                       <ul>
-                                          <li><a href="blogs.html">Новости АДСК КР</a></li>
-                                          <li><a href="blog-grid.html">СМИ о нас</a></li>
-                                          <li><a href="blog-grid-sidebar.html">Ссылки на новостные публикации</a></li>
-                                          <li><a href="blog-details.html">В мире дорожного строительства</a></li>
-                                       </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                       <a href="#">Проекты</a>
-                                       <ul>
-                                          <li><a href="category.html">Наши проекты</a></li>
-                                          <li><a href="product-details.html">Международные проекты</a></li>
-                                          <li><a href="cart.html">Законопроекты</a></li>
-                                          <li><a href="checkout.html">Тендеры</a></li>
-<!--                                          <li><a href="gallery.html">Gallery Grid</a></li>-->
-<!--                                          <li><a href="gallery-masonry.html">Gallery Masonry</a></li>-->
-<!--                                          <li><a href="testimonial.html">Testimonial</a></li>-->
-<!--                                          <li><a href="faq.html">FAQ</a></li>-->
-<!--                                          <li><a href="quote.html">Quote</a></li>-->
-<!--                                          <li><a href="pricing.html">Pricing</a></li>-->
-<!--                                          <li><a href="404.html">404 Page</a></li>-->
-                                       </ul>
-                                    </li>
-                                    <li>
-                                       <a href="contact.html">Патнёры</a>
-                                    </li>
-                                 </ul>
-                              </nav>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!--   header area end   -->
+                    </p>
+					</div>               
+				</div>
+				</div>				 
+				</div>
 
 
-      <!--   search bar popup start   -->
-      <div class="search-popup">
-         <form class="search-form" action="#">
-            <div class="form-element"><input type="text" placeholder="Type your search keyword"></div>
-         </form>
-         <div class="search-popup-overlay" id="searchOverlay"></div>
-         <button class="search-close-btn" id="searchCloseBtn"><i class="fas fa-times"></i></button>
-      </div>
-      <!--   search bar popup end   -->
-
-
-      <!--  hero area start  -->
-      <div class="hero-area hero-bg">
-         <div class="container">
+                
+        </div>
+		<!-- =============== container end =============== -->
+    </header>
+    <!-- =============== About =============== -->
+    <section id="about" class="">
+		<!-- =============== container =============== -->
+        <div class="container">            
             <div class="row">
-               <div class="col-xl-6 col-lg-8">
-                  <div class="hero-txt">
-                     <span class="wow fadeInDown" data-wow-duration="1.5s">We are transpix</span>
-                     <h1 class="wow fadeInUp" data-wow-duration="1.5s">No# 1 solution for transport</h1>
-                     <a class="wow fadeInUp boxed-btn" data-wow-duration="1.5s" href="services.html"><span>SEE SERVICES</span></a>
+                <div class="col-xs-12 col-sm-12 col-md-6 wow fadeInDown animated" data-wow-delay=".5s">
+                   <h2>About Us</h2>
+				   <p>Lorem ipsum dolor sit amet, netus pellentesque mauris, non quis adipiscing aliquam tortor nulla, ut dolor, mauris sem ultricies sed tellus ut aliquam. Donec vel sollicitudin orci mi ut, neque aliquam vel vel nostrum enim tristique, magna rhoncus. Dapibus purus eget cubilia eget, in ut in mi dui ipsum odio, nullam vestibulum aliquam fusce, dignissim venenatis ultricies sed mattis non, metus a libero et. Imperdiet aliquet. Vivamus malesuada, ultrices convallis, diam vitae pellentesque volutpat ante vitae amet, ac leo, arcu duis venenatis in auctor sit suscipit. </p>
+				   <p>Integer sapien sed mauris nec, volutpat risus leo placerat elit at aliquet, a egestas ultrices, vitae non amet lacus etiam, malesuada pellentesque scelerisque. Neque fermentum parturient ante pede, a dui ut ultricies luctus non nobis, amet nibh et. Diam nunc in eleifend commodo ante, amet quam integer dolor sit volutpat faucibus, sed sem, et amet sed, vestibulum mollit et a ac nullam. Eu nunc voluptas risus dui et pellentesque.</p>
                   </div>
-               </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 wow fadeInRight animated" data-wow-delay=".5s">
+                     <img src="{% static 'assets/img/about-img.jpg' %}"/>
+                  </div>     
             </div>
-         </div>
-         <div class="hero-overlay"></div>
-      </div>
-      <!--  hero area end  -->
-
-
-      <!--  features section start  -->
-      <div class="features-section">
-         <div class="container">
-            <div class="row feature-bg feature-content">
-               <div class="col-lg-7 offset-lg-5 pr-0">
-                  <div class="features">
-                     <span class="title">Features</span>
-                     <h2 class="subtitle">WHY CHOOSE US</h2>
-                     <div class="feature-lists">
-                        <div class="single-feature wow fadeInUp" data-wow-duration="1s">
-                           <div class="icon-wrapper"><i class="flaticon-customer-service"></i></div>
-                           <div class="feature-details">
-                              <h4>24/7 support</h4>
-                              <p>We offers logistic management services and supply chain perspiciatis unde omnis iste natus error sit voluptat. </p>
-                           </div>
-                        </div>
-                        <div class="single-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                           <div class="icon-wrapper"><i class="flaticon-email"></i></div>
-                           <div class="feature-details">
-                              <h4>On time delivery</h4>
-                              <p>We offers logistic management services and supply chain perspiciatis unde omnis iste natus error sit voluptat. </p>
-                           </div>
-                        </div>
-                        <div class="single-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-                           <div class="icon-wrapper"><i class="flaticon-worldwide"></i></div>
-                           <div class="feature-details">
-                              <h4>global service</h4>
-                              <p>We offers logistic management services and supply chain perspiciatis unde omnis iste natus error sit voluptat.</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!--  features section end  -->
-
-
-      <!--  service section start  -->
-      <div class="service-section">
-         <div class="container">
-            <span class="title">Our Services</span>
-            <h2 class="subtitle">WHAT WE PROVIDE</h2>
-            <div class="service-carousel owl-carousel owl-theme">
-               <div class="single-service">
-                  <div class="img-wrapper">
-                     <img src="{% static 'assets/img/services/service_1.jpg' %}" alt="">
-                  </div>
-                  <div class="service-txt">
-                     <h4 class="service-title">Air Freight</h4>
-                     <p class="service-para">We offers a host of logistic management services and supply chain solutions. consectetur adipiscing elit.</p>
-                     <a href="service-details.html" class="readmore">Read More</a>
-                  </div>
-               </div>
-               <div class="single-service">
-                  <div class="img-wrapper">
-                     <img src="{% static 'assets/img/services/service_2.jpg'%} " alt="">
-                  </div>
-                  <div class="service-txt">
-                     <h4 class="service-title">Road Freight</h4>
-                     <p class="service-para">We offers a host of logistic management services and supply chain solutions. consectetur adipiscing elit.</p>
-                     <a href="service-details.html" class="readmore">Read More</a>
-                  </div>
-               </div>
-               <div class="single-service">
-                  <div class="img-wrapper">
-                     <img src="{% static 'assets/img/services/service_3.jpg'%}" alt="">
-                  </div>
-                  <div class="service-txt">
-                     <h4 class="service-title">Ocean Freight</h4>
-                     <p class="service-para">We offers a host of logistic management services and supply chain solutions. consectetur adipiscing elit.</p>
-                     <a href="service-details.html" class="readmore">Read More</a>
-                  </div>
-               </div>
-               <div class="single-service">
-                  <div class="img-wrapper">
-                     <img src="{% static 'assets/img/services/service_4.jpg' %}" alt="">
-                  </div>
-                  <div class="service-txt">
-                     <h4 class="service-title">Warhousing</h4>
-                     <p class="service-para">We offers a host of logistic management services and supply chain solutions. consectetur adipiscing elit.</p>
-                     <a href="service-details.html" class="readmore">Read More</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!--  service section end  -->
-
-
-      <!--  about section start  -->
-      <div class="about-section about-bg">
-         <div class="container">
+        </div>   
+		<!-- =============== container end =============== -->		
+    </section>
+	<section id="team" class="">
+		<!-- =============== container =============== -->
+        <div class="container">            
             <div class="row">
-               <div class="col-lg-5">
-                  <img class="ceo-pic" src="{% static 'assets/img/ceo.png '%}" alt="">
-               </div>
-               <div class="col-lg-6 offset-lg-1">
-                  <div class="comment-content">
-                     <span class="title">About Us</span>
-                     <h2 class="subtitle">WE ARE TRANSFIX</h2>
-                     <p class="comment">We offers a host of logistic management services and supply chain solutions. We provide innovative solutions with the best.  Incididunt dolor sit amet, consectetur adipiscing elit, sed dolore magna Incididunt dolor sit amet, consectetur adipiscing elit, sed dolore magna. </p>
-                     <div class="ceo-details">
-                        <img src="{% static 'assets/img/signature.png' %}" alt="">
-                        <h5>DAVID ANDERSON</h5>
-                        <span>Founder & CEO</span>
-                     </div>
+				<div class="title">
+				<h2>Our Team</h2>
+				<p>Meet some of our lovely, passionate, positive people.</p>
+				</div>
+                <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInDown animated" data-wow-delay=".1s">
+                   <div class="timg"><img src="{% static 'assets/img/team-img1.jpg' %}"/></div>
+				    <div class="t-box">
+				   <h3>MOHD SUBHAN</h3>
+				   <span>Creative Director </span>
+				   <ul class="social-links">
+						<li><a class="wow fadeInUp animated" href="index.html#"><i class="fa fa-facebook"></i></a></li>
+						<li><a data-wow-delay=".1s" class="wow fadeInUp animated" href="index.html#"><i class="fa fa-twitter"></i></a></li>
+						<li><a data-wow-delay=".2s" class="wow fadeInUp animated" href="index.html#"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				   </div>
                   </div>
-               </div>
+				  <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp animated" data-wow-delay=".2s">
+                    <div class="timg"><img src="{% static 'assets/img/team-img2.jpg' %}"/></div>
+				   <div class="t-box">
+				   <h3>Mohd Rahman</h3>
+				   <span>Website & ui designer</span>
+				   <ul class="social-links">
+						<li><a class="wow fadeInUp animated" href="index.html#"><i class="fa fa-facebook"></i></a></li>
+						<li><a data-wow-delay=".1s" class="wow fadeInUp animated" href="index.html#"><i class="fa fa-twitter"></i></a></li>
+						<li><a data-wow-delay=".2s" class="wow fadeInUp animated" href="index.html#"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				   </div>				   
+                  </div>
+				  <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInDown animated" data-wow-delay=".3s">
+                    <div class="timg"><img src="{% static 'assets/img/team-img3.jpg' %}"/></div>
+				   <div class="t-box">
+				   <h3>ZEENAT SUBHAN</h3>
+				   <span>Senior Developer</span>
+				   <ul class="social-links">
+						<li><a class="wow fadeInUp animated" href="index.html#"><i class="fa fa-facebook"></i></a></li>
+						<li><a data-wow-delay=".1s" class="wow fadeInUp animated" href="index.html#"><i class="fa fa-twitter"></i></a></li>
+						<li><a data-wow-delay=".2s" class="wow fadeInUp animated" href="index.html#"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				   </div>
+                  </div> 
+				  <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp animated" data-wow-delay=".4s">
+                    <div class="timg"><img src="{% static 'assets/img/team-img4.jpg' %}"/></div>
+				    <div class="t-box">
+				   <h3>MOHD SAIF</h3>
+				   <span>Content Writer</span>
+				   <ul class="social-links">
+						<li><a class="wow fadeInUp animated" href="index.html#"><i class="fa fa-facebook"></i></a></li>
+						<li><a data-wow-delay=".1s" class="wow fadeInUp animated" href="index.html#"><i class="fa fa-twitter"></i></a></li>
+						<li><a data-wow-delay=".2s" class="wow fadeInUp animated" href="index.html#"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				   </div>
+                  </div>                 
             </div>
-         </div>
-         <div class="about-overlay"></div>
-      </div>
-      <!--  about section end  -->
-
-
-      <!--  Testimonial section start  -->
-      <div class="testimonial-section">
-         <div class="container">
-            <div class="testimonial-container">
-               <div class="row">
-                  <div class="col-lg-5">
-                     <div class="testimonial">
-                        <span class="title">Testimonial</span>
-                        <h2 class="subtitle">WHAT THEY SAY</h2>
-                        <div class="testimonial-carousel owl-carousel owl-theme">
-                           <div class="single-testimonial">
-                              <p>They offers a host of logistic management services and supply chain . We provide innovative solutions with the best.  tempor incididunt ut labore et dolor  empor tempor incididunt 
-                              </p>
-                              <h5>Jonathon Doe</h5>
-                              <span>Directer, art media</span>
-                           </div>
-                           <div class="single-testimonial">
-                              <p>They offers a host of logistic management services and supply chain . We provide innovative solutions with the best.  tempor incididunt ut labore et dolor  empor tempor incididunt </p>
-                              <h5>Jonathon Doe</h5>
-                              <span>Directer, art media</span>
-                           </div>
-                           <div class="single-testimonial">
-                              <p>They offers a host of logistic management services and supply chain . We provide innovative solutions with the best.  tempor incididunt ut labore et dolor  empor tempor incididunt </p>
-                              <h5>Jonathon Doe</h5>
-                              <span>Directer, art media</span>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-7">
-                     <div class="free-space"></div>
-                  </div>
-               </div>
-               <div class="quote-icon">
-                  <i class="flaticon-quote-left"></i>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!--  Testimonial section end  -->
-
-
-      <!--   partner section start    -->
-      <div class="partner-section">
-         <div class="container">
+        </div>   
+		<!-- =============== container end =============== -->		
+    </section>	
+	<!-- =============== Services =============== -->
+    <section id="Services" class="">
+		<!-- =============== container =============== -->
+        <div class="container">            
             <div class="row">
-               <div class="col-md-12">
-                  <div class="partner-carousel owl-carousel owl-theme border-bottom border-top-lg-0 border-top">
-                     <div class="single-partner-item">
-                        <div class="outer">
-                           <div class="inner">
-                              <img src="{% static 'assets/img/partner-1.png' %}" alt="">
-                           </div>
-                        </div>
-                     </div>
-                     <div class="single-partner-item">
-                        <div class="outer">
-                           <div class="inner">
-                              <img src="{% static 'assets/img/partner-2.png' %}" alt="">
-                           </div>
-                        </div>
-                     </div>
-                     <div class="single-partner-item">
-                        <div class="outer">
-                           <div class="inner">
-                              <img src="{% static 'assets/img/partner-3.png' %}" alt="">
-                           </div>
-                        </div>
-                     </div>
-                     <div class="single-partner-item">
-                        <div class="outer">
-                           <div class="inner">
-                              <img src="{% static 'assets/img/partner-4.png' %}" alt="">
-                           </div>
-                        </div>
-                     </div>
-                     <div class="single-partner-item">
-                        <div class="outer">
-                           <div class="inner">
-                              <img src="{% static 'assets/img/partner-5.png' %}" alt="">
-                           </div>
-                        </div>
-                     </div>
+			 <div class="col-xs-12 col-sm-12 col-md-6 wow fadeInLeft animated" data-wow-delay=".5s">
+                     <img src="{% static 'assets/img/services-img.jpg' %}" class="img-left"/>
+                  </div>     
+                <div class="col-xs-12 col-sm-12 col-md-6 wow fadeInRight animated" data-wow-delay=".5s">
+                   <h2>Services</h2>
+				   <p>Lorem ipsum dolor sit amet, netus pellentesque mauris, non quis adipiscing aliquam tortor nulla, ut dolor, mauris sem ultricies sed tellus ut aliquam. Donec vel sollicitudin orci mi ut, neque aliquam vel vel nostrum enim tristique, magna rhoncus. Dapibus purus eget cubilia eget, in ut in mi dui ipsum odio, nullam vestibulum aliquam fusce, dignissim venenatis ultricies sed mattis non, metus a libero et. Imperdiet aliquet. Vivamus malesuada, ultrices convallis, diam vitae pellentesque volutpat ante vitae amet, ac leo, arcu duis venenatis in auctor sit suscipit. </p>
+				   <p>Integer sapien sed mauris nec, volutpat risus leo placerat elit at aliquet, a egestas ultrices, vitae non amet lacus etiam, malesuada pellentesque scelerisque. Neque fermentum parturient ante pede, a dui ut ultricies luctus non nobis, amet nibh et. Diam nunc in eleifend commodo ante, amet quam integer dolor sit volutpat faucibus, sed sem, et amet sed, vestibulum mollit et a ac nullam. Eu nunc voluptas risus dui et pellentesque.</p>
                   </div>
-               </div>
+                 
             </div>
-         </div>
-      </div>
-      <!--   partner section end    -->
-
-
-      <!--   faq section start    -->
-      <div class="faq-section">
-         <div class="container">
+        </div>   
+		<!-- =============== container end =============== -->		
+    </section>	
+	<!-- =============== for box =============== -->		
+	<section class="for-box">
+	 <div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-3 wow rotateInDownLeft animated" data-wow-delay=".1s">
+				<div class="for-box-crecl">
+					<i class="fa fa-home"></i>
+				</div>
+				<div class="clr1">				
+				<h2>
+					WEB<br/>DESIGN
+				</h2>
+				</div>
+				<div class="wbox">
+					<strong>sorem ipsum </strong>
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Vestibulum ac vehicula leo dulam 
+nullam rhoncus tortor at dignissim vehicula.</p>
+					<a href="#" class="clr1-a">+</a>
+				</div>
+				
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 wow rotateInDownLeft animated" data-wow-delay=".2s">
+				<div class="for-box-crecl">
+					<i class="fa fa-code"></i>
+				</div>
+				<div class="clr2">				
+				<h2>
+					WEB<br/>DEVELOMENT
+				</h2>
+				</div>
+				<div class="wbox">
+					<strong>sorem ipsum </strong>
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Vestibulum ac vehicula leo dulam 
+nullam rhoncus tortor at dignissim vehicula.</p>
+					<a href="#" class="clr2-a">+</a>
+				</div>
+				
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 wow rotateInDownRight animated" data-wow-delay=".3s">
+				<div class="for-box-crecl">
+					<i class="fa fa-rocket"></i>
+				</div>
+				<div class="clr3">				
+				<h2>
+					PRINT<br/>DESING
+				</h2>	
+				</div>
+				<div class="wbox">
+					<strong>sorem ipsum </strong>
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Vestibulum ac vehicula leo dulam 
+nullam rhoncus tortor at dignissim vehicula.</p>
+					<a href="#" class="clr3-a">+</a>
+				</div>
+			
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 wow rotateInDownRight animated" data-wow-delay=".4s">
+				<div class="for-box-crecl">
+					<i class="fa fa-wifi"></i>
+				</div>
+				<div class="clr4">				
+				<h2>
+					ONLINE<br/>MARKITING
+				</h2>
+				</div>
+				<div class="wbox">
+					<strong>sorem ipsum </strong>
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Vestibulum ac vehicula leo dulam 
+nullam rhoncus tortor at dignissim vehicula.</p>
+					<a href="#" class="clr4-a">+</a>
+				</div>
+				
+			</div>
+		</div>
+	 </div>
+	</section>
+	<!-- =============== Counter =============== -->
+    <section class="counter">
+		<!-- =============== container =============== -->
+        <div class="container">            
             <div class="row">
-               <div class="col-xl-6 col-lg-7">
-                  <div class="targets">
-                     <div class="box wow fadeInUp" data-wow-duration="1.5s">
-                        <div class="icon-wrapper"><i class="flaticon-external-link-square-with-an-arrow-in-right-diagonal"></i></div>
-                        <div class="box-details">
-                           <h4>Our mission</h4>
-                           <p>We offers a host of logistic management services and supply chain solutions. consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
-                        </div>
-                     </div>
-                     <div class="box wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".2s">
-                        <div class="icon-wrapper"><i class="flaticon-check"></i></div>
-                        <div class="box-details">
-                           <h4>Our Vision</h4>
-                           <p>We offers a host of logistic management services and supply chain solutions. consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="offset-xl-1 col-xl-5 col-lg-5 faqs">
-                  <span class="title">FAQS</span>
-                  <h2 class="subtitle">FREQUENTLY ASKED QUESTIONS</h2>
-                  <div class="accordion" id="accordionExample">
-                     <div class="card wow fadeInUp" data-wow-duration="1s">
-                        <div class="card-header" id="headingOne">
-                           <h2 class="mb-0">
-                              <button class="btn btn-link collapsed btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                              Why choose this?                         
-                              </button>
-                           </h2>
-                        </div>
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                           <div class="card-body">
-                              They offers a host of logistic management services and supply chain . We provide innovative solutions with the best.  tempor incididunt ut labore et dolor  empor tempor incididunt innovative solutions 
-                           </div>
-                        </div>
-                     </div>
-                     <div class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                        <div class="card-header" id="headingTwo">
-                           <h2 class="mb-0">
-                              <button class="btn btn-link collapsed btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Is it costly?
-                              </button>
-                           </h2>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                           <div class="card-body">
-                              They offers a host of logistic management services and supply chain . We provide innovative solutions with the best.  tempor incididunt ut labore et dolor  empor tempor incididunt innovative solutions 
-                           </div>
-                        </div>
-                     </div>
-                     <div class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-                        <div class="card-header" id="headingThree">
-                           <h2 class="mb-0">
-                              <button class="btn btn-link collapsed btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              When usally product reach
-                              </button>
-                           </h2>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                           <div class="card-body">
-                              They offers a host of logistic management services and supply chain . We provide innovative solutions with the best.  tempor incididunt ut labore et dolor  empor tempor incididunt innovative solutions
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+			<div class="title">
+				<h2>we are   awesome,   check some interesting facts</h2>				
+				</div>
+			 <div class="col-xs-12 col-sm-2 col-md-2 wow fadeInUp animated" data-wow-delay=".1s">
+                            <i class="fa fa-clock-o size"></i>
+							<h2>522</h2>
+							<span>Hour of Work</span>
+                  </div>     
+               <div class="col-xs-12 col-sm-2 col-md-2 wow fadeInUp animated" data-wow-delay=".2s">
+                            <i class="fa fa-coffee size"></i>
+							<h2>888</h2>
+							<span>Cup of Coffee</span>
+                  </div>  
+				   <div class="col-xs-12 col-sm-2 col-md-2 wow fadeInUp animated" data-wow-delay=".3s">
+                            <i class="fa fa-trophy size"></i>
+							<h2>11</h2>
+							<span>Awards Won</span>
+                  </div>  
+				   <div class="col-xs-12 col-sm-2 col-md-2 wow fadeInUp animated" data-wow-delay=".4s">
+                            <i class="fa fa-code size"></i>
+							<h2>55566</h2>
+							<span>Line of Code</span>
+                  </div>  
+				   <div class="col-xs-12 col-sm-2 col-md-2 wow fadeInUp animated" data-wow-delay=".5s">
+                            <i class="fa fa-globe size"></i>
+							<h2>133</h2>
+							<span>Clients Worldwide</span>
+                  </div>  
+				   <div class="col-xs-12 col-sm-2 col-md-2 wow fadeInUp animated" data-wow-delay=".6s">
+                            <i class="fa fa-rocket size"></i>
+							<h2>77</h2>
+							<span>Projects Delivered</span>
+                  </div>  
             </div>
-         </div>
-      </div>
-      <!--   faq section end    -->
-
-
-      <!--   quote section start    -->
-      <div class="quote-section quote-bg">
-         <div class="container">
+        </div>   
+		<!-- =============== container end =============== -->		
+    </section>	
+    
+<!-- =============== Gallery =============== -->
+    <section id="Gallery" class="wow flipInX animated" data-wow-delay=".5s">
+	<div class="title">
+				<h2>Gallery</h2>				
+				<p>we are   awesome,   check some interesting facts</p>
+				</div>
+			
+	<div class="big-demo go-wide" data-js-module="filtering-demo">
+	<div class="container">            
             <div class="row">
-               <div class="offset-lg-5 col-lg-7">
-                  <div class="quote-form-section">
-                     <span class="title">Quote</span>
-                     <h2 class="subtitle">Request a free qoute</h2>
-                     <form action="#">
-                        <div class="row">
-                           <div class="col-lg-6">
-                              <div class="form-element"><input name="name" type="text" placeholder="You name"></div>
-                           </div>
-                           <div class="col-lg-6">
-                              <div class="form-element">
-                                 <div class="select-wrapper">
-                                    <select name="freight">
-                                       <option value="" selected disabled>Select a Freight</option>
-                                       <option value="">Air Freight</option>
-                                       <option value="">Ocean Freight</option>
-                                       <option value="">Road Freight</option>
-                                    </select>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-6">
-                              <div class="form-element"><input name="email" type="email" placeholder="Email"></div>
-                           </div>
-                           <div class="col-lg-6">
-                              <div class="form-element"><input name="phone" type="text" placeholder="Phone"></div>
-                           </div>
-                           <div class="col-lg-12">
-                              <div class="form-element mb-0"><button type="submit"><span>Submit</span></button></div>
-                           </div>
-                        </div>
-                     </form>
-                  </div>
-               </div>
-            </div>
-         </div>
+  <div class="filter-button-group button-group js-radio-button-group">
+    <button class="button is-checked" data-filter="*">show all</button>
+    <button class="button" data-filter=".webdesign">Web design</button>
+    <button class="button" data-filter=".ecommerce">E-commerce</button>  
+	 <button class="button" data-filter=".cms">Cms</button>  
+	<button class="button" data-filter=".logo">Logo</button>  
+  </div>
+</div>
+</div>
+
+
+  <div class="grid baguetteBoxThree gallery">
+      <div class="element-item transition webdesign " data-category="post-transition">
+	  <a href="{% static 'assets/img/gallery/emp-1.jpg' %}">
+	  <img src="{% static 'assets/img/gallery/emp-1.jpg' %}"/>
+		<div class="hover-img"> 
+		<h2>Website Design</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>
+	  </a>
+      </div>      
+      <div class="element-item post-transition ecommerce " data-category="post-transition">
+	  <a href="{% static 'assets/img/gallery/emp-2.jpg' %}">
+        <img src="{% static 'assets/img/gallery/emp-2.jpg' %}"/>
+		<div class="hover-img"> 
+		<h2>E-commerce</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>		
+	  </a>
       </div>
-      <!--   quote section end    -->
+      <div class="element-item post-transition webdesign " data-category="post-transition">
+	  <a href="{% static 'assets/img/gallery/emp-3.jpg' %}">
+		<img src="{% static 'assets/img/gallery/emp-3.jpg' %}"/>
+		<div class="hover-img"> 
+		<h2>Website Design</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>		
+		</a>
+      </div>
+	 <div class="element-item transition ecommerce " data-category="post-transition">
+	   <a href="{% static 'assets/img/gallery/emp-4.jpg' %}">
+	    <img src="{% static 'assets/img/gallery/emp-4.jpg' %}"/>
+		<div class="hover-img"> 
+		<h2>E-commerce</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>		
+      </div>      
+      <div class="element-item post-transition logo " data-category="post-transition">
+         <a href="{% static 'assets/img/gallery/emp-5.jpg' %}">
+	    <img src="{% static 'assets/img/gallery/emp-5.jpg' %}"/>
+		<div class="hover-img"> 
+		<h2>Logo</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>
+      </div>
+      <div class="element-item post-transition cms " data-category="post-transition">
+		 <a href="{% static 'assets/img/gallery/emp-6.jpg' %}">
+	    <img src="{% static 'assets/img/gallery/emp-6.jpg' %}"/>
+		<div class="hover-img"> 
+		<h2>CMS</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>
+      </div>
+	  <div class="element-item post-transition logo " data-category="post-transition">
+         <a href="{% static 'assets/img/gallery/emp-7.jpg' %}">
+	    <img src="{% static 'assets/img/gallery/emp-7.jpg' %}"/>
+		<div class="hover-img"> 
+		<h2>Logo</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>
+      </div>
+	  <div class="element-item transition cms " data-category="post-transition">
+	   <a href="{% static 'assets/img/gallery/emp-8.jpg' %}">
+	    <img src="{% static 'assets/img/gallery/emp-8.jpg' %}"/>
+		<div class="hover-img"> 
+		<h2>CMS</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>
+      </div>      
+      <div class="element-item post-transition ecommerce " data-category="post-transition">
+         <a href="{% static 'assets/img/gallery/emp-9.jpg' %}">
+	    <img src="{% static 'assets/img/gallery/emp-9.jpg' %}"/>
+		<div class="hover-img"> 
+		<h2>E-commerce</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>
+      </div>
+      <div class="element-item post-transition webdesign " data-category="post-transition">
+		 <a href="{% static 'assets/img/gallery/emp-10.jpg' %}">
+	    <img src="{% static 'assets/img/gallery/emp-10.jpg' %}"/>
+		<div class="hover-img"> 
+		<h2>Web Design</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>          
+      </div>
+	  <div class="element-item post-transition logo " data-category="post-transition">
+         <a href="{% static 'assets/img/gallery/emp-11.jpg' %}">
+	    <img src="{% static 'assets/img/gallery/emp-11.jpg' %}"/>
+		<div class="hover-img"> 
+		<h2>Logo</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>
+      </div>
+	  <div class="element-item transition cms " data-category="post-transition">
+	   <a href="{% static 'assets/img/gallery/emp-12.jpg' %}">
+	    <img src="{% static 'assets/img/gallery/emp-12.jpg' %}"/>
+		<div class="hover-img"> 
+		<h2>CMS</h2>
+		<i class="fa fa-camera camera"></i>
+		</div>	
+		</a>
+      </div>      
+  </div>
+
+ 
+</div>
 
 
-      <!--   news section start    -->
-      <div class="news-section">
-         <div class="container">
-            <span class="title">Latest blog</span>
-            <h2 class="subtitle">Inside The News</h2>
+</section>
+	<section id="blog" class="">
+		<!-- =============== container =============== -->
+        <div class="container">            
             <div class="row">
-               <div class="col-lg-4 col-md-6">
-                  <div class="single-news wow fadeInRight" data-wow-duration="1.5s">
-                     <img src="{% static 'assets/img/news-1.jpg' %}" alt="">
-                     <div class="news-txt">
-                        <span class="date">November 05, 2018  -  BY Admin</span>
-                        <a href="blog-details.html" class="title">
-                           <h3>Flexible shipping are increasing day by day gradually...</h3>
-                        </a>
-                        <a class="readmore" href="blog-details.html">Read More</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-md-6">
-                  <div class="single-news wow fadeInRight" data-wow-duration="1.5s" data-wow-delay=".2s">
-                     <img src="{% static 'assets/img/news-2.jpg' %}" alt="">
-                     <div class="news-txt">
-                        <span class="date">November 05, 2018  -  BY Admin</span>
-                        <a href="blog-details.html" class="title">
-                           <h3>Big warehouse are most friendly for  new shipping..</h3>
-                        </a>
-                        <a class="readmore" href="blog-details.html">Read More</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-md-6">
-                  <div class="single-news wow fadeInRight" data-wow-duration="1.5s" data-wow-delay=".4s">
-                     <img src="{% static 'assets/img/news-3.jpg' %}" alt="">
-                     <div class="news-txt">
-                        <span class="date">November 05, 2018  -  BY Admin</span>
-                        <a href="blog-details.html" class="title">
-                           <h3>Keep your product in storage for long time...</h3>
-                        </a>
-                        <a class="readmore" href="blog-details.html">Read More</a>
-                     </div>
-                  </div>
-               </div>
+				<div class="title">
+				<h2>Our Blog</h2>
+				<p>Meet some of our lovely, passionate, positive people.</p>
+				</div>
+                 <div class="col-xs-12 col-sm-4 col-md-4 wow fadeInUp animated" data-wow-delay=".1s">
+                      <div class="blog-img">
+						<img src="{% static 'assets/img/blog1.JPG' %}"/>
+					  </div>
+					  <div class="row">
+					  <div class="data">30</div>
+					  <div class="month">March</div>
+					  </div>
+					  <div class="row">
+					  <h3>Travelling with kids Quensland Capricorn Coast</h3>
+					  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Vestibulum ac vehicula leo dulam nullam rhoncus tortor at dignissim vehicula.</p>
+					  <a href="blog-single.html">MORE</a>
+					  </div>
+                  </div>        
+				 <div class="col-xs-12 col-sm-4 col-md-4 wow bounceIn animated" data-wow-delay=".4s">
+                      <div class="blog-img">
+						<img src="{% static 'assets/img/blog2.JPG' %}"/>
+					  </div>
+					  <div class="row">
+					  <div class="data">30</div>
+					  <div class="month">March</div>
+					  </div>
+					  <div class="row">
+					  <h3>Travelling with kids Quensland Capricorn Coast</h3>
+					  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Vestibulum ac vehicula leo dulam nullam rhoncus tortor at dignissim vehicula.</p>
+					  <a href="blog-single.html">MORE</a>
+					  </div>
+                  </div>        
+				 <div class="col-xs-12 col-sm-4 col-md-4 wow fadeInDown animated" data-wow-delay=".3s">
+                      <div class="blog-img">
+						<img src="{% static 'assets/img/blog3.JPG' %}"/>
+					  </div>
+					  <div class="row">
+					  <div class="data">30</div>
+					  <div class="month">March</div>
+					  </div>
+					  <div class="row">
+					  <h3>Travelling with kids Quensland Capricorn Coast</h3>
+					  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Vestibulum ac vehicula leo dulam nullam rhoncus tortor at dignissim vehicula.</p>
+					  <a href="blog-single.html">MORE</a>
+					  </div>
+                  </div>        
             </div>
-         </div>
-      </div>
-      <!--   news section end    -->
+        </div>   
+		<!-- =============== container end =============== -->		
+    </section>	
+	<section id="contact">
+	<!-- =============== container =============== -->
+		<div class="container">
+			    <div class="row">
+                <div class="title">
+				<h2>Contact</h2>
+				<p>Meet some of our lovely, passionate, positive people.</p>
+				</div>
+			</div>
 
+			<div class="row">
 
-      <!--   cta section start    -->
-      <div class="cta-section cta-bg">
-         <div class="container">
-            <div class="cta-container">
-               <div class="row align-items-center">
-                  <div class="col-lg-9">
-                     <h2 class="mb-lg-0 text-center text-lg-left">Reach your destination 100% safe & secure</h2>
-                  </div>
-                  <div class="col-lg-3 text-center text-lg-right">
-                     <a href="contact.html" class="boxed-btn"><span>Contact Us</span></a>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="cta-overlay"></div>
-      </div>
-      <!--   cta section end    -->
+				<div class="col-xs-12 col-sm-12 col-md-12 wow bounceIn animated" data-wow-delay=".1s">
 
+					<form action="#" method="post">
+						<div class="ajax-hidden">
+							<div class="col-xs-12 col-sm-6 col-md-6 form-group wow fadeInUp animated">
+								<label for="c_name" class="sr-only">Name</label>
+								<input type="text" placeholder="Name" name="name" class="form-control" id="name" required="">
+							</div>
 
-      <!--   footer section start    -->
-      <footer>
-         <div class="container">
-            <div class="top-footer">
-               <div class="row">
-                  <div class="col-xl-4 col-lg-4">
-                     <div class="logo-wrapper"><img src="{% static 'assets/img/footer_logo.png' %}" alt=""></div>
-                     <p>Transgo shipping offers a host of logistic management services and supply chain & provide innovative solutions with the best. </p>
-                  </div>
-                  <div class="offset-xl-1 col-xl-2 col-lg-2">
-                     <h4>Useful Links</h4>
-                     <ul class="userful-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="services.html">Service</a></li>
-                        <li><a href="blogs.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                     </ul>
-                  </div>
-                  <div class="col-xl-2 col-lg-2">
-                     <h4>Services</h4>
-                     <ul class="userful-links">
-                        <li><a href="#">Air Freight</a></li>
-                        <li><a href="#">OCEAN Freight</a></li>
-                        <li><a href="#">WAREHOUSING</a></li>
-                        <li><a href="#">STORAGE</a></li>
-                        <li><a href="#">ROAD Freight</a></li>
-                     </ul>
-                  </div>
-                  <div class="col-xl-3 col-lg-4">
-                     <h4>Contact Us</h4>
-                     <div class="footer-contact">
-                        <div class="contact-info">
-                           <div class="icon-wrapper"><i class="flaticon-placeholder"></i></div>
-                           <p>143 castle road 517 district, kiyev port south Canada</p>
-                        </div>
-                        <div class="contact-info">
-                           <div class="icon-wrapper"><i class="flaticon-call"></i></div>
-                           <p>+00 12 123 4567</p>
-                        </div>
-                        <div class="contact-info">
-                           <div class="icon-wrapper"><i class="flaticon-email"></i></div>
-                           <p>Info@yourmail.com</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="bottom-footer">
-               <p class="text-center">© Разработано ASOI 2022. Все права защищены!.</p>
-            </div>
-         </div>
-      </footer>
-      <!--   footer section end    -->
+							<div data-wow-delay=".1s" class="col-xs-12 col-sm-6 col-md-6 form-group wow fadeInUp animated">
+								<label for="c_email" class="sr-only">Email</label>
+								<input type="email" placeholder="E-mail" name="email" class="form-control" id="email" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" placeholder="e.g. info@envato.com" required="">
+							</div>
 
+							<div data-wow-delay=".2s" class="col-xs-12 col-sm-12 col-md-12 form-group wow fadeInUp animated">
+								<textarea placeholder="Message" rows="7" name="description" id="description" class="form-control" required=""></textarea>
+							</div>
 
-      <!-- preloader section start -->
-      <div class="loader-container">
-         <span class="loader">
-         <span class="loader-inner"></span>
-         </span>
-      </div>
-      <!-- preloader section end -->
+							<button data-wow-delay=".3s" class="btn btn-sm btn-block wow fadeInUp animated" type="submit">Send Message</button>
+						</div>
+						<div class="ajax-response"></div>
+					</form>
 
+				</div>              
+			</div>
+		</div><!-- =============== container end =============== -->
+	</section>
+    <!-- Footer -->
+    <footer id="footer">
+	<!-- =============== container =============== -->
+    <div class="container">
+			    <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6">
 
-      <!-- back to top area start -->
-      <div class="back-to-top">
-         <i class="fas fa-chevron-up"></i>
-      </div>
-      <!-- back to top area end -->
+					<ul class="social-links">
+						<li><a class="wow fadeInUp animated" href="index.html#" style="visibility: visible; animation-name: fadeInUp;"><i class="fa fa-facebook"></i></a></li>
+						<li><a data-wow-delay=".1s" class="wow fadeInUp animated" href="index.html#" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;"><i class="fa fa-twitter"></i></a></li>
+						<li><a data-wow-delay=".2s" class="wow fadeInUp animated" href="index.html#" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;"><i class="fa fa-google-plus"></i></a></li>
+						<li><a data-wow-delay=".4s" class="wow fadeInUp animated" href="index.html#" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;"><i class="fa fa-pinterest"></i></a></li>
+						<li><a data-wow-delay=".5s" class="wow fadeInUp animated" href="index.html#" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;"><i class="fa fa-envelope"></i></a></li>
+					</ul>
 
+                    <p class="copyright">
+                        &copy; 2016 Be. Created By <a href="http://templatestock.co">Template Stock</a>
+					</p>
 
+				</div>
+				<div data-wow-delay=".6s" class="col-xs-12 col-sm-6 col-md-6 wow bounceIn  animated" style="visibility: visible; animation-delay: 0.6s; animation-name: bounceIn;">
 
-      <!-- popper js -->
-      <script src="{% static 'assets/js/popper.min.js' %}"></script>
-      <!-- bootstrap js -->
-      <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
-      <!-- owl carousel js -->
-      <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
-      <!-- isotope js -->
-      <script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
-      <!-- slicknav js -->
-      <script src="{% static 'assets/js/jquery.slicknav.min.js' %}"></script>
-      <!-- wow js -->
-      <script src="{% static 'assets/js/wow.min.js' %}"></script>
-      <!-- main js -->
-      <script src="{% static 'assets/js/main.js' %}"></script>
-   </body>
+					  <section class="widget widget_text" id="text-15">
+                         <h3 class="widget-title">California, United States</h3> <div class="textwidget">786, Firs Avenue, The Mall,<br>
+                        <p>Tel: 01 234-56786<br>
+                        Mobile: 01 234-56786<br>
+                        E-mail: <a href="#">info@Be.com</a></p>
+                        <a href="#">Get directions on the map</a> →</div>
+                    </section>
 
-<!-- Mirrored from themeforest.kreativdev.com/transpix/transpix/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Mar 2022 11:52:37 GMT -->
+				</div>
+			</div>
+    </div><!-- =============== container end =============== -->
+	</footer>    
+	<!-- =============== jQuery =============== -->
+    <script src="{% static 'assets/js/jquery.js' %}"></script>
+	 <script src="{% static 'assets/js/isotope-docs.min.js' %}"></script>
+    <!-- =============== Bootstrap Core JavaScript =============== -->
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <!-- =============== Plugin JavaScript =============== -->
+    <script src="{% static 'assets/js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.fittext.js' %}"></script>
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+	<!-- =============== owl carousel =============== -->
+    <script src="{% static 'assets/owl-carousel/owl.carousel.js' %}"></script>
+	<!-- Isotope does NOT require jQuery. But it does make things easier -->
+
+<script src="{% static 'assets/js/baguetteBox.js' %}" async></script>
+<script src="{% static 'assets/js/plugins.js' %}" async></script>
+ 
+    <!-- =============== Custom Theme JavaScript =============== -->
+    <script src="{% static 'assets/js/creative.js' %}">	</script>
+<script src="{% static 'assets/js/jquery.nicescroll.min.js' %}"></script>
+
+<script>
+  $(document).ready(function() {
+  
+	var nice = $("html").niceScroll();  // The document page (body)
+	
+	$("#div1").html($("#div1").html()+' '+nice.version);
+    
+    $("#boxscroll").niceScroll({cursorborder:"",cursorcolor:"#00F",boxzoom:true}); // First scrollable DIV
+
+    $("#boxscroll2").niceScroll("#contentscroll2",{cursorcolor:"#F00",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true});  // Second scrollable DIV
+    $("#boxframe").niceScroll("#boxscroll3",{cursorcolor:"#0F0",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true});  // This is an IFrame (iPad compatible)
+	
+    $("#boxscroll4").niceScroll("#boxscroll4 .wrapper",{boxzoom:true});  // hw acceleration enabled when using wrapper
+    
+  });
+</script>
+<script>
+window.onload = function() {
+    if(typeof oldIE === 'undefined' && Object.keys)
+        hljs.initHighlighting();
+
+    baguetteBox.run('.baguetteBoxOne');
+    baguetteBox.run('.baguetteBoxTwo');
+    baguetteBox.run('.baguetteBoxThree', {
+        animation: 'fadeIn'
+    });
+    baguetteBox.run('.baguetteBoxFour', {
+        buttons: false
+    });
+    baguetteBox.run('.baguetteBoxFive', {
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+        }
+    });
+};
+</script>
+</body>
 </html>
+
