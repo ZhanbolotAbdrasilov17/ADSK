@@ -96,7 +96,7 @@ nav {
     padding-top: 15px;
 }
 .navbar-default {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    background: black !important;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
     background-color: #ffcb00;
@@ -105,8 +105,8 @@ nav {
 }
 .affix
 {
- background: rgba(0, 0, 0, 0.9) none repeat scroll 0 0 !important;
-transition: all 0.35s ease 0s;
+ background: black !important;
+/* transition: all 0.35s ease 0s; */
 }
 .navbar-default .navbar-nav > li > a {
     color: #fff;
