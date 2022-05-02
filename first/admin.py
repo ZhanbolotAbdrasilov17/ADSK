@@ -6,3 +6,4 @@ from .models import *
 admin.site.register(Clients)
 admin.site.register(Project)
 admin.site.register(Portfolio)
+admin.site.register(News)
