@@ -69,7 +69,7 @@ a {
 .logo{
     float: left;
     text-align: center;
-    width: 20%;
+    width: 100%;
 }
 nav {
     background: #fff none repeat scroll 0 0 !important;
@@ -83,9 +83,12 @@ nav {
     color:#fff;
 }
 .navbar-nav {
-    float: left;
+    float: right;
     font-size: 16px;
-    margin: 0;   
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .img-left {
     left: -390px;
@@ -98,10 +101,11 @@ nav {
 .navbar-default {
     background: black !important;
 }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+.navbar-default .navbar-nav > .acefault .ntive > a, .navbar-davbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
     background-color: #ffcb00;
     border-bottom: 10px solid #e49102;
     color: #fff;
+    word-wrap: normal;
 }
 .affix
 {
@@ -167,8 +171,8 @@ nav {
 	font-size:18px;
 	transition: all 0.35s ease 0s;
 }
-.btn-ornge:hover {   
-    border: 2px solid #ffae00;    
+.btn-ornge:hover {
+    border: 2px solid #ffae00;
 	color:#ffae00;
 	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
 	transition: all 0.35s ease 0s;
@@ -229,7 +233,7 @@ nav {
 }
 .t-box .social-links {
 padding:0px;
-margin:20px 0 0 0px;  
+margin:20px 0 0 0px;
 }
 .t-box .social-links > li {
     display: inline;
@@ -528,7 +532,7 @@ padding:10px;
 }
 .owl-theme .owl-controls .owl-buttons div:hover {
     background: #ffcb00 none repeat scroll 0 0 !important;
-    color: #fff !important;    
+    color: #fff !important;
     font-size: 65px !important;
     opacity: 1 !important;
 }
@@ -1007,17 +1011,49 @@ blockquote {
     color: #000;
     text-decoration: none;
 }
+.navbar-brand{
+    margin-top: 33px;
+    padding: 0;
+}
 .navbar-brand>img {
     display: block;
     max-width: 187px;
 }
 
-@media (min-width:768px) and (max-width:1024px)
-{
-    .navbar-brand>img {
-        display: block;
-        max-width: 187px;
+
+@media (max-width: 768px){
+    .navbar-default .navbar-nav > li > a {
+    font-size: 18px;
+    padding: 10px 15px 10px;
+    width:100%;
     }
+
+
+
+    .navbar-nav {
+    flex-direction: column;
+    justify-content: center;
+    }
+    }
+@media (min-width:996px) and (max-width:1206px)
+    {
+    .navbar-brand {
+        display: block !important;
+
+    }
+   }
+
+@media (min-width:768px) and (max-width:1206px)
+{
+        .navbar-brand {
+        display: none;
+        margin-top: 33px;
+
+    }
+
+
+
+
     .navbar-default .navbar-nav > li > a {
         font-size: 18px;
         padding: 50px 15px 35px;
@@ -1057,8 +1093,21 @@ blockquote {
             top: -100px;
     }
 }
-@media (max-width:800px)
-    {
+
+
+
+@media (max-width:800px){
+
+    .navbar-toggle{
+    margin-top: 40px;
+    }
+    .navbar-nav{
+    width: 100%;}
+
+
+    .navbar-brand {
+    margin-bottom: 30px;
+    }
     #about img {
         left: -40px;
         position: relative;
@@ -1124,11 +1173,7 @@ blockquote {
     .header-text h2 {
         font-size: 24px;
     }
-    .navbar-default .navbar-nav > li > a {
-        font-size: 18px;
-        padding: 10px 15px 10px;
-        width:100%;
-    }
+
 
     .img-left img{
         width:100%;
@@ -1173,10 +1218,7 @@ blockquote {
         width: 87%;
     }
 
-    .navbar-brand img {
-        margin-top: -25px;
-        max-width: 150px;
-    }
+
     .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
         background-color: orange;
     }
@@ -1249,10 +1291,7 @@ blockquote {
     .blog-img {
         height: 249px;
     }
-    .navbar-brand img {
-        margin-top: -10px;
-        max-width: 140px;
-    }
+
     .navbar-toggle {
         margin-top: 30px;
     }
@@ -1334,10 +1373,7 @@ blockquote {
         height: 157px;
         margin-top: 30px;
     }
-    .navbar-brand img {
-        margin-top: -25px;
-        max-width: 150px;
-    }
+
     .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
         background-color: orange;
     }
