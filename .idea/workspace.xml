@@ -5,11 +5,231 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a6fd954-09e3-4b7f-91cc-f7cd4290b432" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/static/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/banner1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/banner2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/banner3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/banner4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/banner5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/banner6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/banner7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/banner8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/blog/b_g_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/blog/b_g_10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/blog/b_g_11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/blog/b_g_12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/blog/b_g_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/blog/b_g_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/blog/b_g_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/blog/b_g_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/blog/b_g_6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/blog/b_g_7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/blog/b_g_8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/blog/b_g_9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/blog/b_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/blog/blog1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/blog/blog2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/blog/blog3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/blog/blog4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/blog/comment_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/blog/comment_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/blog/comment_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/blog/r_p1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/blog/r_p2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/blog/r_p3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/about.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/about_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/author.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/clients-logo/Logo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/clients-logo/Logo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/clients-logo/Logo4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/clients-logo/Logo5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/icon10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/icon3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/icon4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/icon5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/icon6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/icon7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/icon8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/icon9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/l_post1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/l_post2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/l_post3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/l_post4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/l_post5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/project/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/project/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/project/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/project/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/project/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/project/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/shap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/slider1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/tank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/team1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/team2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/team3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/testimonial-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/testimonial-bg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-1/video_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/Logo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/Logo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/Logo3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/Logo4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/Logo5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/Logo6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/action.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/art.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/clients1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/clients2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/faq_img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/icon3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/icon4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/man.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/pr_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/pr_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/pr_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/quote.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/slider1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/slider2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/team1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/team2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/team3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home/team4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home3/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home3/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home3/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home3/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home3/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home3/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home3/about.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home3/post1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home3/post2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home3/post3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home3/price_icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home3/price_icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home3/price_icon3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home3/protfolio10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home3/protfolio11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home3/protfolio12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home3/protfolio7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home3/protfolio8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home3/protfolio9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home3/shape1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home3/shape2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home3/slider1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home3/video.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/team/team10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/team/team4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/team/team5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/team/team6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/team/team7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/team/team8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/team/team9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/gmaps.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/map-active.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/asoi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/asoi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asoi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/asoi/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/first/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/first/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/first/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/first/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/first/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/css/animate.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/css/baguetteBox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/css/isotope-docs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/font/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/font/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/font/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/font/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/font/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/font/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/font/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/font/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/font/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/font/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/font/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/AjaxLoader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/IMG_8134.MP4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/a_road.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/about-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/adsk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/adsk_new_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/blog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/blog1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/blog2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/blog3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/blogg.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/contact-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/dan-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/ficon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/footer-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/gallery/adsk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/gallery/emp-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/gallery/emp-10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/gallery/emp-11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/gallery/emp-12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/gallery/emp-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/gallery/emp-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/gallery/emp-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/gallery/emp-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/gallery/emp-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/gallery/emp-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/gallery/emp-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/gallery/emp-9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/grabbing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/header.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/header2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/header4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/loading-cylon-red.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/road.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/services-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/services-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/team-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/team-img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/team-img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/team-img3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/team-img4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/van-dam.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/baguetteBox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/creative.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/isotope-docs.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/jquery.easing.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/jquery.fittext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/jquery.nicescroll.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/plugins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/wow.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/owl-carousel/AjaxLoader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/owl-carousel/grabbing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/owl-carousel/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/owl-carousel/owl.carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/owl-carousel/owl.theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/events.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/news.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/partners.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,24 +256,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/zhanbolot/Рабочий стол/asoi/asoi&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "last_opened_file_path": "/home/zhanbolot/Рабочий стол/asoi/asoi"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/static/assets/img" />
       <recent name="$PROJECT_DIR$/static/assets/img/gallery" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/static" />
-      <recent name="$PROJECT_DIR$/first/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/static/assets/img" />
       <recent name="$PROJECT_DIR$/static/assets" />
-      <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>

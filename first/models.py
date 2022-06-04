@@ -3,13 +3,11 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 
-class User(models.Model):
-    pass
 
-class Clients(models.Model):
-    full_name = models.CharField(max_length=200, null=True)
-    image = models.ImageField(null=True, blank=True, upload_to="")
-    description = models.TextField(max_length=1000, null=True)
+class Employee(models.Model):
+    full_name = models.CharField(max_length=200, verbose_name="ФИО")
+    position = models.CharField(max_length=300, verbose_name="Должность")
+    image = models.ImageField(null=True, blank=True, upload_to="doctors")
 
     def __str__(self):
         return self.full_name
@@ -24,7 +22,6 @@ class Project(models.Model):
         return self.title
 
 class Portfolio(models.Model):
-    full_name = models.ForeignKey(Clients, on_delete=models.CASCADE)
     project_title = models.ForeignKey(Project, on_delete=models.SET_NULL, blank=True, null=True)
     work_experience = models.CharField(max_length=200, null=True)
     education = models.CharField(max_length=200, null=True)
@@ -44,3 +41,11 @@ class News(models.Model):
 
     def __str__(self):
         return self.title
+
+class Partners(models.Model):
+    partner_name = models.CharField(max_length=200, verbose_name="Название партнера")
+    partner_description = models.TextField()
+    image = models.ImageField(upload_to='partners_images', verbose_name='Фото')
+
+    def __str__(self):
+        return self.partner_name

@@ -1,9 +1,13 @@
-from django.views.generic import ListView, DetailView
 from django.shortcuts import render
+from django.views.generic import DetailView
 
 from .models import *
 
-#
+
+def index(request):
+    return render(request, 'index.html')
+
+
 # class CategoryListView(ListView):
 #     model = Clients
 #     template_name = 'index.html'
@@ -18,7 +22,7 @@ from .models import *
 def home(request):
     news = News.objects.all()
     context = {'news': news}
-    return render(request, 'home.html', context)
+    return render(request, 'index.html', context)
 
 
 class NewsDetailView(DetailView):
