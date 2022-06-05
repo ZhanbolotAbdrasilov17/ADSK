@@ -792,6 +792,57 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   left: 50px;
 }
 
+.con_slider_area .slider__video {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  right: 5%;
+  bottom: 10px;
+  background: black;
+  background-size: cover;
+  radial-gradient(circle at top right,hsla(0,0%,100%,.25) 14.69%,hsla(0,0%,100%,0) 79.94%);
+  text-align: center;
+  overflow: hidden
+}
+
+.con_slider_area .slider__video video{
+  position: reletive;
+  height: 100%;
+  z-index: 1;
+  cursor: pointer
+}
+
+.header_background-video {
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    height: 100vh;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    transform: scale(0);
+    background: #000;
+    transition: .3s
+}
+
+.header_background-video.active{
+    transition: .3s;
+    transform: scale(1);
+}
+
+.header_background-video-close{
+   position: absolute;
+   right: 3%;
+   top: 5%;
+   width: 50px;
+   height: 50px;
+   background: #FDB900;
+   border-radius: 50%;
+   cursor: pointer
+}
+
 .main_slider {
   height: calc(100vh - 145px);
   min-height: 700px;

@@ -27,6 +27,10 @@
 <body>
     <div class="layout animsition">
         <div class="body_wrapper">
+            <div class="header_background-video">
+                <div class="header_background-video-close"></div>
+                <iframe width="100%" height="100%" src="http://www.youtube.com/embed/dQiYnFQX3Qg" frameborder="0" allowfullscreen></iframe>
+            </div>
             <header class="header_area">
                 <div class="header_top_two header_dark">
                     <div class="container">
@@ -134,6 +138,12 @@
                 <div class="slider_nav">
                     <i class="ti-arrow-left left_arrow"></i>
                     <i class="ti-arrow-right right_arrow"></i>
+                </div>
+                <div class="slider__video">
+                    <video src="https://cdn.videvo.net/videvo_files/video/free/2014-12/large_watermarked/Metal_Wind_Chimes_at_Sunset_preview.mp4"
+                       type="video/mp4" muted class="vid"
+                       loop>
+                </video>
                 </div>
             </section>
             <section class="con_features_area">
@@ -273,6 +283,7 @@
             </section>
             <section class="con_video_area">
                 <div class="overlay_bg parallax-effect" style="background: url(static/img/home-1/video_bg.jpg) no-repeat;"></div>
+                <div class="container">
                 <div class="container">
                     <div class="con_video_content">
                         <a href="https://www.youtube.com/watch?v=sU3FkzUKHXU" class="video_btn popup-youtube wow fadeIn" data-wow-delay="0.5s">
@@ -703,6 +714,21 @@
     <script src="{% static 'js/gmaps.min.js' %}"></script>
     <script src="{% static 'js/map-active.js' %}"></script>
     <script src="{% static 'js/custom.js' %}"></script>
+    <script>
+        let clip = document.querySelector(".vid")
+        clip.addEventListener("mouseover", function (e) {
+            clip.play();
+        })
+        clip.addEventListener("mouseout", function (e) {
+            clip.pause();
+        })
+        document.querySelector(".slider__video").addEventListener("click", function (e) {
+            document.querySelector(".header_background-video").classList.add("active")
+            })
+        document.querySelector(".header_background-video-close").addEventListener("click", function (e) {
+            document.querySelector(".header_background-video").classList.remove("active")
+            })
+    </script>
 </body>
 
 
