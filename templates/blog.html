@@ -1,10 +1,180 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'index.html' %}
+{% load static %}
+{% block page %}
 
-</body>
-</html>
+
+
+            <section class="banner_area">
+                <div class="overlay_bg parallax-effect" style="background: url(static/img/banner4.jpg) no-repeat;"></div>
+                <div class="container">
+                    <div class="breadcrumb_content">
+                        <h2>BLOG STANDARD</h2>
+                        <ol class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li>Blog STANDARD</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+            <section class="con_blog_area sec_gap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="blog_inner">
+                                <article class="blog_item">
+                                    <a href="#"><img src="static/img/blog/blog1.jpg" alt=""></a>
+                                    <ul class="post_meta list-unstyled">
+                                        <li><a href="#"><i class="far fa-calendar-alt"></i>02 February , 2019</a></li>
+                                        <li><i class="far fa-folder"></i><a href="#">Construction,</a> <a href="#">Building</a></li>
+                                    </ul>
+                                    <a href="#">
+                                        <h2 class="l_post_title">Etesy lives to fight another day as new leadership shaves costs and delivers an earnings beat</h2>
+                                    </a>
+                                    <p>For the majority of construction firms, technology is seen as a massive investment that needs to be carefully considered before purchasing. Read to learn why construction companies should be less concerned about the cost of software and instead, prioritize its value....</p>
+                                    <a href="#" class="read_btn">Read More <i class="ti-angle-right"></i></a>
+                                </article>
+                                <article class="blog_item">
+                                    <div class="video_post">
+                                        <img src="static/img/blog/blog2.jpg" alt="">
+                                        <a href="https://www.youtube.com/watch?v=sU3FkzUKHXU" class="video_btn popup-youtube">
+                                            <span></span>
+                                        </a>
+                                    </div>
+                                    <ul class="post_meta list-unstyled">
+                                        <li><a href="#"><i class="far fa-calendar-alt"></i>03 February , 2019</a></li>
+                                        <li><i class="far fa-folder"></i><a href="#">Construction,</a> <a href="#">Building</a></li>
+                                    </ul>
+                                    <a href="#">
+                                        <h2 class="l_post_title">Adapti Engineers designs the tallest hotel in the United States in 2014</h2>
+                                    </a>
+                                    <p>For the majority of construction firms, technology is seen as a massive investment that needs to be carefully considered before purchasing. Read to learn why construction companies should be less concerned about the cost of software and instead, prioritize its value....</p>
+                                    <a href="#" class="read_btn">Read More <i class="ti-angle-right"></i></a>
+                                </article>
+                                <article class="blog_item quote_post">
+                                    <div class="q_icon"><i class="fas fa-quote-left"></i></div>
+                                    <h4>Quas minima enim! Fugiat tempora nascetur cum quae soluta quos consectetuer velit quidem iaculis, ante fusce? Quam aut, recusandae, mollitia dictumst ac nam id odio!</h4>
+                                    <span class="author_name">- David Allan Coe</span>
+                                </article>
+                                <article class="blog_item">
+                                    <a href="#"><img src="static/img/blog/blog3.jpg" alt=""></a>
+                                    <ul class="post_meta list-unstyled">
+                                        <li><a href="#"><i class="far fa-calendar-alt"></i>02 February , 2019</a></li>
+                                        <li><i class="far fa-folder"></i><a href="#">Construction,</a> <a href="#">Building</a></li>
+                                    </ul>
+                                    <a href="#">
+                                        <h2 class="l_post_title">How Mobile Technology Can Help Construction Companies Close the Labor Gap </h2>
+                                    </a>
+                                    <p>For the majority of construction firms, technology is seen as a massive investment that needs to be carefully considered before purchasing. Read to learn why construction companies should be less concerned about the cost of software and instead, prioritize its value....</p>
+                                    <a href="#" class="read_btn">Read More <i class="ti-angle-right"></i></a>
+                                </article>
+                                <article class="blog_item quote_post quote_post_two">
+                                    <div class="q_icon"><img src="img/blog/b_icon.png" alt=""></div>
+                                    <a href="#">
+                                        <h2 class="l_post_title">Cursus augue ante porro consequuntur harum donec venenatis , curae pharetra nascetur lacus!</h2>
+                                    </a>
+                                </article>
+                                <article class="blog_item">
+                                    <a href="#"><img src="static/img/blog/blog4.jpg" alt=""></a>
+                                    <ul class="post_meta list-unstyled">
+                                        <li><a href="#"><i class="far fa-calendar-alt"></i>02 February , 2019</a></li>
+                                        <li><i class="far fa-folder"></i><a href="#">Construction,</a> <a href="#">Building</a></li>
+                                    </ul>
+                                    <a href="#">
+                                        <h2 class="l_post_title">How analytics can drive smarter engineering and construction decisions</h2>
+                                    </a>
+                                    <p>For the majority of construction firms, technology is seen as a massive investment that needs to be carefully considered before purchasing. Read to learn why construction companies should be less concerned about the cost of software and instead, prioritize its value....</p>
+                                    <a href="#" class="read_btn">Read More <i class="ti-angle-right"></i></a>
+                                </article>
+                                <nav class="navigation pagination" role="navigation">
+                                    <a class="prev page-numbers" href="#"><i class="ti-arrow-left"></i></a>
+                                    <span aria-current="page" class="page-numbers current">1</span>
+                                    <a class="page-numbers" href="#">2</a>
+                                    <a class="next page-numbers" href="#"><i class="ti-arrow-right"></i></a>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="blog_sidebar">
+                                <div class="widget sidebar_widget widget_search">
+                                    <form action="#" class="search-form input-group">
+                                        <input type="search" class="form-control widget_input" placeholder="Search here">
+                                        <button type="submit"><i class="fas fa-search"></i></button>
+                                    </form>
+                                </div>
+                                <div class="widget recente_post_widget">
+                                    <h4 class="w_title">Recent Posts</h4>
+                                    <div class="media latest_post_thumb">
+                                        <img src="static/img/home-1/l_post5.jpg" alt="">
+                                        <div class="media-body">
+                                            <a href="#">
+                                                <h4>How to be Successfull in commercial construction</h4>
+                                            </a>
+                                            <ul class="post_meta list-unstyled">
+                                                <li><a href="#"><i class="far fa-calendar-alt"></i>02 February , 2019</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="media latest_post_thumb">
+                                        <img src="static/img/home-1/l_post2.jpg" alt="">
+                                        <div class="media-body">
+                                            <a href="#">
+                                                <h4>How to be Successfull in commercial construction</h4>
+                                            </a>
+                                            <ul class="post_meta list-unstyled">
+                                                <li><a href="#"><i class="far fa-calendar-alt"></i>02 February , 2019</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="media latest_post_thumb">
+                                        <img src="static/img/home-1/l_post3.jpg" alt="">
+                                        <div class="media-body">
+                                            <a href="#">
+                                                <h4>How to be Successfull in commercial construction</h4>
+                                            </a>
+                                            <ul class="post_meta list-unstyled">
+                                                <li><a href="#"><i class="far fa-calendar-alt"></i>02 February , 2019</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="media latest_post_thumb">
+                                        <img src="static/img/home-1/l_post4.jpg" alt="">
+                                        <div class="media-body">
+                                            <a href="#">
+                                                <h4>How to be Successfull in commercial construction</h4>
+                                            </a>
+                                            <ul class="post_meta list-unstyled">
+                                                <li><a href="#"><i class="far fa-calendar-alt"></i>02 February , 2019</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget sidebar_widget widget_categorie">
+                                    <h4 class="w_title">Categories</h4>
+                                    <ul class="list-unstyled">
+                                        <li> <a href="#"><span>Building Planning </span><em>(54)</em></a> </li>
+                                        <li> <a href="#"><span>Trending Architecture</span><em>(3)</em></a> </li>
+                                        <li> <a href="#"><span>Fashion</span><em>(96)</em></a> </li>
+                                        <li> <a href="#"><span>Eleva</span><em>(38)</em></a> </li>
+                                        <li> <a href="#"><span>Creative app</span><em>(44)</em></a> </li>
+                                        <li> <a href="#"><span>Landing</span><em>(44)</em></a> </li>
+                                    </ul>
+                                </div>
+                                <div class="widget sidebar_widget widget_tag_cloud">
+                                    <h4 class="w_title">Tag cloud</h4>
+                                    <div class="post-tags">
+                                        <a href="#">Technology</a>
+                                        <a href="#">Architecture</a>
+                                        <a href="#">Building</a>
+                                        <a href="#">Construction</a>
+                                        <a href="#">Tools</a>
+                                        <a href="#">Worker</a>
+                                        <a href="#">Development</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+{% endblock %}

@@ -32,15 +32,16 @@ class Portfolio(models.Model):
 
 
 class News(models.Model):
-    date = models.DateTimeField(auto_now_add=True, verbose_name='Дата создания')
-    title = models.CharField(max_length=500, verbose_name='Заголовок')
-    announcement = models.CharField(max_length=200, null=True, blank=True, verbose_name='Анонс')
-    image = models.ImageField(upload_to='news_images', verbose_name='Фото')
-    text = models.TextField(verbose_name='Текст')
-    author = models.CharField(max_length=200, verbose_name='Источник')
+    title = models.CharField(max_length=200, verbose_name="Новости")
+    date = models.DateField(auto_now_add=True)
+    image = models.ImageField(null=True, blank=True, upload_to="news")
 
     def __str__(self):
         return self.title
+
+class Fulldescription(models.Model):
+    news = models.ForeignKey(News, on_delete=models.CASCADE, related_name="news_descriptions")
+    text = models.TextField(verbose_name="Текст")
 
 class Partners(models.Model):
     partner_name = models.CharField(max_length=200, verbose_name="Название партнера")

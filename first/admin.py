@@ -6,5 +6,13 @@ from .models import *
 admin.site.register(Employee)
 admin.site.register(Project)
 admin.site.register(Portfolio)
-admin.site.register(News)
 admin.site.register(Partners)
+
+class DescNews(admin.TabularInline):
+    model = Fulldescription
+
+
+class NewsAdmin(admin.ModelAdmin):
+    inlines = [DescNews, ]
+
+admin.site.register(News, NewsAdmin)
