@@ -12,6 +12,10 @@ class Employee(models.Model):
     def __str__(self):
         return self.full_name
 
+class Emdescription(models.Model):
+    employee = models.ForeignKey(Employee, on_delete=models.CASCADE, related_name="descriptions")
+    text = models.TextField(verbose_name="Описание")
+
 
 class Project(models.Model):
     title = models.CharField(max_length=100)

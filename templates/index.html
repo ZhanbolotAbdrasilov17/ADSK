@@ -83,13 +83,13 @@
                                 <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
                                 <li class="nav-item"><a class="nav-link" href="service.html">SERVICES</a></li>
                                 <li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
-                                <li class="nav-item"><a class="nav-link" href="team.html">TEAM</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'employee' %}">TEAM</a></li>
                                 <li class="nav-item dropdown submenu">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         BLOG
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="blog.html" class="nav-link">Blog List</a></li>
+                                        <li class="nav-item"><a href="{% url 'news' %}" class="nav-link">Blog List</a></li>
                                         <li class="nav-item"><a href="blog-grid.html" class="nav-link">Blog Grid</a></li>
                                         <li class="nav-item"><a href="blog-details.html" class="nav-link">Blog Details</a></li>
                                     </ul>
