@@ -6,10 +6,12 @@
             <section class="con_team_area_three sec_gap">
                 <div class="container">
                     <div class="row">
+                        {% for em in employee %}
+
                         <div class="col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay="0.1s">
                             <div class="con_team_item_two">
                                 <div class="team_img hover_effect">
-                                    <img src="static/img/home-1/team1.jpg" alt="team1">
+                                    <img src={{em.image.url}} alt="team1">
                                     <div class="social_icon">
                                         <a href="#"><i class="ti-facebook"></i></a>
                                         <a href="#"><i class="ti-twitter-alt"></i></a>
@@ -18,156 +20,14 @@
                                 </div>
                                 <div class="content">
                                     <a href="#">
-                                        <h5>Jarvis Pepperspray</h5>
+                                        <h5>{{em.full_name}}</h5>
                                     </a>
-                                    <p>CIVIL ENGINEER</p>
+                                    <p>{{em.position}}</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay="0.3s">
-                            <div class="con_team_item_two">
-                                <div class="team_img hover_effect">
-                                    <img src="static/img/team/team4.jpg" alt="team1">
-                                    <div class="social_icon">
-                                        <a href="#"><i class="ti-facebook"></i></a>
-                                        <a href="#"><i class="ti-twitter-alt"></i></a>
-                                        <a href="#"><i class="ti-pinterest"></i></a>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <a href="#">
-                                        <h5>Bodrum Salvador</h5>
-                                    </a>
-                                    <p>DESIGNER</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay="0.5s">
-                            <div class="con_team_item_two">
-                                <div class="team_img hover_effect">
-                                    <img src="static/img/home-1/team3.jpg" alt="team1">
-                                    <div class="social_icon">
-                                        <a href="#"><i class="ti-facebook"></i></a>
-                                        <a href="#"><i class="ti-twitter-alt"></i></a>
-                                        <a href="#"><i class="ti-pinterest"></i></a>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <a href="#">
-                                        <h5>Rodney Artichoke</h5>
-                                    </a>
-                                    <p>PROJECT ENGINEER</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay="0.2s">
-                            <div class="con_team_item_two">
-                                <div class="team_img hover_effect">
-                                    <img src="static/img/team/team5.jpg" alt="team1">
-                                    <div class="social_icon">
-                                        <a href="#"><i class="ti-facebook"></i></a>
-                                        <a href="#"><i class="ti-twitter-alt"></i></a>
-                                        <a href="#"><i class="ti-pinterest"></i></a>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <a href="#">
-                                        <h5>Barrett Benedict</h5>
-                                    </a>
-                                    <p>BUILDING INSPECTOR</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay="0.4s">
-                            <div class="con_team_item_two">
-                                <div class="team_img hover_effect">
-                                    <img src="static/img/team/team6.jpg" alt="team1">
-                                    <div class="social_icon">
-                                        <a href="#"><i class="ti-facebook"></i></a>
-                                        <a href="#"><i class="ti-twitter-alt"></i></a>
-                                        <a href="#"><i class="ti-pinterest"></i></a>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <a href="#">
-                                        <h5>Julian Jackson</h5>
-                                    </a>
-                                    <p>DESIGNER</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay="0.6s">
-                            <div class="con_team_item_two">
-                                <div class="team_img hover_effect">
-                                    <img src="static/img/team/team7.jpg" alt="team1">
-                                    <div class="social_icon">
-                                        <a href="#"><i class="ti-facebook"></i></a>
-                                        <a href="#"><i class="ti-twitter-alt"></i></a>
-                                        <a href="#"><i class="ti-pinterest"></i></a>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <a href="#">
-                                        <h5>Austin Benjamin</h5>
-                                    </a>
-                                    <p>CONSTRUCTOR</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay="0.2s">
-                            <div class="con_team_item_two">
-                                <div class="team_img hover_effect">
-                                    <img src="static/img/team/team8.jpg" alt="team1">
-                                    <div class="social_icon">
-                                        <a href="#"><i class="ti-facebook"></i></a>
-                                        <a href="#"><i class="ti-twitter-alt"></i></a>
-                                        <a href="#"><i class="ti-pinterest"></i></a>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <a href="#">
-                                        <h5>Charles Clare</h5>
-                                    </a>
-                                    <p>BUILDING INSPECTOR</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay="0.4s">
-                            <div class="con_team_item_two">
-                                <div class="team_img hover_effect">
-                                    <img src="static/img/team/team9.jpg" alt="team1">
-                                    <div class="social_icon">
-                                        <a href="#"><i class="ti-facebook"></i></a>
-                                        <a href="#"><i class="ti-twitter-alt"></i></a>
-                                        <a href="#"><i class="ti-pinterest"></i></a>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <a href="#">
-                                        <h5>Donald Duke</h5>
-                                    </a>
-                                    <p>FIELD ENGINEER</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay="0.6s">
-                            <div class="con_team_item_two">
-                                <div class="team_img hover_effect">
-                                    <img src="static/img/team/team10.jpg" alt="team1">
-                                    <div class="social_icon">
-                                        <a href="#"><i class="ti-facebook"></i></a>
-                                        <a href="#"><i class="ti-twitter-alt"></i></a>
-                                        <a href="#"><i class="ti-pinterest"></i></a>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <a href="#">
-                                        <h5>Edward Eugene</h5>
-                                    </a>
-                                    <p>ASSISTANT PROJECT MANAGER</p>
-                                </div>
-                            </div>
-                        </div>
+                                    {% endfor %}
+
                     </div>
                 </div>
             </section>

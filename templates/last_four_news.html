@@ -1,0 +1,14 @@
+
+{% for last_n in last_four_news %}
+    <div class="media latest_post_thumb">
+        <img src={{ last_n.image.url }} alt="">
+        <div class="media-body">
+            <a href="#">
+                <h4>{{ last_n.title }}</h4>
+            </a>
+            <ul class="post_meta list-unstyled">
+                <li><a href="#"><i class="far fa-calendar-alt"></i>{{ last_n.created_at.date }}</a></li>
+            </ul>
+        </div>
+    </div>
+{% endfor %}

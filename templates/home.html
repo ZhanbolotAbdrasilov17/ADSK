@@ -360,10 +360,11 @@
                         <p class="con_p">Twit cras excuse my French matie boy grub it’s all gone to pot off his nut butty<br> horse play blow off pardon you hanky panky.</p>
                     </div>
                     <div class="row">
+                        {% for em in employees %}
                         <div class="col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay="0.3s">
                             <div class="con_team_item_two">
                                 <div class="team_img hover_effect">
-                                    <img src="{% static 'img/home-1/team1.jpg' %}" alt="team1">
+                                    <img src={{em.image.url}} alt="team1">
                                     <div class="social_icon">
                                         <a href="#"><i class="ti-facebook"></i></a>
                                         <a href="#"><i class="ti-twitter-alt"></i></a>
@@ -372,48 +373,13 @@
                                 </div>
                                 <div class="content">
                                     <a href="#">
-                                        <h5>Jarvis Pepperspray</h5>
+                                        <h5>{{em.full_name}}</h5>
                                     </a>
-                                    <p>CIVIL ENGINEER</p>
+                                    <p>{{em.position}}</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay="0.5s">
-                            <div class="con_team_item_two">
-                                <div class="team_img hover_effect">
-                                    <img src="{% static 'img/home-1/team2.jpg' %}" alt="team1">
-                                    <div class="social_icon">
-                                        <a href="#"><i class="ti-facebook"></i></a>
-                                        <a href="#"><i class="ti-twitter-alt"></i></a>
-                                        <a href="#"><i class="ti-pinterest"></i></a>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <a href="#">
-                                        <h5>Bodrum Salvador</h5>
-                                    </a>
-                                    <p>DESIGNER</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay="0.7s">
-                            <div class="con_team_item_two">
-                                <div class="team_img hover_effect">
-                                    <img src="{% static 'img/home-1/team3.jpg' %}" alt="team1">
-                                    <div class="social_icon">
-                                        <a href="#"><i class="ti-facebook"></i></a>
-                                        <a href="#"><i class="ti-twitter-alt"></i></a>
-                                        <a href="#"><i class="ti-pinterest"></i></a>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <a href="#">
-                                        <h5>Rodney Artichoke</h5>
-                                    </a>
-                                    <p>PROJECT ENGINEER</p>
-                                </div>
-                            </div>
-                        </div>
+                         {% endfor %}
                     </div>
                 </div>
             </section>
@@ -426,65 +392,20 @@
                         <p class="con_p">Twit cras excuse my French matie boy grub it’s all gone to pot off his nut butty<br> horse play blow off pardon you hanky panky.</p>
                     </div>
                     <div class="row">
-                        <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="latest_post_item">
-                                <img src="{% static 'img/home-1/l_post1.jpg' %}" alt="">
-                                <a href="#">
-                                    <h2 class="l_post_title">Adapti Engineers designs the tallest hotel in the United States in January, 2019</h2>
-                                </a>
-                                <ul class="post_meta list-unstyled">
-                                    <li><a href="#"><i class="far fa-calendar-alt"></i>02 February , 2019</a></li>
-                                    <li><i class="far fa-folder"></i><a href="#">Construction,</a> <a href="#">Building</a></li>
-                                </ul>
-                                <p>Twit cras excuse my French matie boy grub it’s all gone to pot off his nut butty horse play blow off pardon you hanky panky. Why I say old chap that is sping</p>
-                                <a href="#" class="read_btn">Read More <i class="ti-angle-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="media latest_post_thumb wow fadeInUp" data-wow-delay="0.3s">
-                                <img src="{% static 'img/home-1/l_post5.jpg' %}" alt="">
-                                <div class="media-body">
-                                    <a href="#">
-                                        <h4>How to be Successfull in commercial construction</h4>
-                                    </a>
-                                    <ul class="post_meta list-unstyled">
-                                        <li><a href="#"><i class="far fa-calendar-alt"></i>02 February , 2019</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="media latest_post_thumb wow fadeInUp" data-wow-delay="0.5s">
-                                <img src="{% static 'img/home-1/l_post4.jpg' %}" alt="">
-                                <div class="media-body">
-                                    <a href="#">
-                                        <h4>Three ways to make the foundation of a building</h4>
-                                    </a>
-                                    <ul class="post_meta list-unstyled">
-                                        <li><a href="#"><i class="far fa-calendar-alt"></i>02 January , 2019</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="media latest_post_thumb wow fadeInUp" data-wow-delay="0.7s">
-                                <img src="{% static 'img/home-1/l_post3.jpg' %}" alt="">
-                                <div class="media-body">
-                                    <a href="#">
-                                        <h4>Know who you are hiring in the construction</h4>
-                                    </a>
-                                    <ul class="post_meta list-unstyled">
-                                        <li><a href="#"><i class="far fa-calendar-alt"></i>20 April , 2019</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="media latest_post_thumb wow fadeInUp" data-wow-delay="0.8s">
-                                <img src="img/home-1/l_post2.jpg" alt="">
-                                <div class="media-body">
-                                    <a href="#">
-                                        <h4>How to be Success commercial construction</h4>
-                                    </a>
-                                    <ul class="post_meta list-unstyled">
-                                        <li><a href="#"><i class="far fa-calendar-alt"></i>30 February , 2019</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+
+                            {% include "last_four_news.html" %}
+
+<!--                            <div class="media latest_post_thumb wow fadeInUp" data-wow-delay="0.8s">-->
+<!--                                <img src="img/home-1/l_post2.jpg" alt="">-->
+<!--                                <div class="media-body">-->
+<!--                                    <a href="#">-->
+<!--                                        <h4>How to be Success commercial construction</h4>-->
+<!--                                    </a>-->
+<!--                                    <ul class="post_meta list-unstyled">-->
+<!--                                        <li><a href="#"><i class="far fa-calendar-alt"></i>30 February , 2019</a></li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+<!--                            </div>-->
                         </div>
                     </div>
                 </div>
@@ -502,7 +423,8 @@
                                     <h5 class="con_title_top">REQUEST A QUOTE</h5>
                                     <h2 class="con_title">Contact With Us</h2>
                                 </div>
-                                <form action="https://pixelsigns.art/html/pix-construction/theme/contact_process.php" method="post" id="contactForm" novalidate="novalidate" class="contact_form get_quote_form">
+                                <form action="{% url 'appeal' %}" method="post" id="contactForm" novalidate="novalidate" class="contact_form get_quote_form">
+                                    <input class="form-control" hidden name="csrfmiddlewaretoken" value={{ token }}>
                                     <div class="form-group">
                                         <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
                                     </div>

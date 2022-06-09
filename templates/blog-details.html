@@ -1,5 +1,24 @@
 {% extends 'index.html' %}
 {% load static %}
 {% block page %}
+        <div class="blog-details-area pt-100 pb-100">
+            <div class="container">
+                <div class="blog-details-desc">
+                    <div class="article-content">
+                        <div class="article-image">
+                            <img src="{{news.image.url}}" alt="image">
+                            <div class="date">{{ news.date}}</div>
+                        </div>
+                        <h3>{{ news.title}}</h3>
+                        {% for t in texts %}
+                        {% if t.news.id == news.id%}
+                        <p>{{ t.text}}</p>
+                        {% endif%}
+                        {% endfor %}
 
+                    </div>
+
+                </div>
+            </div>
+        </div>
 {% endblock %}
