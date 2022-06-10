@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{% static 'vendors/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/bootstrap/css/bootstrap.css' %}">
     <link rel="stylesheet" href="{% static 'vendors/slick/slick.css' %}">
     <link rel="stylesheet" href="{% static 'vendors/slick/slick-theme.css' %}">
     <link rel="stylesheet" href="{% static 'vendors/animation/animate.css' %}">
@@ -29,9 +29,8 @@
         <div class="body_wrapper">
             <div class="header_background-video">
                 <div class="header_background-video-close"></div>
-                <iframe width="100%" height="100%" src="http://www.youtube.com/embed/dQiYnFQX3Qg" frameborder="0" allowfullscreen></iframe>
-                <iframe width="100%" height="100%" src="http://www.youtube.com/embed/dQiYnFQX3Qg" frameborder="0" allowfullscreen></iframe>
-            </div>
+                <iframe width="100%" height="100%" src="http://www.youtube.com/embed/gaMt5-MU7Mk" frameborder="0" allowfullscreen></iframe>
+                           </div>
             <header class="header_area">
                 <div class="header_top_two header_dark">
                     <div class="container">
@@ -69,22 +68,16 @@
                         </button>
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mr-auto menu">
+                            <a class=" f_logo navbar-brand logo" href="#">
+                                <img src="{% static 'img/adsk.png' %}" alt="LOGO">
+                            </a>
+                            <ul class="navbar-nav menu">
                                 <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">HOME</a></li>
                                 <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
                                 <li class="nav-item"><a class="nav-link" href="service.html">SERVICES</a></li>
                                 <li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{% url 'employee' %}">TEAM</a></li>
-                                <li class="nav-item dropdown submenu">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        BLOG
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="{% url 'news' %}" class="nav-link">Blog List</a></li>
-                                        <li class="nav-item"><a href="blog-grid.html" class="nav-link">Blog Grid</a></li>
-                                        <li class="nav-item"><a href="blog-details.html" class="nav-link">Blog Details</a></li>
-                                    </ul>
-                                </li>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'news' %}">BLOG</a></li>
                                 <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
                             </ul>
                             <ul class="list-unstyled search">
@@ -169,7 +162,7 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
     <script src="{% static 'vendors/bootstrap/js/popper.min.js' %}"></script>
-    <script src="{% static 'vendors/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'vendors/bootstrap/js/bootstrap.js' %}"></script>
     <script src="{% static 'vendors/slick/slick.min.js' %}"></script>
     <script src="{% static 'vendors/stellar/jquery.stellar.js' %}"></script>
     <script src="{% static 'vendors/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>

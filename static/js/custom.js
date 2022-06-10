@@ -261,5 +261,59 @@
 	        window.location.href = url;
 	    }
 	});
+
     
 })(jQuery)
+
+// 用 bootstrap 4.41 實現 menuIcon 動畫效果
+const navMenuIcon = document.getElementById('navMenuIcon');
+let menuIconCollapsed = true; // flag for detect collapsed or not
+
+
+function menuIconAni(){
+    let targetElm = $('.iconbar');
+  if (menuIconCollapsed){
+    menuIconCollapsed = !menuIconCollapsed; // 把 menuIconCollapsed 由 true 改 false
+    targetElm.addClass('open');
+  }else{
+     targetElm.removeClass('open');
+    menuIconCollapsed = true
+  }
+}
+
+
+
+navMenuIcon.addEventListener("click" , ()=>{
+  menuIconAni();
+})
+
+//- swiper
+    var swiper = new Swiper('.swiper-container', {
+      autoplay: {
+    delay: 1000,
+  },
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+       breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+       640: {
+      slidesPerView: 3,
+      spaceBetween: 10
+    }},
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });

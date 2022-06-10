@@ -592,8 +592,12 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   display: none;
 }
 
-.header_three .navbar-brand {
-  display: none;
+.header_three .navbar-brand img{
+  width: 140px;
+}
+
+.navbar-nav{
+    margin: 0 auto;
 }
 
 .header_three .con_btn {
@@ -835,7 +839,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .header_background-video-close{
    position: absolute;
    right: 3%;
-   top: 5%;
+   top: 10%;
    width: 50px;
    height: 50px;
    background: #FDB900;
@@ -988,9 +992,12 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   opacity: 1;
 }
 
+.slider_text{
+    color: #fff
+}
+
 .slider_text_three h5 {
   font-weight: 600;
-  color: #485c6b;
   letter-spacing: 2px;
   font-size: 20px;
   text-transform: uppercase;
@@ -1151,6 +1158,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .con_about_img img {
+width: 590px;
   margin-top: -10px;
 }
 
@@ -2684,6 +2692,10 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   margin-bottom: -30px;
 }
 
+.blog_item a img {
+    width: 390px
+}
+
 .latest_blog_item_two {
   background: #f9f9f9;
   -webkit-transition: all 0.3s linear;
@@ -3166,6 +3178,10 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .get_quote_form .con_btn {
   border: 0px;
+}
+
+.pagination{
+  margin: 15px;
 }
 
 .pagination_two {
@@ -3842,3 +3858,20 @@ input[type="text"] {
 /*====================================================*/
 
 /*# sourceMappingURL=style.css.map */
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+   filter: invert(1)
+}
+
+.carousel-item.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-item ul{
+width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly
+}

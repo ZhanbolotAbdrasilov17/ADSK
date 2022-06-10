@@ -19,7 +19,8 @@
             <section class="con_blog_area sec_gap">
                 <div class="container">
                     <div class="row">
-                        {% for new in news %}
+                        <div class="col-7">
+                            {% for new in news %}
                         <div class="col-lg-8">
                             <div class="blog_inner">
                                 <article class="blog_item">
@@ -34,18 +35,15 @@
                                     <p>{{ new.text}}</p>
                                     <a href="{% url 'news' new.pk %}" class="read_btn">Read More <i class="ti-angle-right"></i></a>
                                 </article>
-                                {% endfor %}
-
-
-
-                                <nav class="navigation pagination" role="navigation">
-                                    <a class="prev page-numbers" href="#"><i class="ti-arrow-left"></i></a>
-                                    <span aria-current="page" class="page-numbers current">1</span>
-                                    <a class="page-numbers" href="#">2</a>
-                                    <a class="next page-numbers" href="#"><i class="ti-arrow-right"></i></a>
-                                </nav>
                             </div>
+
                         </div>
+                                {% endfor %}
+                        </div>
+
+
+
+
                         <div class="col-lg-4">
                             <div class="blog_sidebar">
                                 <div class="widget sidebar_widget widget_search">
@@ -61,7 +59,15 @@
 
 
                                 </div>
+                            <nav class="navigation pagination" role="navigation">
+                                    <a class="prev page-numbers" href="#"><i class="ti-arrow-left"></i></a>
+                                    <span aria-current="page" class="page-numbers current">1</span>
+                                    <a class="page-numbers" href="#">2</a>
+                                    <a class="next page-numbers" href="#"><i class="ti-arrow-right"></i></a>
+                                </nav>
                             </div>
+
+
                         </div>
                     </div>
                 </div>
