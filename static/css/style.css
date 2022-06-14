@@ -839,12 +839,37 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .header_background-video-close{
    position: absolute;
    right: 3%;
-   top: 10%;
-   width: 50px;
-   height: 50px;
+   top: 20%;
+   width: 40px;
+   height: 40px;
    background: #FDB900;
    border-radius: 50%;
    cursor: pointer
+}
+
+.header_background-video-close::before {
+  position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    top: 50%;
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 8px
+}
+.header_background-video-close::after {
+  position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    top: 50%;
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 8px
 }
 
 .main_slider {
@@ -2654,10 +2679,11 @@ width: 590px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 33%;
 }
 
 .latest_post_thumb img {
-  margin-right: 20px;
+  width: 100%;
 }
 
 .latest_post_thumb .media-body h4 {
@@ -2676,10 +2702,6 @@ width: 590px;
 
 .latest_post_thumb .post_meta {
   margin-bottom: 0;
-}
-
-.latest_post_thumb + .latest_post_thumb {
-  margin-top: 40px;
 }
 
 /*========== con_latest_news_area css ===========*/

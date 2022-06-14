@@ -1,6 +1,6 @@
 ;(function($){
     "use strict";
-    
+
     $('.main_slider').on('init', function (e, slick) {
           var $firstAnimatingElements = $('div.slider_item:first-child').find('[data-animation]');
           doAnimations($firstAnimatingElements);
@@ -34,7 +34,7 @@
               });
           });
       }
-    
+
     if ($('.con_testimonial_slider').length) {
         $('.con_testimonial_slider').slick({
             autoplay: true,
@@ -48,7 +48,7 @@
             nextArrow:'.next',
         });
     }
-    
+
     if ($('#testimonila_slider').length) {
         $('#testimonila_slider').slick({
             autoplay: true,
@@ -69,8 +69,8 @@
             ]
         });
     }
-    
-    
+
+
     if ($('#project_slider').length) {
         $('#project_slider').slick({
             autoplay: true,
@@ -106,8 +106,8 @@
             ]
         });
     }
-    
-    
+
+
     /* ===== Parallax Effect===== */
 	function parallaxEffect() {
         if($('.parallax-effect').length){
@@ -115,7 +115,7 @@
         };
 	}
     parallaxEffect();
-    
+
     /*===========Portfolio isotope js===========*/
     function portfolioMasonry(){
         var portfolio = $("#work-portfolio");
@@ -161,16 +161,16 @@
         }
     }
     portfolioMasonry();
-    
+
     var headerFixed = function() {
         $('#header').each(function() {
             var nav = $('#header');
             $(window).on('load', function(){
-                var header = $('#header');           
+                var header = $('#header');
                 var offsetTop = $('#header').offset().top;
-                var headerHeight = $('#header').height();             
-                var buffer  = $('<div>', { height: headerHeight }).insertAfter(header);   
-                    buffer.hide();                 
+                var headerHeight = $('#header').height();
+                var buffer  = $('<div>', { height: headerHeight }).insertAfter(header);
+                    buffer.hide();
 
                 $(window).on('load scroll', function(){
                     if ( $(window).scrollTop() > offsetTop  ) {
@@ -185,19 +185,19 @@
         });
     };
     headerFixed();
-    
+
     /* Counter Js */
     function counterUp(){
-        if ( $('.counter').length ){ 
+        if ( $('.counter').length ){
             $('.counter').counterUp({
                 delay: 1,
                 time: 250
             });
         };
-    };  
-    
+    };
+
     counterUp();
-    
+
     /*--------------- End popup-js--------*/
     function popupGallery(){
         if($('.popup-youtube').length){
@@ -212,7 +212,7 @@
         }
     }
     popupGallery();
-    
+
     $('.search-btn').on('click', function(){
         $('body').addClass('open');
         setTimeout(function () {
@@ -224,16 +224,16 @@
 		$('body').removeClass('open');
 		return false;
 	});
-    
+
     /*--------- WOW js-----------*/
     function wowAnimation(){
         new WOW({
-            offset: 100,          
+            offset: 100,
             mobile: true
         }).init()
     }
     wowAnimation();
-    
+
     /*-------------------------------------------------------------------------------
 	  Loader
 	-------------------------------------------------------------------------------*/
@@ -262,8 +262,19 @@
 	    }
 	});
 
-    
+//	YouTubeVideo
+$('.slider__video').click(function(){
+    $('#mainVideo')[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+});
+
+$('.header_background-video-close').click(function(){
+    $('#mainVideo')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+});
+
+
+
 })(jQuery)
+
 
 // 用 bootstrap 4.41 實現 menuIcon 動畫效果
 const navMenuIcon = document.getElementById('navMenuIcon');

@@ -50,8 +50,8 @@ class Fulldescription(models.Model):
 
 class Partners(models.Model):
     partner_name = models.CharField(max_length=200, verbose_name="Название партнера")
-    partner_description = models.TextField()
-    image = models.ImageField(upload_to='partners_images', verbose_name='Фото')
+    partner_description = models.TextField(blank=True)
+    image = models.ImageField(upload_to='partners_images', verbose_name='Фото', blank=True)
 
     def __str__(self):
         return self.partner_name

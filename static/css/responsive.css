@@ -31,10 +31,6 @@
     .con_team_item_two .team_img img{
         width: 100%;
     }
-    .latest_post_thumb img{
-        max-width: 35%;
-        margin-right: 10px;
-    }
     .con_service_item_three{
         padding-left: 15px;
         padding-right: 15px;
@@ -57,6 +53,13 @@
     }
     .contact_info_item{
         margin-bottom: 30px;
+    }
+    .latest_post_thumb{
+        width: 50%;
+    }
+    .con_slider_area .slider__video{
+        width: 220px;
+        height: 220px
     }
 }
 
@@ -471,6 +474,10 @@
     }
     .comment-box .post_comment .reply-comment{
         padding-left: 0px;
+    }
+    .con_slider_area .slider__video{
+    width: 170px;
+    height: 170px;
     }
 }
 
