@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
 
+
     <title>Pixel Builders</title>
 </head>
 
@@ -41,9 +42,9 @@
                                 </div>
                                 <div class="col-lg-10 text-right">
                                     <div class="header_contact_info">
-                                        <a href="#"><i class="far fa-clock"></i>Monday - Friday 09:00 - 19:00</a>
-                                        <a href="#"><i class="fas fa-phone"></i>Call Us: +07 554 332 322</a>
-                                        <a href="mailto:pixelbuilders@email.com"><i class="fas fa-envelope"></i>pixelbuilders@email.com</a>
+                                        <a href="#"><i class="far fa-clock"></i>График: Понедельник - Пятница 09:00 - 18:00</a>
+                                        <a href="#"><i class="fas fa-phone"></i>Номер: +996 700 000000</a>
+                                        <a href="mailto:pixelbuilders@email.com"><i class="fas fa-envelope"></i>adsk@email.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -72,17 +73,15 @@
                                 <img src="{% static 'img/adsk.png' %}" alt="LOGO">
                             </a>
                             <ul class="navbar-nav menu">
-                                <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">HOME</a></li>
-                                <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
-                                <li class="nav-item"><a class="nav-link" href="service.html">SERVICES</a></li>
-                                <li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{% url 'employee' %}">TEAM</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{% url 'news' %}">BLOG</a></li>
-                                <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Главная</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about.html">О НАС</a></li>
+                                <li class="nav-item"><a class="nav-link" href="service.html">СЕРВИСЫ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="portfolio.html">ПОРТФОЛИО</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'employee' %}">КОМАНДА</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'news' %}">БЛОГ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">КОНТАКТЫ</a></li>
                             </ul>
-                            <ul class="list-unstyled search">
-                                <li><a href="#" class="con_btn btn_effect">GET A QUOTE</a></li>
-                            </ul>
+
                         </div>
                     </div>
                 </nav>
@@ -120,30 +119,29 @@
                         </div>
                         <div class="col-lg-3 col-sm-5 wow fadeInUp" data-wow-delay="0.4s">
                             <div class="f_widget link_widget">
-                                <h2 class="f_title">Usefull Links</h2>
+                                <h2 class="f_title">Полезные ссылки</h2>
                                 <ul class="list-unstyled">
-                                    <li><a href="#">Support Center (Faq)</a></li>
-                                    <li><a href="#">Features Overview</a></li>
-                                    <li><a href="#">Welcome Page</a></li>
-                                    <li><a href="#">Under Maintenance</a></li>
+                                    <li><a href="#">Поддержка</a></li>
+                                    <li><a href="#">Обзор функций</a></li>
+                                    <li><a href="#">Страницы</a></li>
+                                    <li><a href="#">На техобслуживании</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-2 col-sm-5 wow fadeInUp" data-wow-delay="0.6s">
                             <div class="f_widget link_widget">
-                                <h2 class="f_title">Navigation</h2>
+                                <h2 class="f_title">Навигация</h2>
                                 <ul class="list-unstyled">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Portfolio</a></li>
+                                    <li><a href="#">Главная</a></li>
+                                    <li><a href="#">О нас</a></li>
+                                    <li><a href="#">Сервисы</a></li>
+                                    <li><a href="#">Портфолио</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-7 wow fadeInUp" data-wow-delay="0.8s">
                             <div class="f_widget subscribe_widget">
-                                <h2 class="f_title">Subscribe to Our Newsletter</h2>
-                                <p>We are the leaders in the construction and building industries.</p>
+                                <h2 class="f_title">Подписывайтесь на нашу новостную рассылку</h2>
                                 <form action="#" class="f_subscribe mailchimp">
                                     <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
                                     <button class="btn btn-submit" type="submit"><i class="fas fa-paper-plane"></i></button>
@@ -153,7 +151,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="footer_bottom wow fadeInUp" data-wow-delay="0.4s">© 2019. All Rights Reserved. Design by <a href="#">Pixel Builders</a></div>
+                    <div class="footer_bottom wow fadeInUp" data-wow-delay="0.4s">© 2022. Все права защищены. Дизайнер: ASOI</div>
                 </div>
             </footer>
         </div>
@@ -194,6 +192,7 @@
             document.querySelector(".header_background-video").classList.remove("active")
             })
     </script>
+        <script src="{% static 'js/script.js' %}"></script>
 </body>
 
 

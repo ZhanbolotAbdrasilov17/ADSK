@@ -328,3 +328,5 @@ navMenuIcon.addEventListener("click" , ()=>{
         el: '.swiper-pagination',
       },
     });
+
+

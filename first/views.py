@@ -22,8 +22,9 @@ def appeal(request):
 def home(request):
     employees = Employee.objects.all()
     news_ = News.objects.all()
+    partners = Partners.objects.all()
     context = {"employees": employees, "news": news_, 'last_four_news': news_.order_by('created_at')[:4],
-               'token': get_token(request)}
+               'token': get_token(request), "partners": partners }
     return render(request, "home.html", context)
 
 
@@ -31,6 +32,7 @@ def employee(request):
     employee_ = Employee.objects.all()
     context = {"employee": employee_}
     return render(request, "team.html", context)
+
 
 
 class EmployeeDetail(DetailView):
