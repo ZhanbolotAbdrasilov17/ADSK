@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 # Create your models here.
+from django.db.models import QuerySet
 
 
 class Employee(models.Model):
@@ -43,10 +44,21 @@ class News(models.Model):
     def __str__(self):
         return self.title
 
+    @classmethod
+    def search_news(cls, value: str) -> QuerySet:
+        return cls.objects.filter(
+            models.Q(title__icontains=value) | models.Q(news_descriptions__text__icontains=value)
+        )
+
+    @classmethod
+    def last_four_news(cls) -> QuerySet:
+        return cls.objects.all().order_by('created_at')[:4]
+
 
 class Fulldescription(models.Model):
     news = models.ForeignKey(News, on_delete=models.CASCADE, related_name="news_descriptions")
     text = models.TextField(verbose_name="Текст")
+
 
 class Partners(models.Model):
     partner_name = models.CharField(max_length=200, verbose_name="Название партнера")

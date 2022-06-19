@@ -15,6 +15,7 @@ next.addEventListener("click", function (e) {
   if (track.offsetWidth - index * width < index * width) {
        index = 1
   }
+
 });
 prev.addEventListener("click", function () {
   index = index - 1;

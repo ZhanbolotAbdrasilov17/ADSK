@@ -1315,16 +1315,17 @@ width: 590px;
 
 .con_features_area .row .con_features_item {
   margin-top: 30px;
+  text-align: center
 }
 
 .con_features_item {
   height: 100%;
-  padding-right: 25px;
   margin-top: 50px;
 }
 
 .con_features_item .media_icon {
   width: 75px;
+  margin: 0 auto;
 }
 
 .con_features_item .media-body {
@@ -2693,7 +2694,8 @@ width: 590px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 33%;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .latest_post_thumb img {
@@ -3963,7 +3965,6 @@ width: 100%;
 
 .nav button {
   position: absolute;
-    top: 53%;
     border: none;
     outline: none;
     background: transparent;

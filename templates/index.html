@@ -8,7 +8,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'img/title.png' %}" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{% static 'vendors/bootstrap/css/bootstrap.css' %}">
     <link rel="stylesheet" href="{% static 'vendors/slick/slick.css' %}">
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
 
 
-    <title>Pixel Builders</title>
+    <title>ADSK</title>
 </head>
 
 <body>
@@ -43,8 +43,8 @@
                                 <div class="col-lg-10 text-right">
                                     <div class="header_contact_info">
                                         <a href="#"><i class="far fa-clock"></i>График: Понедельник - Пятница 09:00 - 18:00</a>
-                                        <a href="#"><i class="fas fa-phone"></i>Номер: +996 700 000000</a>
-                                        <a href="mailto:pixelbuilders@email.com"><i class="fas fa-envelope"></i>adsk@email.com</a>
+                                        <a href="tel:+996 700 000000"><i class="fas fa-phone"></i>Номер: +996 700 000000</a>
+                                        <a href="mailto:adsk@gmail.com"><i class="fas fa-envelope"></i>adsk@email.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -69,17 +69,17 @@
                         </button>
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <a class=" f_logo navbar-brand logo" href="#">
+                            <a class=" f_logo navbar-brand logo" href="{% url 'home' %}">
                                 <img src="{% static 'img/Logo.png' %}" alt="LOGO">
                             </a>
                             <ul class="navbar-nav menu">
                                 <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Главная</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">О НАС</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#services">СЕРВИСЫ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'home' %}#services">СЕРВИСЫ</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{% url 'portfolio' %}">ПРОЕКТЫ</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{% url 'employee' %}">КОМАНДА</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{% url 'news' %}">БЛОГ</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#contact">КОНТАКТЫ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">КОНТАКТЫ</a></li>
                             </ul>
 
                         </div>
@@ -97,23 +97,22 @@
                                 <div class="info_list">
                                     <div class="info_item">
                                         <i class="ti-location-pin"></i>
-                                        <p>2602 Powder House Road, West Palm Beach, FL 33410</p>
+                                        <p>г. Бишкек; Орозбекова 2/2</p>
                                     </div>
                                     <div class="info_item">
                                         <i class="ti-mobile"></i>
-                                        <p><a href="tel:4355803031">+435-580-3031</a> /<a href="tel:4356284157">+435-628-4157</a></p>
+                                        <p><a href="tel:+996 700 000000">Номер: +996 700 000000</a>
                                     </div>
                                     <div class="info_item">
                                         <i class="ti-email"></i>
-                                        <p><a href="mailto:pixelbuilderstheme@gmail.com">pixelbuilderstheme@gmail.com</a></p>
+                                        <p><a href="mailto:adsk@gmail.com">adsk@gmail.com</a></p>
                                     </div>
                                 </div>
                                 <div class="social_icon">
                                     <a href="#"><i class="ti-facebook"></i></a>
-                                    <a href="#"><i class="ti-pinterest"></i></a>
-                                    <a href="#"><i class="ti-twitter-alt"></i></a>
-                                    <a href="#"><i class="ti-vimeo-alt"></i></a>
-                                    <a href="#"><i class="ti-dribbble"></i></a>
+                                    <a href="#"><i class="ti-instagram"></i></a>
+
+
                                 </div>
                             </div>
                         </div>
@@ -150,7 +149,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="footer_bottom wow fadeInUp" data-wow-delay="0.4s">© 2022. Все права защищены. Дизайнер: ASOI</div>
+                    <div class="footer_bottom wow fadeInUp" data-wow-delay="0.4s">© 2022. Все права защищены. Дизайнер:
+                        <a target="_blank" href="http://asoi.kg"> ASOI</a></div>
                 </div>
             </footer>
         </div>

@@ -5,6 +5,7 @@ from django.shortcuts import render
 from django.urls import reverse
 from django.views.generic import DetailView
 from django.conf import settings
+from django.views.decorators.csrf import csrf_exempt
 
 from .models import *
 
@@ -27,17 +28,34 @@ def home(request):
                'token': get_token(request), "partners": partners }
     return render(request, "home.html", context)
 
+
 def about(request):
     return render(request, "about.html")
 
+
 def portfolio(request):
     return render(request, "portfolio.html")
+
+def contact(request):
+    return render(request, "contact.html")
+
+
+@csrf_exempt
+def search_news(request):
+    query = request.GET.get('q')
+
+    _news = None
+    if query is not None:
+        _news = News.search_news(query)
+    if not _news or query is None:
+        _news = News.objects.all()
+    return render(request, "blog.html", {'news': _news, 'last_four_news': News.last_four_news()})
+
 
 def employee(request):
     employee_ = Employee.objects.all()
     context = {"employee": employee_}
     return render(request, "team.html", context)
-
 
 
 class EmployeeDetail(DetailView):
@@ -54,7 +72,7 @@ class EmployeeDetail(DetailView):
 
 def news(request):
     newses = News.objects.all()
-    context = {"news": newses, 'last_four_news': newses.order_by('created_at')[:4]}
+    context = {"news": newses, 'last_four_news': News.last_four_news()}
     return render(request, "blog.html", context)
 
 
@@ -68,7 +86,6 @@ class NewsDetail(DetailView):
         context = super().get_context_data()
         context['texts'] = Fulldescription.objects.all()
         return context
-
 
 
 # class CategoryListView(ListView):

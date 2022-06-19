@@ -8,20 +8,16 @@
                 <div class="overlay_bg parallax-effect" style="background: url(static/img/banner4.jpg) no-repeat;"></div>
                 <div class="container">
                     <div class="breadcrumb_content">
-                        <h2>BLOG STANDARD</h2>
-                        <ol class="list-unstyled">
-                            <li><a href="#">Home</a></li>
-                            <li>Blog STANDARD</li>
-                        </ol>
+
                     </div>
                 </div>
             </section>
             <section class="con_blog_area sec_gap">
-                <div class="container">
+                <div class="container-xxl">
                     <div class="row">
-                        <div class="col-7">
+                        <div class="col-9" style="display: flex; flex-wrap: wrap">
                             {% for new in news %}
-                        <div class="col-lg-8">
+                        <div class="col-lg-6">
                             <div class="blog_inner">
                                 <article class="blog_item">
                                     <a href="#"><img src="{{new.image.url}}" alt=""></a>
@@ -44,29 +40,29 @@
 
 
 
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <div class="blog_sidebar">
                                 <div class="widget sidebar_widget widget_search">
-                                    <form action="#" class="search-form input-group">
-                                        <input type="search" class="form-control widget_input" placeholder="Search here">
+                                    <form action="{% url 'search' %}" method="GET" class="search-form input-group">
+                                        <input name="q" type="search" class="form-control widget_input" placeholder="Название">
                                         <button type="submit"><i class="fas fa-search"></i></button>
                                     </form>
                                 </div>
                                 <div class="widget recente_post_widget">
-                                    <h4 class="w_title">Последние новости</h4>
+                                    <h4 class="w_title" style="text-align: center;">Последние новости</h4>
                                     {% include "last_four_news.html" %}
                                 </div>
 
 
                                 </div>
-                            <nav class="navigation pagination" role="navigation">
+
+                            </div>
+<nav class="navigation pagination" role="navigation">
                                     <a class="prev page-numbers" href="#"><i class="ti-arrow-left"></i></a>
                                     <span aria-current="page" class="page-numbers current">1</span>
                                     <a class="page-numbers" href="#">2</a>
                                     <a class="next page-numbers" href="#"><i class="ti-arrow-right"></i></a>
                                 </nav>
-                            </div>
-
 
                         </div>
                     </div>

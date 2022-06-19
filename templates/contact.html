@@ -1,0 +1,53 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block page %}
+            <section class="banner_area">
+                <div class="overlay_bg parallax-effect" style="background: url(/static/img/banner8.jpg) no-repeat;"></div>
+                <div class="container">
+                    <div class="breadcrumb_content">
+
+                    </div>
+                </div>
+            </section>
+            <section class="contact_area sec_gap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="contact_info_two">
+                                <div class="contact_info_item">
+                                    <i class="ti-location-pin"></i>
+                                    <h3>Адрес</h3>
+                                    <p>г. Бишкек; Орозбекова 2/2</p>
+                                </div>
+                                <div class="contact_info_item">
+                                    <i class="ti-mobile"></i>
+                                    <h3>Контакт</h3>
+                                    <p>Номер: <a href="tel:0964355803031">+996 700 000000</a></p>
+
+                                </div>
+                                <div class="contact_info_item">
+                                    <i class="ti-email"></i>
+                                    <h3>Почта</h3>
+                                    <p>Номер: <a href="mailto:adsk@gmail.com">adsk@gmail.com</a></p>
+                                </div>
+                                <div class="social_icon">
+                                    <h3>Социальные сети</h3>
+                                    <a href="#"><i class="ti-facebook"></i></a>
+                                    <a href="#"><i class="ti-instagram"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-6">
+
+                        {% include 'send_mail.html' %}
+                            </div>
+                    </div>
+                </div>
+            </section>
+            <section class="map_area">
+                <div id="mapBox2" class="mapBox2" data-lat="40.701083" data-lon="-74.1522848" data-zoom="12" data-marker="/static/img/location.png" data-info="54B, Tailstoi Town 5238 La city, IA 522364" data-mlat="40.701083" data-mlon="-74.1522848">
+                </div>
+            </section>
+
+{% endblock %}

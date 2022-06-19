@@ -13,6 +13,8 @@ urlpatterns = [
     path('appeal/', appeal, name='appeal'),
     path('about/', about, name='about'),
     path('portfolio/', portfolio, name='portfolio'),
+    path('contact', contact, name='contact'),
+    path('search', search_news, name='search'),
 
 
 ]
