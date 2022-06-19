@@ -127,7 +127,7 @@
                     </div>
                 </div>
             </section>
-            <section class="con_service_area sec_gap bg_color">
+            <section id="services" class="con_service_area sec_gap bg_color">
                 <div class="container">
                     <div class="section_title text-center wow fadeInUp" data-wow-delay="0.2s">
                         <h6 class="con_title_top">НАШ СЕРВИС</h6>
@@ -209,23 +209,37 @@
                     <div class="cons_skill_info">
                         <div class="skill_item">
                             <span class="counter">1150</span>
-                            <p>Завершенные проекты</p>
+                            <p>Талас</p>
                         </div>
                         <div class="skill_item">
                             <span class="counter">348</span>
-                            <p>Довольные клиенты</p>
+                            <p>Чуй</p>
                         </div>
                         <div class="skill_item">
                             <span class="counter">250</span>
-                            <p>Работников</p>
+                            <p>Бишкек</p>
                         </div>
                         <div class="skill_item">
                             <span class="counter">162</span>
-                            <p>Проекты запущенные</p>
+                            <p>Нарын</p>
                         </div>
                         <div class="skill_item">
                             <span class="counter">30</span>
-                            <p>Выигранные награды</p>
+                            <p>Иссык-Куль</p>
+                        </div>
+                    </div>
+                    <div class="cons_skill_info cons_skill_info-2">
+                        <div class="skill_item">
+                            <span class="counter">1150</span>
+                            <p>Баткен</p>
+                        </div>
+                        <div class="skill_item">
+                            <span class="counter">348</span>
+                            <p>Ош</p>
+                        </div>
+                        <div class="skill_item">
+                            <span class="counter">250</span>
+                            <p>Джалал-Абад</p>
                         </div>
                     </div>
                 </div>
@@ -371,6 +385,36 @@
                     </div>
                 </div>
             </section>
+            <section class="con_team_area_two sec_gap bg_color">
+                <div class="container">
+                    <div class="section_title text-center wow fadeInUp" data-wow-delay="0.2s">
+                        <h6 class="con_title_top">Наша команда</h6>
+                        <h2 class="con_title">Встречайте наших героев</h2>
+                    </div>
+                    <div class="row">
+                        {% for em in employees %}
+                        <div class="col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay="0.3s">
+                            <div class="con_team_item_two">
+                                <div class="team_img hover_effect">
+                                    <img src={{em.image.url}} alt="team1">
+                                    <div class="social_icon">
+                                        <a href="#"><i class="ti-facebook"></i></a>
+                                        <a href="#"><i class="ti-twitter-alt"></i></a>
+                                        <a href="#"><i class="ti-pinterest"></i></a>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <a href="#">
+                                        <h5>{{em.full_name}}</h5>
+                                    </a>
+                                    <p>{{em.position}}</p>
+                                </div>
+                            </div>
+                        </div>
+                         {% endfor %}
+                    </div>
+                </div>
+            </section>
             <section class="con_testimonial_area">
                 <div class="overlay_bg parallax-effect" style="background: url(static/img/home-1/testimonial-bg.jpg) no-repeat;"></div>
                 <div class="container">
@@ -402,36 +446,6 @@
                     </div>
                 </div>
             </section>
-            <section class="con_team_area_two sec_gap bg_color">
-                <div class="container">
-                    <div class="section_title text-center wow fadeInUp" data-wow-delay="0.2s">
-                        <h6 class="con_title_top">Наша команда</h6>
-                        <h2 class="con_title">Встречайте наших героев</h2>
-                    </div>
-                    <div class="row">
-                        {% for em in employees %}
-                        <div class="col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay="0.3s">
-                            <div class="con_team_item_two">
-                                <div class="team_img hover_effect">
-                                    <img src={{em.image.url}} alt="team1">
-                                    <div class="social_icon">
-                                        <a href="#"><i class="ti-facebook"></i></a>
-                                        <a href="#"><i class="ti-twitter-alt"></i></a>
-                                        <a href="#"><i class="ti-pinterest"></i></a>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <a href="#">
-                                        <h5>{{em.full_name}}</h5>
-                                    </a>
-                                    <p>{{em.position}}</p>
-                                </div>
-                            </div>
-                        </div>
-                         {% endfor %}
-                    </div>
-                </div>
-            </section>
             <section class="con_latest_news_area sec_gap">
                 <div class="container">
                     <div class="section_title text-center wow fadeInUp" data-wow-delay="0.2s">
@@ -439,25 +453,26 @@
                         <h2 class="con_title">Наши последние новости</h2>
                     </div>
                     <div class="row">
+                            {% for new in news %}
+<!--                            {% include "last_four_news.html" %}-->
 
-                            {% include "last_four_news.html" %}
-
-<!--                            <div class="media latest_post_thumb wow fadeInUp" data-wow-delay="0.8s">-->
-<!--                                <img src="img/home-1/l_post2.jpg" alt="">-->
-<!--                                <div class="media-body">-->
-<!--                                    <a href="#">-->
-<!--                                        <h4>How to be Success commercial construction</h4>-->
-<!--                                    </a>-->
-<!--                                    <ul class="post_meta list-unstyled">-->
-<!--                                        <li><a href="#"><i class="far fa-calendar-alt"></i>30 February , 2019</a></li>-->
-<!--                                    </ul>-->
-<!--                                </div>-->
-<!--                            </div>-->
+                            <div class="media latest_post_thumb wow fadeInUp" data-wow-delay="0.8s">
+                                <img src="{{new.image.url}}" alt="">
+                                <div class="media-body">
+                                    <a href="{% url 'news' new.pk %}">
+                                        <h4>{{new.title}}</h4>
+                                    </a>
+                                    <ul class="post_meta list-unstyled">
+                                        <li><a href="#"><i class="far fa-calendar-alt"></i>{{ new.created_at.date}}</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        {% endfor %}
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="con_contact_area bg_color">
+            <section id="contact" class="con_contact_area bg_color">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-6 col-md-5 map_info">

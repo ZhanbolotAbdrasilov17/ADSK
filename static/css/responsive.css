@@ -379,8 +379,10 @@
     .f_widget .f_title{
         margin-top: 0;
     }
-    .cons_skill_info .skill_item,.con_clients_logo .con_logo_item{
-        width: calc(100% / 2);
+    .cons_skill_info .skill_item,
+    .cons_skill_info-2 .skill_item,
+    .con_clients_logo .con_logo_item{
+        width: calc(100% / 2) !important;
     }
     .con_clients_logo .d-flex{
         flex-wrap: wrap;

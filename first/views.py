@@ -27,6 +27,11 @@ def home(request):
                'token': get_token(request), "partners": partners }
     return render(request, "home.html", context)
 
+def about(request):
+    return render(request, "about.html")
+
+def portfolio(request):
+    return render(request, "portfolio.html")
 
 def employee(request):
     employee_ = Employee.objects.all()

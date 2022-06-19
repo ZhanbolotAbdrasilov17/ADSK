@@ -53,7 +53,7 @@
                 </div>
                 <nav class="navbar navbar-expand-lg header_three header_dark" id="header">
                     <div class="container">
-                        <a class="navbar-brand" href="#"><img src="img/Logo.png" alt=""></a>
+                        <a class="navbar-brand" href="/"><img src="img/Logo.png" alt=""></a>
                         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="menu_toggle">
                                 <span class="hamburger">
@@ -70,16 +70,16 @@
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <a class=" f_logo navbar-brand logo" href="#">
-                                <img src="{% static 'img/adsk.png' %}" alt="LOGO">
+                                <img src="{% static 'img/Logo.png' %}" alt="LOGO">
                             </a>
                             <ul class="navbar-nav menu">
                                 <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Главная</a></li>
-                                <li class="nav-item"><a class="nav-link" href="about.html">О НАС</a></li>
-                                <li class="nav-item"><a class="nav-link" href="service.html">СЕРВИСЫ</a></li>
-                                <li class="nav-item"><a class="nav-link" href="portfolio.html">ПОРТФОЛИО</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">О НАС</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#services">СЕРВИСЫ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'portfolio' %}">ПРОЕКТЫ</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{% url 'employee' %}">КОМАНДА</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{% url 'news' %}">БЛОГ</a></li>
-                                <li class="nav-item"><a class="nav-link" href="contact.html">КОНТАКТЫ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#contact">КОНТАКТЫ</a></li>
                             </ul>
 
                         </div>
@@ -140,14 +140,13 @@
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-7 wow fadeInUp" data-wow-delay="0.8s">
-                            <div class="f_widget subscribe_widget">
-                                <h2 class="f_title">Подписывайтесь на нашу новостную рассылку</h2>
-                                <form action="#" class="f_subscribe mailchimp">
-                                    <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
-                                    <button class="btn btn-submit" type="submit"><i class="fas fa-paper-plane"></i></button>
-                                    <p class="mchimp-errmessage" style="display: none;"></p>
-                                    <p class="mchimp-sucmessage" style="display: none;"></p>
-                                </form>
+                            <div class="f_widget subscribe_widget" style="
+    text-align: center;
+">
+                                <h2 style="color: #fdb900" class="f_title">Есть вопрос? Напишите нам в</h2>
+                                <a href="tg://resolve?domain=Zhanbozhan" style="
+    font-size: 30px;
+"><i class="fas fa-paper-plane"></i></a>
                             </div>
                         </div>
                     </div>
