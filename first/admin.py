@@ -10,9 +10,10 @@ class EmployeeAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Employee, EmployeeAdmin)
-admin.site.register(Project)
 admin.site.register(Portfolio)
 admin.site.register(Partners)
+admin.site.register(Newtechno)
+
 
 class DescNews(admin.TabularInline):
     model = Fulldescription

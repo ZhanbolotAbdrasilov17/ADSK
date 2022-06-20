@@ -29,8 +29,8 @@ def home(request):
     return render(request, "home.html", context)
 
 
-def about(request):
-    return render(request, "about.html")
+def our_companies(request):
+    return render(request, "our_companies.html")
 
 
 def portfolio(request):
@@ -55,7 +55,7 @@ def search_news(request):
 def employee(request):
     employee_ = Employee.objects.all()
     context = {"employee": employee_}
-    return render(request, "team.html", context)
+    return render(request, "about.html", context)
 
 
 class EmployeeDetail(DetailView):

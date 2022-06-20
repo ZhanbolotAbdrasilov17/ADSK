@@ -18,22 +18,23 @@ class Emdescription(models.Model):
     text = models.TextField(verbose_name="Описание")
 
 
-class Project(models.Model):
-    title = models.CharField(max_length=100)
-    description = models.TextField()
-    technology = models.CharField(max_length=20)
-
-    def __str__(self):
-        return self.title
-
 class Portfolio(models.Model):
-    project_title = models.ForeignKey(Project, on_delete=models.SET_NULL, blank=True, null=True)
-    work_experience = models.CharField(max_length=200, null=True)
-    education = models.CharField(max_length=200, null=True)
-    achievements = models.CharField(max_length=200, null=True)
+    project_title = models.CharField(max_length=200, null=True)
+    filter_project = models.CharField(max_length=100, null=True)
+    text = models.TextField(verbose_name="Текст")
+    image = models.ImageField(upload_to='portfolio_images', verbose_name='Фото', blank=True)
 
     def __str__(self):
-        return str(self.id)
+        return self.project_title
+
+class Newtechno(models.Model):
+    project_title = models.CharField(max_length=200, null=True)
+    text = models.TextField(verbose_name="Текст")
+    image = models.ImageField(upload_to='portfolio_images', verbose_name='Фото', blank=True)
+
+    def __str__(self):
+        return self.project_title
+
 
 
 class News(models.Model):
@@ -67,3 +68,4 @@ class Partners(models.Model):
 
     def __str__(self):
         return self.partner_name
+

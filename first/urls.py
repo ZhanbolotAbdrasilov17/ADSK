@@ -6,14 +6,14 @@ from .views import *
 
 urlpatterns = [
     path('', home, name='home'),
-    path('employee', employee, name='employee'),
+    path('about/', employee, name='about'),
+    path('our_companies', our_companies, name='our_companies'),
     path('employee/<int:employees_id>/', EmployeeDetail.as_view(), name='employee'),
     path('news', news, name='news'),
     path('news/<int:news_id>/', NewsDetail.as_view(), name='news'),
     path('appeal/', appeal, name='appeal'),
-    path('about/', about, name='about'),
     path('portfolio/', portfolio, name='portfolio'),
-    path('contact', contact, name='contact'),
+    path('contact/', contact, name='contact'),
     path('search', search_news, name='search'),
 
 

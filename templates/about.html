@@ -29,8 +29,8 @@
                         <div class="col-lg-6 d-flex align-items-center">
                             <div class="con_work_content">
                                 <div class="section_title">
-                                    <h6 class="con_title_top">HOW IT WORKS</h6>
-                                    <h2 class="con_title">Working Process</h2>
+                                    <h6 class="con_title_top">История Ассоциации</h6>
+                                    <h2 class="con_title">Погрузимся в начало развития нашей компании</h2>
                                     <div class="line_bottom"></div>
                                     <p class="con_p">Twit cras excuse my French matie boy grub it’s all gone to pot off his nut butty horse play blow off pardon you hanky panky. Why I say old chap that is sping lavatory.</p>
                                 </div>
@@ -85,20 +85,66 @@
                     </div>
                 </div>
             </section>
-            <section class="con_about_area_two con_about_area_three">
-                <div class="con_about_top bg_color">
-                    <img class="overlay_bg" src="{% static 'img/home/art.png' %}" alt="">
-                    <div class="container">
-                        <div class="con_about_content text-center">
-                            <h6 class="con_title_top">ABOUT US</h6>
-                            <h2 class="con_title">We Build Everything</h2>
-                            <div class="line_bottom ml-auto mr-auto"></div>
-                            <p class="con_p">Celiac microdosing trust fund, offal seitan Cafe 24 keffiyeh banh mi chartreuse thundercats freegan +1 craft beer. Chia shabby chic retro put a bird on it disrupt. Keffiyeh tousled ramps listicle locavore. Dreamcatcher tattooed pickled, 8-bit bicycle rights DIY biodiesel flexitarian asymmetrical gentrify wayfarers. Semiotics dreamcatcher offal mixtape, pinterest microdosing selvage quinoa street art mumblecore flannel four dollar toast brunch.</p>
-                            <img src="{% static 'img/home/man.png'%}" alt="">
+            <section class="con_team_area_three sec_gap">
+                <div class="container">
+                    <div class="row">
+                        {% for em in employee %}
+
+                        <div class="col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay="0.1s">
+                            <div class="con_team_item_two">
+                                <div class="team_img hover_effect">
+                                    <img src={{em.image.url}} alt="team1">
+                                    <div class="social_icon">
+                                        <a href="#"><i class="ti-facebook"></i></a>
+                                        <a href="#"><i class="ti-twitter-alt"></i></a>
+                                        <a href="#"><i class="ti-pinterest"></i></a>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <a href="#">
+                                        <h5>{{em.full_name}}</h5>
+                                    </a>
+                                    <p>{{em.position}}</p>
+                                </div>
+                            </div>
+                        </div>
+                                    {% endfor %}
+
+                    </div>
+                </div>
+            </section>
+                        <section class="con_testimonial_area" style="margin-top: 90px;">
+                <div class="overlay_bg parallax-effect" style="background: url(/static/img/home-1/testimonial-bg.jpg) no-repeat;"></div>
+                <div class="container">
+                    <div class="con_testimonial_info">
+                        <div class="custom_nav_two">
+                            <i class="ti-arrow-left prev"></i>
+                            <i class="ti-arrow-right next"></i>
+                        </div>
+                        <div class="con_testimonial_slider">
+                            <div class="testimonial_item">
+                                <div class="author_img"><img src="{% static 'img/home-1/author.jpg'%}" alt=""></div>
+                                <h5>Valentino Morose</h5>
+                                <h6>MANAGER</h6>
+                                <p>The whole difference between construction and creation is exactly this that a thing constructed can only be loved after it is constructed but a thing created is loved before it exists.</p>
+                            </div>
+                            <div class="testimonial_item">
+                                <div class="author_img"><img src="{% static 'img/home-1/author.jpg'%}" alt=""></div>
+                                <h5>Valentino Morose</h5>
+                                <h6>MANAGER</h6>
+                                <p>The whole difference between construction and creation is exactly this that a thing constructed can only be loved after it is constructed but a thing created is loved before it exists.</p>
+                            </div>
+                            <div class="testimonial_item">
+                                <div class="author_img"><img src="{% static 'img/home-1/author.jpg' %}" alt=""></div>
+                                <h5>Valentino Morose</h5>
+                                <h6>MANAGER</h6>
+                                <p>The whole difference between construction and creation is exactly this that a thing constructed can only be loved after it is constructed but a thing created is loved before it exists.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+
             <section class="con_video_area">
                 <div class="overlay_bg parallax-effect" style="background: url(/static/img/road.jpg) no-repeat;"></div>
                 <div class="container">
@@ -110,6 +156,7 @@
                     </div>
                 </div>
             </section>
+
             <section class="con_skill_area">
                 <div class="container">
                     <div class="cons_skill_info">
@@ -150,39 +197,7 @@
                     </div>
                 </div>
             </section>
-            <section class="con_testimonial_area" style="
-    margin-top: 90px;
-">
-                <div class="overlay_bg parallax-effect" style="background: url(/static/img/home-1/testimonial-bg.jpg) no-repeat;"></div>
-                <div class="container">
-                    <div class="con_testimonial_info">
-                        <div class="custom_nav_two">
-                            <i class="ti-arrow-left prev"></i>
-                            <i class="ti-arrow-right next"></i>
-                        </div>
-                        <div class="con_testimonial_slider">
-                            <div class="testimonial_item">
-                                <div class="author_img"><img src="{% static 'img/home-1/author.jpg'%}" alt=""></div>
-                                <h5>Valentino Morose</h5>
-                                <h6>MANAGER</h6>
-                                <p>The whole difference between construction and creation is exactly this that a thing constructed can only be loved after it is constructed but a thing created is loved before it exists.</p>
-                            </div>
-                            <div class="testimonial_item">
-                                <div class="author_img"><img src="{% static 'img/home-1/author.jpg'%}" alt=""></div>
-                                <h5>Valentino Morose</h5>
-                                <h6>MANAGER</h6>
-                                <p>The whole difference between construction and creation is exactly this that a thing constructed can only be loved after it is constructed but a thing created is loved before it exists.</p>
-                            </div>
-                            <div class="testimonial_item">
-                                <div class="author_img"><img src="{% static 'img/home-1/author.jpg' %}" alt=""></div>
-                                <h5>Valentino Morose</h5>
-                                <h6>MANAGER</h6>
-                                <p>The whole difference between construction and creation is exactly this that a thing constructed can only be loved after it is constructed but a thing created is loved before it exists.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
             <section class="con_clients_logo">
                 <div class="container">
                     <div class="row align-items-center">
