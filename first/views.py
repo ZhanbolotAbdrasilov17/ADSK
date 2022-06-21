@@ -36,6 +36,7 @@ def our_companies(request):
 def portfolio(request):
     return render(request, "portfolio.html")
 
+
 def contact(request):
     return render(request, "contact.html")
 
@@ -66,7 +67,7 @@ class EmployeeDetail(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data()
-        context['texts'] = Emdescription.objects.all()
+        context['texts'] = EmDescription.objects.all()
         return context
 
 
@@ -84,7 +85,7 @@ class NewsDetail(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data()
-        context['texts'] = Fulldescription.objects.all()
+        context['texts'] = FullDescription.objects.all()
         return context
 
 

@@ -1,9 +1,10 @@
 from django.contrib import admin
 from .models import *
 
-# Register your models here.
+
 class DescEmployee(admin.TabularInline):
-    model = Emdescription
+    model = EmDescription
+
 
 class EmployeeAdmin(admin.ModelAdmin):
     inlines = [DescEmployee, ]
@@ -12,14 +13,16 @@ class EmployeeAdmin(admin.ModelAdmin):
 admin.site.register(Employee, EmployeeAdmin)
 admin.site.register(Portfolio)
 admin.site.register(Partners)
-admin.site.register(Newtechno)
+admin.site.register(NewTechno)
 
 
 class DescNews(admin.TabularInline):
-    model = Fulldescription
+    model = FullDescription
 
 
 class NewsAdmin(admin.ModelAdmin):
     inlines = [DescNews, ]
 
+
 admin.site.register(News, NewsAdmin)
+admin.site.register(Projects)

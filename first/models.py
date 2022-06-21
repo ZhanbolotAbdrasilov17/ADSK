@@ -1,7 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User
 
-# Create your models here.
 from django.db.models import QuerySet
 
 
@@ -13,28 +11,36 @@ class Employee(models.Model):
     def __str__(self):
         return self.full_name
 
-class Emdescription(models.Model):
+
+class EmDescription(models.Model):
     employee = models.ForeignKey(Employee, on_delete=models.CASCADE, related_name="descriptions")
     text = models.TextField(verbose_name="Описание")
 
 
+class Projects(models.Model):
+    project_name = models.CharField(max_length=200, null=True, blank=True)
+
+    def __str__(self):
+        return self.project_name
+
+
 class Portfolio(models.Model):
-    project_title = models.CharField(max_length=200, null=True)
-    filter_project = models.CharField(max_length=100, null=True)
-    text = models.TextField(verbose_name="Текст")
-    image = models.ImageField(upload_to='portfolio_images', verbose_name='Фото', blank=True)
+    project_name = models.ForeignKey(Projects, on_delete=models.CASCADE, related_name="projects")
+    project_title = models.CharField(max_length=200, null=True, blank=True)
+    image = models.ImageField(upload_to='portfolio_images', verbose_name='Фото', blank=True, null=True)
+    text = models.TextField(verbose_name="Полное описание")
 
     def __str__(self):
         return self.project_title
 
-class Newtechno(models.Model):
-    project_title = models.CharField(max_length=200, null=True)
+
+class NewTechno(models.Model):
+    project_title = models.CharField(max_length=200, null=True, blank=True)
     text = models.TextField(verbose_name="Текст")
-    image = models.ImageField(upload_to='portfolio_images', verbose_name='Фото', blank=True)
+    image = models.ImageField(upload_to='portfolio_images', verbose_name='Фото', blank=True, null=True)
 
     def __str__(self):
         return self.project_title
-
 
 
 class News(models.Model):
@@ -56,16 +62,39 @@ class News(models.Model):
         return cls.objects.all().order_by('created_at')[:4]
 
 
-class Fulldescription(models.Model):
+class FullDescription(models.Model):
     news = models.ForeignKey(News, on_delete=models.CASCADE, related_name="news_descriptions")
     text = models.TextField(verbose_name="Текст")
 
 
 class Partners(models.Model):
     partner_name = models.CharField(max_length=200, verbose_name="Название партнера")
-    partner_description = models.TextField(blank=True)
-    image = models.ImageField(upload_to='partners_images', verbose_name='Фото', blank=True)
+    partner_description = models.TextField(blank=True, null=True)
+    image = models.ImageField(upload_to='partners_images', verbose_name='Фото', blank=True, null=True)
 
     def __str__(self):
         return self.partner_name
+
+
+class NewTechno(models.Model):
+    title = models.CharField(max_length=200, verbose_name="new_techno")
+    date = models.DateField(auto_now_add=True)
+    image = models.ImageField(null=True, blank=True, upload_to="news")
+
+    def __str__(self):
+        return self.title
+
+
+class FullDescriptionNewTechno(models.Model):
+    techno = models.ForeignKey(NewTechno, on_delete=models.CASCADE, related_name="new_techno_description")
+    text = models.TextField(verbose_name="Текст_новых_технологий")
+
+
+class Media(models.Model):
+    title = models.CharField(max_length=300, null=True)
+    link = models.CharField(max_length=300, verbose_name="ссылка")
+    image = models.ImageField(null=True, blank=True, upload_to="portals")
+
+    def __str__(self):
+        return self.title
 

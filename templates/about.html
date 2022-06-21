@@ -34,7 +34,10 @@
                                     <div class="line_bottom"></div>
                                     <p class="con_p">Twit cras excuse my French matie boy grub it’s all gone to pot off his nut butty horse play blow off pardon you hanky panky. Why I say old chap that is sping lavatory.</p>
                                 </div>
-                                <div class="row">
+
+                            </div>
+                        </div>
+                        <div class="row targets">
                                     <div class="col-lg-6 col-sm-6">
                                         <div class="media con_features_item">
                                             <div class="media_icon">
@@ -80,40 +83,10 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
-            <section class="con_team_area_three sec_gap">
-                <div class="container">
-                    <div class="row">
-                        {% for em in employee %}
-
-                        <div class="col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay="0.1s">
-                            <div class="con_team_item_two">
-                                <div class="team_img hover_effect">
-                                    <img src={{em.image.url}} alt="team1">
-                                    <div class="social_icon">
-                                        <a href="#"><i class="ti-facebook"></i></a>
-                                        <a href="#"><i class="ti-twitter-alt"></i></a>
-                                        <a href="#"><i class="ti-pinterest"></i></a>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <a href="#">
-                                        <h5>{{em.full_name}}</h5>
-                                    </a>
-                                    <p>{{em.position}}</p>
-                                </div>
-                            </div>
-                        </div>
-                                    {% endfor %}
-
-                    </div>
-                </div>
-            </section>
-                        <section class="con_testimonial_area" style="margin-top: 90px;">
+            <section class="con_testimonial_area">
                 <div class="overlay_bg parallax-effect" style="background: url(/static/img/home-1/testimonial-bg.jpg) no-repeat;"></div>
                 <div class="container">
                     <div class="con_testimonial_info">
@@ -141,6 +114,38 @@
                                 <p>The whole difference between construction and creation is exactly this that a thing constructed can only be loved after it is constructed but a thing created is loved before it exists.</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="con_team_area_three sec_gap">
+                <div class="container">
+                    <div class="section_title text-center wow fadeInUp" data-wow-delay="0.2s">
+                        <h2 class="con_title">Наше руководство</h2>
+                    </div>
+                    <div class="row">
+                        {% for em in employee %}
+
+                        <div class="col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay="0.1s">
+                            <div class="con_team_item_two">
+                                <div class="team_img hover_effect">
+                                    <img src={{em.image.url}} alt="team1">
+                                    <div class="social_icon">
+                                        <a href="#"><i class="ti-facebook"></i></a>
+                                        <a href="#"><i class="ti-twitter-alt"></i></a>
+                                        <a href="#"><i class="ti-pinterest"></i></a>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <a href="#">
+                                        <h5>{{em.full_name}}</h5>
+                                    </a>
+                                    <p>{{em.position}}</p>
+                                </div>
+                            </div>
+                        </div>
+                                    {% endfor %}
+
                     </div>
                 </div>
             </section>
@@ -197,6 +202,19 @@
                     </div>
                 </div>
             </section>
+            <div class="carousel-container">
+      <div class="inner-carousel">
+        <ul class="track">
+          {% for partner in partners %}
+          <li class="card-container"> <span class="card">{{partner.partner_name}}</span></li>
+         {% endfor%}
+        </ul>
+        <div class="nav">
+          <button class="prev"><i class="carousel-control-prev-icon"></i></button>
+          <button class="next"><i class="carousel-control-next-icon"></i></button>
+        </div>
+  </div>
+</div>
 
             <section class="con_clients_logo">
                 <div class="container">

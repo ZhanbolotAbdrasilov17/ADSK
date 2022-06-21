@@ -248,6 +248,20 @@
     .contact_info_item{
         margin-bottom: 50px;
     }
+    .news row, .news .col-9{
+    width: 100%
+}
+.news .col-lg-6{
+  margin: 0 auto;
+}
+.news .blog_item {
+    text-align: center;
+}
+.news .read_btn {
+    margin: 0 auto;
+    height: fit-content;
+    width: fit-content
+}
 }
 
 @media (max-width:767px){

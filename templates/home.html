@@ -4,7 +4,7 @@
             <section class="con_slider_area">
                 <div class="main_slider">
                     <div class="slider_item">
-                        <div class="overlay_bg" style="background: url(media/sliderImgs/1.JPG) no-repeat;"></div>
+                        <div class="overlay_bg" style="background: url(static/img/sliderImg1.JPG) no-repeat;"></div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6">
@@ -18,7 +18,7 @@
                         </div>
                     </div>
                     <div class="slider_item">
-                        <div class="overlay_bg" style="background: url(media/sliderImgs/2.JPG) no-repeat;"></div>
+                        <div class="overlay_bg" style="background: url(static/img/sliderImg2.JPG) no-repeat;"></div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6">
@@ -32,7 +32,7 @@
                         </div>
                     </div>
                     <div class="slider_item">
-                        <div class="overlay_bg" style="background: url(media/sliderImgs/3.JPG) no-repeat;"></div>
+                        <div class="overlay_bg" style="background: url(static/img/sliderImg3.JPG) no-repeat;"></div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6">
@@ -64,7 +64,6 @@
                 </div>
             </section>
             <section class="con_about_area">
-                <img class="a_bg" src="{% static 'img/home-1/about_bg.png' %}" alt="">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7">
@@ -340,35 +339,6 @@
                     </div>
                 </div>
             </section>
-            <section class="con_team_area_two sec_gap bg_color">
-                <div class="container">
-                    <div class="section_title text-center wow fadeInUp" data-wow-delay="0.2s">
-                        <h2 class="con_title">Наше руководство</h2>
-                    </div>
-                    <div class="row">
-                        {% for em in employees %}
-                        <div class="col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay="0.3s">
-                            <div class="con_team_item_two">
-                                <div class="team_img hover_effect">
-                                    <img src={{em.image.url}} alt="team1">
-                                    <div class="social_icon">
-                                        <a href="#"><i class="ti-facebook"></i></a>
-                                        <a href="#"><i class="ti-twitter-alt"></i></a>
-                                        <a href="#"><i class="ti-pinterest"></i></a>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <a href="#">
-                                        <h5>{{em.full_name}}</h5>
-                                    </a>
-                                    <p>{{em.position}}</p>
-                                </div>
-                            </div>
-                        </div>
-                         {% endfor %}
-                    </div>
-                </div>
-            </section>
             <section class="con_testimonial_area">
                 <div class="overlay_bg parallax-effect" style="background: url(static/img/home-1/testimonial-bg.jpg) no-repeat;"></div>
                 <div class="container">
@@ -397,6 +367,35 @@
                                 <p>The whole difference between construction and creation is exactly this that a thing constructed can only be loved after it is constructed but a thing created is loved before it exists.</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section class="con_team_area_two sec_gap bg_color">
+                <div class="container">
+                    <div class="section_title text-center wow fadeInUp" data-wow-delay="0.2s">
+                        <h2 class="con_title">Наше руководство</h2>
+                    </div>
+                    <div class="row">
+                        {% for em in employees %}
+                        <div class="col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay="0.3s">
+                            <div class="con_team_item_two">
+                                <div class="team_img hover_effect">
+                                    <img src={{em.image.url}} alt="team1">
+                                    <div class="social_icon">
+                                        <a href="#"><i class="ti-facebook"></i></a>
+                                        <a href="#"><i class="ti-twitter-alt"></i></a>
+                                        <a href="#"><i class="ti-pinterest"></i></a>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <a href="#">
+                                        <h5>{{em.full_name}}</h5>
+                                    </a>
+                                    <p>{{em.position}}</p>
+                                </div>
+                            </div>
+                        </div>
+                         {% endfor %}
                     </div>
                 </div>
             </section>
