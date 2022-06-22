@@ -35,8 +35,8 @@ class Portfolio(models.Model):
 
 
 class NewTechno(models.Model):
-    project_title = models.CharField(max_length=200, null=True, blank=True)
-    text = models.TextField(verbose_name="Текст")
+    project_title = models.CharField(max_length=200, null=True, blank=True, verbose_name="Название")
+    text = models.TextField(verbose_name="Поле", blank=True, null=True)
     image = models.ImageField(upload_to='portfolio_images', verbose_name='Фото', blank=True, null=True)
 
     def __str__(self):
@@ -76,15 +76,6 @@ class Partners(models.Model):
         return self.partner_name
 
 
-class NewTechno(models.Model):
-    title = models.CharField(max_length=200, verbose_name="new_techno")
-    date = models.DateField(auto_now_add=True)
-    image = models.ImageField(null=True, blank=True, upload_to="news")
-
-    def __str__(self):
-        return self.title
-
-
 class FullDescriptionNewTechno(models.Model):
     techno = models.ForeignKey(NewTechno, on_delete=models.CASCADE, related_name="new_techno_description")
     text = models.TextField(verbose_name="Текст_новых_технологий")
@@ -97,4 +88,23 @@ class Media(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class PortFolioCompanies(models.Model):
+    project_title = models.CharField(max_length=200, null=True, blank=True)
+    image = models.ImageField(upload_to='portfolio_images', verbose_name='Фото', blank=True, null=True)
+    text = models.TextField(verbose_name="Полное описание")
+
+    def __str__(self):
+        return self.project_title
+
+class InternationalCongresses(models.Model):
+    title = models.CharField(max_length=200, null=True, blank=True)
+    image = models.ImageField(upload_to='international', verbose_name='Фото', blank=True, null=True)
+    text = models.TextField(verbose_name="Полное описание")
+
+    def __str__(self):
+        return self.title
+
+
 

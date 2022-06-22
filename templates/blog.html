@@ -72,8 +72,8 @@
                 <div class="container">
                     <div class="project_title d-flex justify-content-between align-items-end">
                         <div class="section_title">
-                            <h6 class="con_title_top">OUR PORTFOLIO</h6>
-                            <h2 class="con_title c_w">Our Latest Projects</h2>
+                            <h6 class="con_title_top">Новые технологии</h6>
+                            <h2 class="con_title c_w">Инновации приходят каждый день</h2>
                             <div class="line_bottom mb-0"></div>
                         </div>
                         <div class="custom_nav">
@@ -82,115 +82,42 @@
                         </div>
                     </div>
                     <div class="con_project_info" id="project_slider">
+                        {% for new_t in new_techno%}
+
                         <div class="col-lg-12">
                             <div class="project_item">
-                                <img src="static/img/home/pr_1.jpg" alt="">
+                                <img src="{{new_t.image.url}}" alt="">
                                 <div class="text">
                                     <a href="#">
-                                        <h4>Oxford Science Lab Building</h4>
+                                        <h4>{{new_t.project_title}}</h4>
                                     </a>
                                     <p>Benefit of the socie where we operate. A success website obusly needs great design to be one of the top 10 IT </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-12">
-                            <div class="project_item">
-                                <img src="static/img/home/pr_2.jpg" alt="">
-                                <div class="text">
-                                    <a href="#">
-                                        <h4>Modern Architectured Building</h4>
-                                    </a>
-                                    <p>Benefit of the socie where we operate. A success website obusly needs great design to be one of the top 10 IT </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="project_item">
-                                <img src="static/img/home/pr_3.jpg" alt="">
-                                <div class="text">
-                                    <a href="#">
-                                        <h4>Multi-National Construction Site</h4>
-                                    </a>
-                                    <p>Benefit of the socie where we operate. A success website obusly needs great design to be one of the top 10 IT </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="project_item">
-                                <img src="static/img/home/pr_1.jpg" alt="">
-                                <div class="text">
-                                    <a href="#">
-                                        <h4>Oxford Science Lab Building</h4>
-                                    </a>
-                                    <p>Benefit of the socie where we operate. A success website obusly needs great design to be one of the top 10 IT </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="project_item">
-                                <img src="static/img/home/pr_3.jpg" alt="">
-                                <div class="text">
-                                    <a href="#">
-                                        <h4>Multi-National Construction Site</h4>
-                                    </a>
-                                    <p>Benefit of the socie where we operate. A success website obusly needs great design to be one of the top 10 IT </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="project_item">
-                                <img src="static/img/home/pr_1.jpg" alt="">
-                                <div class="text">
-                                    <a href="#">
-                                        <h4>Oxford Science Lab Building</h4>
-                                    </a>
-                                    <p>Benefit of the socie where we operate. A success website obusly needs great design to be one of the top 10 IT </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="project_item">
-                                <img src="static/img/home/pr_1.jpg" alt="">
-                                <div class="text">
-                                    <a href="#">
-                                        <h4>Oxford Science Lab Building</h4>
-                                    </a>
-                                    <p>Benefit of the socie where we operate. A success website obusly needs great design to be one of the top 10 IT </p>
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </section>
-<section class="page-content">
-  <div class="card">
-    <div class="content">
-      <h2 class="title">Mountain View</h2>
-      <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-      <button class="btn">View Trips</button>
-    </div>
-  </div>
-  <div class="card">
-    <div class="content">
-      <h2 class="title">To The Beach</h2>
-      <p class="copy">Plan your next beach trip with these fabulous destinations</p>
-      <button class="btn">View Trips</button>
-    </div>
-  </div>
-  <div class="card">
-    <div class="content">
-      <h2 class="title">Desert Destinations</h2>
-      <p class="copy">It's the desert you've always dreamed of</p>
-      <button class="btn">Book Now</button>
-    </div>
-  </div>
-  <div class="card">
-    <div class="content">
-      <h2 class="title">Explore The Galaxy</h2>
-      <p class="copy">Seriously, straight up, just blast off into outer space today</p>
-      <button class="btn">Book Now</button>
-    </div>
-  </div>
+            <section class="">
+                <h2 class="con_title" style="
+    margin: 25px 0 15px;
+    text-align: center;
+">СМИ о нас</h2>
+                <div class="page-content">
+                    {% for media in media_news%}
+              <div class="card">
+                  <img src="{{media.image.url}}" alt="">
+                <div class="content">
+                  <h2 class="title">{{media.title}}</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                  <a href="{{media.link}}" target="_blank" class="btn">Подробнее</a>
+                </div>
+              </div>
+                                {% endfor %}
+                </div>
+
+
 </section>
 
 {% endblock %}

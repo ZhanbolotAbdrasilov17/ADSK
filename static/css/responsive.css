@@ -495,6 +495,12 @@
     width: 170px;
     height: 170px;
     }
+    .slider .slides img{
+	    float: center;
+	    margin: 0 0 20px;
+	    max-width: 100%;
+	    width: 100%;
+	}
 }
 
 @media (max-width:450px){

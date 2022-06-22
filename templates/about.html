@@ -44,8 +44,7 @@
                                                 <img src="{% static 'img/home-1/icon1.png' %}" alt="">
                                             </div>
                                             <div class="media-body">
-                                                <h3>BEST QUALITY</h3>
-                                                <p>The full monty burke posh excuse my</p>
+                                                <h3>Лучшее качество</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -55,8 +54,7 @@
                                                 <img src="{% static 'img/home-1/icon2.png'%}" alt="">
                                             </div>
                                             <div class="media-body">
-                                                <h3>BEST QUALITY</h3>
-                                                <p>French Richard cheeky bobby</p>
+                                                <h3>Быстрые решения</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -66,8 +64,7 @@
                                                 <img src="{% static 'img/home-1/icon3.png' %}" alt="">
                                             </div>
                                             <div class="media-body">
-                                                <h3>TOP RATED</h3>
-                                                <p>The full monty burke posh excuse my</p>
+                                                <h3>Лучшее развитие</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -77,8 +74,7 @@
                                                 <img src="{% static 'img/home-1/icon4.png' %}" alt="">
                                             </div>
                                             <div class="media-body">
-                                                <h3>MODERN TOOLS</h3>
-                                                <p>French Richard cheeky bobby</p>
+                                                <h3>Современные технологии</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -221,8 +217,8 @@
                     <div class="row align-items-center">
                         <div class="col-md-4">
                             <div class="section_title">
-                                <h6 class="con_title_top">OUR Clients</h6>
-                                <h2 class="con_title">Honourable<br>Clients</h2>
+                                <h6 class="con_title_top">Наше сотрудничество</h6>
+                                <h2 class="con_title">Почетные партнеры<br></h2>
                             </div>
                         </div>
                         <div class="col-md-8 d-flex">
@@ -240,6 +236,30 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <h2 class="con_title next congress-title">Международные конгрессы ></h2>
+                                <div class="slider">
+	  <div class="arrows">
+	    <p class="previous"><</p>
+	    <p class="next">></p>
+	  </div>
+	  <div class="slides">
+          {% for cong in congresses%}
+			<div class="slide blue">
+                <div style="display: flex; flex-wrap: wrap">
+                    <h2>{{ cong.title}}</h2>
+                    <div><img src="{{ cong.image.url}}" alt="{{ cong.title}}">
+				    <p>{{ cong.text}}</p></div>
+                </div>
+			</div>
+            {% endfor %}
+		</div>
+		<div class="bullets">
+		</div>
+	</div>
                 </div>
             </section>
 

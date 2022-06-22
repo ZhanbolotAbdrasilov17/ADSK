@@ -30,7 +30,9 @@ def home(request):
 
 
 def our_companies(request):
-    return render(request, "our_companies.html")
+    portfolios = PortFolioCompanies.objects.all()
+    context = {"portfolios": portfolios, }
+    return render(request, "our_companies.html", context)
 
 
 def portfolio(request):
@@ -55,7 +57,8 @@ def search_news(request):
 
 def employee(request):
     employee_ = Employee.objects.all()
-    context = {"employee": employee_}
+    congresses = InternationalCongresses.objects.all()
+    context = {"employee": employee_, "congresses": congresses}
     return render(request, "about.html", context)
 
 
@@ -73,7 +76,9 @@ class EmployeeDetail(DetailView):
 
 def news(request):
     newses = News.objects.all()
-    context = {"news": newses, 'last_four_news': News.last_four_news()}
+    new_techno = NewTechno.objects.all()
+    media_news = Media.objects.all()
+    context = {"news": newses, 'last_four_news': News.last_four_news(), "new_techno": new_techno, "media_news": media_news}
     return render(request, "blog.html", context)
 
 
