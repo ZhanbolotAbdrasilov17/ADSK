@@ -24,8 +24,9 @@ def home(request):
     employees = Employee.objects.all()
     news_ = News.objects.all()
     partners = Partners.objects.all()
+    quotes = Quotes.objects.all()
     context = {"employees": employees, "news": news_, 'last_four_news': news_.order_by('created_at')[:4],
-               'token': get_token(request), "partners": partners }
+               'token': get_token(request), "partners": partners, "quotes": quotes}
     return render(request, "home.html", context)
 
 
@@ -36,7 +37,9 @@ def our_companies(request):
 
 
 def portfolio(request):
-    return render(request, "portfolio.html")
+    # projects = Portfolio.object.all()
+    # context = {" projects": projects}
+    return render(request, "portfolio.html", )
 
 
 def contact(request):

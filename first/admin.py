@@ -28,4 +28,4 @@ admin.site.register(Partners)
 admin.site.register(NewTechno)
 admin.site.register(PortFolioCompanies)
 admin.site.register(InternationalCongresses)
-
+admin.site.register(Quotes)

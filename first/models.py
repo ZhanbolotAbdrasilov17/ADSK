@@ -106,5 +106,14 @@ class InternationalCongresses(models.Model):
     def __str__(self):
         return self.title
 
+class Quotes(models.Model):
+    image = models.ImageField(upload_to='header', verbose_name='Фото', blank=True, null=True)
+    text = models.CharField(max_length=200, null=True, blank=True)
+    quote = models.CharField(max_length=200, null=True, blank=True)
+
+    def __str__(self):
+        return self.text
+
+
 
 
