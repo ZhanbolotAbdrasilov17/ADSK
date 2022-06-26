@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-26 23:12+0600\n"
+"POT-Creation-Date: 2022-06-27 02:55+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,23 +34,65 @@ msgstr "Ассоциациянын тарыхы"
 msgid "Погрузимся в начало развития нашей компании"
 msgstr "Келгиле, биздин компаниянын өнүгүүсүнүн башталышына токтололу"
 
-#: templates/about.html:121 templates/home.html:352
+#: templates/about.html:41
+#, fuzzy
+#| msgid "Наши клиенты"
+msgid "Наши цели"
+msgstr "Биздин кардарлар"
+
+#: templates/about.html:49
+#, fuzzy
+#| msgid "Наше руководство"
+msgid "Лучшее качество"
+msgstr "Биздин жетекчилик"
+
+#: templates/about.html:59
+msgid "Быстрые решения"
+msgstr "Тез чечимдер"
+
+#: templates/about.html:69
+msgid "Лучшее развитие"
+msgstr "Мыкты өнүктүрүү"
+
+#: templates/about.html:79
+#, fuzzy
+#| msgid "Новые технологии"
+msgid "Современные технологии"
+msgstr "Жаңы технологиялар"
+
+#: templates/about.html:122 templates/home.html:352
 msgid "Наше руководство"
 msgstr "Биздин жетекчилик"
 
-#: templates/about.html:157
+#: templates/about.html:158
 #, fuzzy
 #| msgid "Мы предоставим вам лучшую работу о которой вы мечтали!"
 msgid "Мы выполним работу, о которой вы мечтаете!"
 msgstr "Биз сизге сиз кыялданган эң жакшы жумушту беребиз!"
 
-#: templates/about.html:244
+#: templates/about.html:222
+#, fuzzy
+#| msgid "Наше руководство"
+msgid "Наше сотрудничество"
+msgstr "Биздин жетекчилик"
+
+#: templates/about.html:223
+#, fuzzy
+#| msgid "Почетные Клиенты"
+msgid "Почетные партнеры"
+msgstr "Ардактуу кардарлар"
+
+#: templates/about.html:245
 msgid "Международные конгрессы"
 msgstr "Эл аралык конгресс"
 
 #: templates/blog.html:27
 msgid "Конструкция"
 msgstr "Дизайн"
+
+#: templates/blog.html:33 templates/blog.html:115 templates/home.html:55
+msgid "Подробнее"
+msgstr "Дагы"
 
 #: templates/blog.html:53
 #, fuzzy
@@ -64,17 +106,19 @@ msgstr "Жаңы технологиялар"
 
 #: templates/blog.html:77
 msgid "Инновации приходят каждый день"
-msgstr ""
+msgstr "Инновация күн сайын келет"
+
+#: templates/blog.html:107
+#, fuzzy
+#| msgid "О нас"
+msgid "СМИ о нас"
+msgstr "Биз жөнүндө"
 
 #: templates/blog.html:114
 msgid ""
 "Check out all of these gorgeous mountain trips with beautiful views of, you "
 "guessed it, the mountains"
 msgstr ""
-
-#: templates/blog.html:115 templates/home.html:55
-msgid "Подробнее"
-msgstr "Дагы"
 
 #: templates/contact.html:27
 msgid "Номер:"
@@ -84,7 +128,7 @@ msgstr "Номер:"
 msgid "Социальные сети"
 msgstr "Социалдык тармак"
 
-#: templates/home.html:52 templates/index.html:95
+#: templates/home.html:52 templates/index.html:96
 msgid "О НАС"
 msgstr "БИЗ ЖӨНҮНДӨ"
 
@@ -152,63 +196,99 @@ msgstr "Биздин блог"
 msgid "Наши последние новости"
 msgstr "Биздин акыркы кабарлар"
 
-#: templates/index.html:94
+#: templates/index.html:95
 msgid "ГЛАВНАЯ"
 msgstr "БАШКЫ"
 
-#: templates/index.html:96
+#: templates/index.html:97
 msgid "НАШИ КОМПАНИИ"
 msgstr "БИЗДИН КОМПАНИЯЛАР"
 
-#: templates/index.html:97
+#: templates/index.html:98
 msgid "НОВОСТИ"
 msgstr "ЖАНЫЛЫКТАР"
 
-#: templates/index.html:98
+#: templates/index.html:99
 msgid "ПРОЕКТЫ"
 msgstr "ДОЛБООРУ"
 
-#: templates/index.html:99
+#: templates/index.html:100
 msgid "КОНТАКТЫ"
 msgstr "БАЙЛАНЫШТАР"
 
-#: templates/index.html:140
+#: templates/index.html:141
 msgid "Поддержка"
 msgstr "Колдоо"
 
-#: templates/index.html:141
+#: templates/index.html:142
 msgid "Обзор функций"
 msgstr "Функцияга сереп салуу"
 
-#: templates/index.html:142
+#: templates/index.html:143
 msgid "Страницы"
 msgstr "Барактар"
 
-#: templates/index.html:143
+#: templates/index.html:144
 msgid "На техобслуживании"
 msgstr "Техникалык тейлөөдө"
 
-#: templates/index.html:149
+#: templates/index.html:150
 msgid "Навигация"
 msgstr "Навигация"
 
-#: templates/index.html:151
+#: templates/index.html:152
 msgid "Главная"
 msgstr "Баш"
 
-#: templates/index.html:152
+#: templates/index.html:153
 msgid "О нас"
 msgstr "Биз жөнүндө"
 
-#: templates/index.html:153
+#: templates/index.html:154
 #, fuzzy
 #| msgid "Наш сервис"
 msgid "Сервисы"
 msgstr "Биздин кызмат"
 
-#: templates/index.html:154
+#: templates/index.html:155
 msgid "Портфолио"
 msgstr "Портфолио"
+
+#: templates/index.html:163
+msgid "Есть вопрос? Напишите нам в"
+msgstr "Суроо барбы? Бизге жазыңыз"
+
+#: templates/index.html:170
+msgid "© 2022. Все права защищены. Дизайнер:"
+msgstr "© 2022. Бардык укуктар корголгон. Дизайнер:"
+
+#: templates/our_companies.html:13
+msgid "Работы наших партнеров"
+msgstr "Биздин өнөктөштөрдүн эмгектери"
+
+#: templates/our_companies.html:42
+msgid "ЖЕЛАЕТЕ РАБОТАТЬ С НАМИ?"
+msgstr "БИЗ МЕНЕН ИШТЕГИНИЗ КЕЛЕБИ?"
+
+#: templates/our_companies.html:43
+msgid "Стать членом АДСК КР"
+msgstr "АДСК КР мүчөсү болуңуз"
+
+#: templates/our_companies.html:72
+msgid "Кодексы"
+msgstr "Кодекстер"
+
+#: templates/our_companies.html:86
+msgid "Этические нормы"
+msgstr "Этика"
+
+#: templates/our_companies.html:100
+msgid "Правила профессионального поведения"
+msgstr "Кесиптик жүрүм-турумдун эрежелери"
+
+#: templates/our_companies.html:121
+msgid "Бесплатная консультация"
+msgstr "Акысыз консультация"
 
 #: templates/send_mail.html:5
 msgid "СДЕЛАТЬ ЗАПРОС"
@@ -237,6 +317,11 @@ msgstr "Сиздин билдирүү ийгиликтүү жөнөтүлдү!"
 #| msgid "Упсс! Что-то пошло не так! Попробуйте отправить снова!"
 msgid "Упс! Что-то пошло не так! Попробуйте отправить снова!"
 msgstr "Ой! Бир жерден ката кетти! Сураныч, кайра жөнөтүп көрүңүз!"
+
+#, fuzzy
+#~| msgid "Подробнее"
+#~ msgid "Подробная работа"
+#~ msgstr "Дагы"
 
 #~ msgid "Тема"
 #~ msgstr "Тема"

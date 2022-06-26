@@ -1,16 +1,16 @@
 {% extends 'index.html' %}
 {% load static %}
+{% load i18n%}
 {% block page %}
             <section class="banner_area">
-                <div class="overlay_bg parallax-effect" style="background: url(static/img/banner2.jpg) no-repeat;"></div>
+                <div id="ourCompanies-overlay_bg" class="overlay_bg parallax-effect"></div>
 
             </section>
             <section class="con_project_area sec_gap">
                 <div class="container">
                     <div class="project_title d-flex justify-content-between align-items-end">
                         <div class="section_title">
-                            <h6 class="con_title_top">Работы наших партнеров</h6>
-                            <h2 class="con_title c_w">Подробная работа</h2>
+                            <h6 class="con_title_top">{% trans 'Работы наших партнеров'%}</h6>
                             <div class="line_bottom mb-0"></div>
                         </div>
                         <div class="custom_nav">
@@ -39,13 +39,13 @@
             <section class="con_faq_area sec_gap bg_color">
                 <div class="container">
                     <div class="section_title text-center">
-                        <h6 class="con_title_top">ЖЕЛАЕТЕ РАБОТАТЬ С НАМИ?</h6>
-                        <h2 class="con_title">Стать членом АДСК КР</h2>
+                        <h6 class="con_title_top">{% trans 'ЖЕЛАЕТЕ РАБОТАТЬ С НАМИ?'%}</h6>
+                        <h2 class="con_title">{% trans 'Стать членом АДСК КР'%}</h2>
                         <div class="line_bottom"></div>
                     </div>
                     <div class="row">
                         <div class="col-lg-6">
-                            <img src="static/img/home/faq_img.jpg" alt="">
+                            <div id="ourCompanies-sec2img"></div>
                         </div>
                         <div class="col-lg-6">
                             <div class="accordion" id="accordionExample">
@@ -69,7 +69,7 @@
                                     <div class="card-header" id="headingTwo">
                                         <h2 class="mb-0">
                                             <a href="/static/pdf/sample.pdf" target="_blank" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                Кодексы <i class="ti-plus"></i>
+                                                {% trans 'Кодексы'%} <i class="ti-plus"></i>
                                             </a>
                                         </h2>
                                     </div>
@@ -83,7 +83,7 @@
                                     <div class="card-header" id="headingThree">
                                         <h2 class="mb-0">
                                             <a href="/static/pdf/sample.pdf" target="_blank" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                Этичические нормы<i class="ti-plus"></i>
+                                                {% trans 'Этические нормы'%}<i class="ti-plus"></i>
                                             </a>
                                         </h2>
                                     </div>
@@ -97,7 +97,7 @@
                                     <div class="card-header" id="headingfour">
                                         <h2 class="mb-0">
                                             <a href="/static/pdf/sample.pdf" target="_blank" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                                                Правила профессионального поведения<i class="ti-plus"></i>
+                                                {% trans 'Правила профессионального поведения'%}<i class="ti-plus"></i>
                                             </a>
                                         </h2>
                                     </div>
@@ -114,11 +114,11 @@
             </section>
 
             <section class="con_call_action_area">
-                <div class="overlay_bg parallax-effect" style="background: url(static/img/home/action.jpg) no-repeat;"></div>
+                <div class="overlay_bg parallax-effect" id="home-overlay_bg2"></div>
                 <div class="container">
                     <div class="d-flex action_info justify-content-between align-items-center">
                         <h2>We will provide you the best work<br> which you dreamt for!</h2>
-                        <a href="#" class="con_btn">FREE CONSULTATION</a>
+                        <a href="#" class="con_btn">{% trans 'Бесплатная консультация'%}</a>
                     </div>
                 </div>
             </section>

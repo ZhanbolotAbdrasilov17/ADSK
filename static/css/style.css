@@ -411,6 +411,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .menu > .nav-item {
   margin-right: 40px;
   padding: 32px 0px;
+  display: flex;
+  align-items: center;
+  text-align: center
 }
 
 .menu > .nav-item > .nav-link {
@@ -4456,4 +4459,27 @@ input{
 
 #navbarSupportedContent.active{
     display: block!important;
+}
+
+#home-overlay_bg{
+    background: url(../img/home-1/video_bg.jpg) no-repeat;
+}
+#home-overlay_bg2{
+    background: url(../img/home-1/testimonial-bg.jpg) no-repeat;
+}
+#ourCompanies-overlay_bg{
+    background: url(../img/banner2.jpg) no-repeat;
+}
+#ourCompanies-sec2img{
+width: 100%;
+height: 100%;
+    background: url(../img/home/faq_img.jpg) no-repeat;
+}
+
+#home-overlay_bg2{
+    background: url(../img/home/action.jpg) no-repeat;
+}
+
+#news-overlay_bg{
+    background: url(static/img/banner4.jpg) no-repeat;
 }

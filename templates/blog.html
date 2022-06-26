@@ -6,7 +6,7 @@
 
 
             <section class="banner_area">
-                <div class="overlay_bg parallax-effect" style="background: url(static/img/banner4.jpg) no-repeat;"></div>
+                <div id="news-overlay_bg" class="overlay_bg parallax-effect"></div>
                 <div class="container">
                     <div class="breadcrumb_content">
 
@@ -30,7 +30,7 @@
                                         <h2 class="l_post_title">{{ new.title}}</h2>
                                     </a>
                                     <p>{{ new.text}}</p>
-                                    <a href="{% url 'news' new.pk %}" class="read_btn">Read More <i class="ti-angle-right"></i></a>
+                                    <a href="{% url 'news' new.pk %}" class="read_btn">{% trans 'Подробнее' %} <i class="ti-angle-right"></i></a>
                                 </article>
                             </div>
 
@@ -104,7 +104,7 @@
                 <h2 class="con_title" style="
     margin: 25px 0 15px;
     text-align: center;
-">СМИ о нас</h2>
+">{% trans 'СМИ о нас' %}</h2>
                 <div class="page-content">
                     {% for media in media_news%}
               <div class="card">
