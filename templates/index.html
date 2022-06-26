@@ -43,11 +43,9 @@
                                         <a href="#"><i class="far fa-clock"></i>График: Понедельник - Пятница 09:00 - 18:00</a>
                                         <a href="tel:+996 700 000000"><i class="fas fa-phone"></i>Номер: +996 700 000000</a>
                                         <a href="mailto:adsk@gmail.com"><i class="fas fa-envelope"></i>adsk@email.com</a>
-                                    </div>
-
-                                <div class="languages-switcher">
+                                     <div class="language_switcher">
 									<i class="ri-global-line"></i>
-									<form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+									<form id=" " action="{% url 'set_language' %}" method="post">{% csrf_token %}
 									<input name="next" type="hidden" value="{{ redirect_to }}">
 									<select class="selectpicker" data-width="fit" name="language" onchange="this.form.submit()">
 										{% get_current_language as LANGUAGE_CODE %}
@@ -55,7 +53,7 @@
 										{% get_language_info_list for LANGUAGES as languages %}
 										{% for language in languages %}
 
-											<option data-content='<span class="flag-icon flag-icon-us"></span>' value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+											<option style="background: white; color: black;" data-content='<span class="flag-icon flag-icon-us"></span>' value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
 												{{ language.name_local }}
 											</option>
 										{% endfor %}
@@ -64,6 +62,9 @@
 									</form>
 
 								</div>
+                                </div>
+
+
 
                             </div>
                         </div>

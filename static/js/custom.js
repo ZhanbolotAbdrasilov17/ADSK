@@ -272,6 +272,8 @@ $('.header_background-video-close').click(function(){
 });
 
 
+//Language switcher
+
 
 //Slider
 var $slider = $(".slider"), $bullets = $(".bullets");

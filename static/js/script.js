@@ -25,3 +25,11 @@ prev.addEventListener("click", function () {
   }
   track.style.transform = "translateX(" + index * -width + "px)";
 });
+
+
+//Burger menu
+let menuBtn = document.querySelector('.navbar-toggler');
+let menu = document.querySelector('#navbarSupportedContent');
+menuBtn.addEventListener('click', function(){
+	menu.classList.toggle('active');
+})

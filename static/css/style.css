@@ -4438,3 +4438,22 @@ input{
 	.congress-title:hover{
 	    color: #999
 	}
+
+
+.language_switcher{
+    width: fit-content;
+    display: inline-block;
+}
+.language_switcher .selectpicker{
+    background: transparent;
+    color: #fff;
+    border: none;
+}
+
+#navbarSupportedContent{
+    display: none;
+}
+
+#navbarSupportedContent.active{
+    display: block!important;
+}
