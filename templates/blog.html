@@ -1,5 +1,6 @@
 {% extends 'index.html' %}
 {% load static %}
+{% load i18n%}
 {% block page %}
 
 
@@ -23,7 +24,7 @@
                                     <a href="#"><img src="{{new.image.url}}" alt=""></a>
                                     <ul class="post_meta list-unstyled">
                                         <li><a href="#"><i class="far fa-calendar-alt"></i>{{ new.created_at.date}}</a></li>
-                                        <li><i class="far fa-folder"></i><a href="#">Construction,</a> <a href="#">Building</a></li>
+                                        <li><i class="far fa-folder"></i><a href="#">{% trans 'Конструкция' %}</a> <a href="#">Building</a></li>
                                     </ul>
                                     <a href="{% url 'news' new.pk %}">
                                         <h2 class="l_post_title">{{ new.title}}</h2>
@@ -49,7 +50,7 @@
                                     </form>
                                 </div>
                                 <div class="widget recente_post_widget">
-                                    <h4 class="w_title" style="text-align: center;">Последние новости</h4>
+                                    <h4 class="w_title" style="text-align: center;">{% trans 'Последние новости' %}</h4>
                                     {% include "last_four_news.html" %}
                                 </div>
 
@@ -72,8 +73,8 @@
                 <div class="container">
                     <div class="project_title d-flex justify-content-between align-items-end">
                         <div class="section_title">
-                            <h6 class="con_title_top">Новые технологии</h6>
-                            <h2 class="con_title c_w">Инновации приходят каждый день</h2>
+                            <h6 class="con_title_top">{% trans 'Новые технологии' %}</h6>
+                            <h2 class="con_title c_w">{% trans 'Инновации приходят каждый день' %}</h2>
                             <div class="line_bottom mb-0"></div>
                         </div>
                         <div class="custom_nav">
@@ -110,8 +111,8 @@
                   <img src="{{media.image.url}}" alt="">
                 <div class="content">
                   <h2 class="title">{{media.title}}</h2>
-                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                  <a href="{{media.link}}" target="_blank" class="btn">Подробнее</a>
+                  <p class="copy">{% trans 'Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains' %}</p>
+                  <a href="{{media.link}}" target="_blank" class="btn">{% trans 'Подробнее' %}</a>
                 </div>
               </div>
                                 {% endfor %}

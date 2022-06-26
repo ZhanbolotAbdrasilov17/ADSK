@@ -1,5 +1,7 @@
 {% extends 'index.html' %}
 {% load static %}
+{% load i18n%}
+
 {% block page %}
             <section class="banner_area">
                 <div class="overlay_bg parallax-effect" style="background: url(/static/img/banner8.jpg) no-repeat;"></div>
@@ -22,7 +24,7 @@
                                 <div class="contact_info_item">
                                     <i class="ti-mobile"></i>
                                     <h3>Контакт</h3>
-                                    <p>Номер: <a href="tel:0964355803031">+996 700 000000</a></p>
+                                    <p>{% trans 'Номер:' %}<a href="tel:0964355803031">+996 700 000000</a></p>
 
                                 </div>
                                 <div class="contact_info_item">

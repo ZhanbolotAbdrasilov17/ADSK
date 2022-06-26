@@ -1,5 +1,6 @@
 {% extends 'index.html' %}
 {% load static %}
+{% load i18n%}
 {% block page %}
 
 <html lang="en">
@@ -29,8 +30,8 @@
                         <div class="col-lg-6 d-flex align-items-center">
                             <div class="con_work_content">
                                 <div class="section_title">
-                                    <h6 class="con_title_top">История Ассоциации</h6>
-                                    <h2 class="con_title">Погрузимся в начало развития нашей компании</h2>
+                                    <h6 class="con_title_top">{% trans 'История Ассоциации'%}</h6>
+                                    <h2 class="con_title">{% trans 'Погрузимся в начало развития нашей компании'%}</h2>
                                     <div class="line_bottom"></div>
                                     <p class="con_p">Twit cras excuse my French matie boy grub it’s all gone to pot off his nut butty horse play blow off pardon you hanky panky. Why I say old chap that is sping lavatory.</p>
                                 </div>
@@ -117,7 +118,7 @@
             <section class="con_team_area_three sec_gap">
                 <div class="container">
                     <div class="section_title text-center wow fadeInUp" data-wow-delay="0.2s">
-                        <h2 class="con_title">Наше руководство</h2>
+                        <h2 class="con_title">{% trans 'Наше руководство'%}</h2>
                     </div>
                     <div class="row">
                         {% for em in employee %}
@@ -153,7 +154,7 @@
                         <a href="https://www.youtube.com/watch?v=sU3FkzUKHXU" class="video_btn popup-youtube">
                             <span></span>
                         </a>
-                        <h2>We will provide you the best work<br> which you dreamt for!</h2>
+                        <h2>{% trans 'Мы выполним работу, о которой вы мечтаете!'%}</h2>
                     </div>
                 </div>
             </section>
@@ -217,8 +218,8 @@
                     <div class="row align-items-center">
                         <div class="col-md-4">
                             <div class="section_title">
-                                <h6 class="con_title_top">Наше сотрудничество</h6>
-                                <h2 class="con_title">Почетные партнеры<br></h2>
+                                <h6 class="con_title_top">{% trans 'Наше сотрудничество</h6>
+                                <h2 class="con_title">{% trans 'Почетные партнеры<br></h2>
                             </div>
                         </div>
                         <div class="col-md-8 d-flex">
@@ -240,7 +241,7 @@
             </section>
             <section>
                 <div class="container">
-                    <h2 class="con_title next congress-title">Международные конгрессы ></h2>
+                    <h2 class="con_title next congress-title">{% trans 'Международные конгрессы' %}</h2>
                                 <div class="slider">
 	  <div class="arrows">
 	    <p class="previous"><</p>
