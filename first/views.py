@@ -37,9 +37,21 @@ def our_companies(request):
 
 
 def portfolio(request):
-    # projects = Portfolio.object.all()
-    # context = {" projects": projects}
-    return render(request, "portfolio.html", )
+    projects = Projects.objects.all()
+    portfolio_ = Portfolio.objects.all()
+    context = {"projects": projects, "portfolio": portfolio_}
+    return render(request, "portfolio.html", context)
+
+
+class PortfolioDetail(DetailView):
+    model = Portfolio
+    template_name = "portfolio-detail.html"
+    context_object_name = 'port'
+    pk_url_kwarg = 'portfolio_id'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data()
+        return context
 
 
 def contact(request):
@@ -97,30 +109,4 @@ class NewsDetail(DetailView):
         return context
 
 
-# class CategoryListView(ListView):
-#     model = Clients
-#     template_name = 'index.html'
-#     context_object_name = 'category'
-#     paginate_by = 20
 
-#
-# def partners(request):
-#     return render(request, "partners.html")
-
-#
-# def home(request):
-#     news = News.objects.all()
-#     context = {'news': news}
-#     return render(request, 'index.html', context)
-#
-#
-# class NewsDetailView(DetailView):
-#     model = News
-#     template_name = 'news.html'
-#     context_object_name = 'news'
-#     pk_url_kwarg = 'news_id'
-#
-#     # def get_context_data(self, **kwargs):
-#     #     context = super().get_context_data()
-#     #     context['recommendation'] = News.objects.all().order_by('-date')[:6]
-#     #     return context

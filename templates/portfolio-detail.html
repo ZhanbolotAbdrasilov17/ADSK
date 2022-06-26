@@ -1,5 +1,17 @@
 {% extends 'index.html' %}
 {% load static %}
 {% block page %}
-
+                   <div class="container">
+                       <div class="row portfolio_gallery" id="work-portfolio">
+                        <div class="col-lg-6 col-sm-6 portfolio_item {{port.project_name.id}}">
+                            <h2 style="margin-top: 30px"><span>{{ port.project_title}}</span></h2>
+                                    <h6><span style="font-family: emoji">{{ port.text}}</span></h6>
+                        </div>
+                           <div class="col-lg-6 col-sm-6 portfolio_item {{port.project_name.id}}">
+                            <div class="portfolio_img hover_effect">
+                                <img src="{{ port.image.url}}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                   </div>
 {% endblock %}

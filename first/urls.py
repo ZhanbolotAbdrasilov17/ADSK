@@ -13,6 +13,7 @@ urlpatterns = [
     path('news/<int:news_id>/', NewsDetail.as_view(), name='news'),
     path('appeal/', appeal, name='appeal'),
     path('portfolio/', portfolio, name='portfolio'),
+    path('portfolio/<int:portfolio_id>/', PortfolioDetail.as_view(), name='portfolio'),
     path('contact/', contact, name='contact'),
     path('search', search_news, name='search'),
 

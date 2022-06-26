@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-26 22:52+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: asoi/settings.py:123
+msgid "Russia"
+msgstr "Русский"
+
+#: asoi/settings.py:124
+msgid "Kyrgyz"
+msgstr "Кыргызча"
+
+#: templates/contact.html:34
+msgid "Социальные сети"
+msgstr "Социалдык тармак"
+
+#: templates/home.html:52 templates/index.html:95
+msgid "О НАС"
+msgstr "БИЗ ЖӨНҮНДӨ"
+
+#: templates/home.html:53 templates/home.html:65
+msgid "Мы строим все"
+msgstr "Биз бардыгын курабыз"
+
+#: templates/home.html:55
+msgid "Подробнее"
+msgstr "Дагы"
+
+#: templates/home.html:64
+msgid "Наш сервис"
+msgstr "Биздин кызмат"
+
+#: templates/home.html:73
+msgid "Архитектурный дизайн"
+msgstr "Архитектуралык дизайн"
+
+#: templates/home.html:82
+msgid "Управление строительством"
+msgstr "Курулушту башкаруу"
+
+#: templates/home.html:91
+msgid "Квалифицированные инженеры"
+msgstr "Квалификациялуу инженерлер"
+
+#: templates/home.html:100
+msgid "Услуги по реконструкции"
+msgstr "Реконструкциялоо кызматтары"
+
+#: templates/home.html:109
+msgid "Дизайн интерьера"
+msgstr "Интерьер дизайн"
+
+#: templates/home.html:118
+msgid "Подготовка к строительству и планирование"
+msgstr "Курулуш даярдоо жана пландаштыруу"
+
+#: templates/home.html:134
+msgid "Мы предоставим вам лучшую работу о которой вы мечтали!"
+msgstr "Биз сизге сиз кыялданган эң жакшы жумушту беребиз!"
+
+#: templates/home.html:181
+msgid "НАШЕ ПОРТФОЛИО"
+msgstr "БИЗДИН ПОРТФОЛИО"
+
+#: templates/home.html:182
+msgid "Наши последние проекты"
+msgstr "Биздин акыркы долбоорлор"
+
+#: templates/home.html:249
+msgid "Посмотреть всё"
+msgstr "Баарын көрүү"
+
+#: templates/home.html:297
+msgid "Наши клиенты"
+msgstr "Биздин кардарлар"
+
+#: templates/home.html:298
+msgid "Почетные Клиенты"
+msgstr "Ардактуу кардарлар"
+
+#: templates/home.html:352
+msgid "Наше руководство"
+msgstr "Биздин жетекчилик"
+
+#: templates/home.html:381
+msgid "Наш блог"
+msgstr "Биздин блог"
+
+#: templates/home.html:382
+msgid "Наши последние новости"
+msgstr "Биздин акыркы кабарлар"
+
+#: templates/index.html:94
+msgid "ГЛАВНАЯ"
+msgstr "БАШКЫ"
+
+#: templates/index.html:96
+msgid "НАШИ КОМПАНИИ"
+msgstr "БИЗДИН КОМПАНИЯЛАР"
+
+#: templates/index.html:97
+msgid "НОВОСТИ"
+msgstr "ЖАНЫЛЫКТАР"
+
+#: templates/index.html:98
+msgid "ПРОЕКТЫ"
+msgstr "ДОЛБООРУ"
+
+#: templates/index.html:99
+msgid "КОНТАКТЫ"
+msgstr "БАЙЛАНЫШТАР"
+
+#: templates/index.html:142
+msgid "Страницы"
+msgstr "Барактар"
+
+#: templates/send_mail.html:5
+msgid "СДЕЛАТЬ ЗАПРОС"
+msgstr "СУРОО КОЮҢУЗ"
+
+#: templates/send_mail.html:6
+msgid "Свяжитесь с нами"
+msgstr "Биз менен байланыш"
+
+#: templates/send_mail.html:20
+msgid "Ваше сообщение"
+msgstr "Cенин билдирүүң"
+
+#: templates/send_mail.html:23
+msgid "Отправить"
+msgstr "Жөнөтүү"
+
+#: templates/send_mail.html:26
+#, fuzzy
+#| msgid "Ваше сообщение успешно отправлено!"
+msgid "Ваше сообщение отправлено!"
+msgstr "Сиздин билдирүү ийгиликтүү жөнөтүлдү!"
+
+#: templates/send_mail.html:27
+#, fuzzy
+#| msgid "Упсс! Что-то пошло не так! Попробуйте отправить снова!"
+msgid "Упс! Что-то пошло не так! Попробуйте отправить снова!"
+msgstr "Ой! Бир жерден ката кетти! Сураныч, кайра жөнөтүп көрүңүз!"
+
+#~ msgid "Тема"
+#~ msgstr "Тема"

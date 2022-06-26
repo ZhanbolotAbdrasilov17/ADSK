@@ -1,13 +1,60 @@
 from django.contrib import admin
+from modeltranslation.admin import TranslationAdmin
+
 from .models import *
 
+
+@admin.register(Employee)
+class EmployeeAdmin(TranslationAdmin):
+    pass
+
+
+@admin.register(NewTechno)
+class NewTechnoAdmin(TranslationAdmin):
+    pass
+
+@admin.register(Projects)
+class ProjectsAdmin(TranslationAdmin):
+    pass
+
+@admin.register(Quotes)
+class QuotesAdmin(TranslationAdmin):
+    pass
+
+@admin.register(InternationalCongresses)
+class InternationalCongressesAdmin(TranslationAdmin):
+    pass
+
+@admin.register(PortFolioCompanies)
+class PortFolioCompaniesAdmin(TranslationAdmin):
+    pass
+
+@admin.register(Partners)
+class PartnersAdmin(TranslationAdmin):
+    pass
+
+@admin.register(Portfolio)
+class PortfolioAdmin(TranslationAdmin):
+    pass
+
+@admin.register(Media)
+class MediaAdmin(TranslationAdmin):
+    pass
+
+@admin.register(News)
+class NewsAdmin(TranslationAdmin):
+    pass
+
+@admin.register(FullDescription)
+class FullDescriptionAdmin(TranslationAdmin):
+    pass
 
 class DescEmployee(admin.TabularInline):
     model = EmDescription
 
 
-class EmployeeAdmin(admin.ModelAdmin):
-    inlines = [DescEmployee, ]
+# class EmployeeAdmin(admin.ModelAdmin):
+#     inlines = [DescEmployee, ]
 
 
 class DescNews(admin.TabularInline):
@@ -18,14 +65,8 @@ class NewsAdmin(admin.ModelAdmin):
     inlines = [DescNews, ]
 
 
-admin.site.register(News, NewsAdmin)
-admin.site.register(Projects)
-admin.site.register(Media)
 
-admin.site.register(Employee, EmployeeAdmin)
-admin.site.register(Portfolio)
-admin.site.register(Partners)
-admin.site.register(NewTechno)
-admin.site.register(PortFolioCompanies)
-admin.site.register(InternationalCongresses)
-admin.site.register(Quotes)
+
+# admin.site.register(Employee, EmployeeAdmin)
+
+

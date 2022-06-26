@@ -338,6 +338,12 @@ var $slider = $(".slider"), $bullets = $(".bullets");
 		}
 		addBullets();
 		calculateHeight();
+
+
+
+		$(function(){
+    $('.selectpicker').selectpicker();
+});
 })(jQuery)
 
 

@@ -329,6 +329,10 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   border-bottom: 1px solid #414549;
 }
 
+.header_contact_info {
+    text-align: center;
+}
+
 .header_contact_info a {
   font-size: 14px;
   line-height: 48px;
@@ -827,18 +831,15 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     z-index: 10000;
     width: 100%;
     height: 100vh;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
+    display: none;
     justify-content: center;
-    transform: scale(0);
     background: #000;
     transition: .3s
 }
 
 .header_background-video.active{
     transition: .3s;
-    transform: scale(1);
+    display: flex;
 }
 
 .header_background-video-close{
