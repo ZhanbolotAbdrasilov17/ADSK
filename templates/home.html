@@ -316,7 +316,7 @@
                 </div>
             </section>
             <section class="con_testimonial_area">
-                <div class="overlay_bg parallax-effect" style="background: url(static/img/home-1/testimonial-bg.jpg) no-repeat;"></div>
+                <div id="home-overlay_bg2" class="overlay_bg parallax-effect"></div>
                 <div class="container">
                     <div class="con_testimonial_info">
                         <div class="custom_nav_two">
@@ -324,24 +324,14 @@
                             <i class="ti-arrow-right next"></i>
                         </div>
                         <div class="con_testimonial_slider">
+                            {% for quote in quotes_managers %}
                             <div class="testimonial_item">
                                 <div class="author_img"><img src="{% static 'img/home-1/author.jpg' %}" alt=""></div>
-                                <h5>Valentino Morose</h5>
-                                <h6>MANAGER</h6>
-                                <p>The whole difference between construction and creation is exactly this that a thing constructed can only be loved after it is constructed but a thing created is loved before it exists.</p>
+                                <h5>{{ quote.full_name }}</h5>
+                                <h6>{{ quote.job_title }}</h6>
+                                <p>{{ quote.text }}</p>
                             </div>
-                            <div class="testimonial_item">
-                                <div class="author_img"><img src="{% static 'img/home-1/author.jpg' %}" alt=""></div>
-                                <h5>Valentino Morose</h5>
-                                <h6>MANAGER</h6>
-                                <p>The whole difference between construction and creation is exactly this that a thing constructed can only be loved after it is constructed but a thing created is loved before it exists.</p>
-                            </div>
-                            <div class="testimonial_item">
-                                <div class="author_img"><img src="{% static 'img/home-1/author.jpg' %}" alt=""></div>
-                                <h5>Valentino Morose</h5>
-                                <h6>MANAGER</h6>
-                                <p>The whole difference between construction and creation is exactly this that a thing constructed can only be loved after it is constructed but a thing created is loved before it exists.</p>
-                            </div>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>

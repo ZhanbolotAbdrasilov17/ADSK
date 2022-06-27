@@ -38,7 +38,7 @@
 
                             </div>
                         </div>
-                        <h3 class="con_title" style="width: fit-content; margin: 10px auto 0">{% trans 'Наши цели'%}</h3>
+                        <h3 class="con_title" style="width: fit-content; margin: 10px auto 0">{% trans 'Наши цели' %}</h3>
                         <div class="row targets">
                                     <div class="col-lg-6 col-sm-6">
                                         <div class="media con_features_item">
@@ -56,7 +56,7 @@
                                                 <img src="{% static 'img/home-1/icon2.png'%}" alt="">
                                             </div>
                                             <div class="media-body">
-                                                <h3>{% trans 'Быстрые решения'%}</h3>
+                                                <h3>{% trans 'Быстрые решения' %}</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -66,7 +66,7 @@
                                                 <img src="{% static 'img/home-1/icon3.png' %}" alt="">
                                             </div>
                                             <div class="media-body">
-                                                <h3>{% trans 'Лучшее развитие'%}</h3>
+                                                <h3>{% trans 'Лучшее развитие' %}</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -93,24 +93,15 @@
                             <i class="ti-arrow-right next"></i>
                         </div>
                         <div class="con_testimonial_slider">
+                            {% for quote in quotes %}
                             <div class="testimonial_item">
-                                <div class="author_img"><img src="{% static 'img/home-1/author.jpg'%}" alt=""></div>
-                                <h5>Valentino Morose</h5>
-                                <h6>MANAGER</h6>
-                                <p>The whole difference between construction and creation is exactly this that a thing constructed can only be loved after it is constructed but a thing created is loved before it exists.</p>
+                                <div class="author_img"><img src="{{ quote.image.url }}" alt=""></div>
+                                <h5>{{ quote.full_name }}</h5>
+                                <h6>{{ quote.job_title }}</h6>
+                                <p>{{ quote.text }}</p>
                             </div>
-                            <div class="testimonial_item">
-                                <div class="author_img"><img src="{% static 'img/home-1/author.jpg'%}" alt=""></div>
-                                <h5>Valentino Morose</h5>
-                                <h6>MANAGER</h6>
-                                <p>The whole difference between construction and creation is exactly this that a thing constructed can only be loved after it is constructed but a thing created is loved before it exists.</p>
-                            </div>
-                            <div class="testimonial_item">
-                                <div class="author_img"><img src="{% static 'img/home-1/author.jpg' %}" alt=""></div>
-                                <h5>Valentino Morose</h5>
-                                <h6>MANAGER</h6>
-                                <p>The whole difference between construction and creation is exactly this that a thing constructed can only be loved after it is constructed but a thing created is loved before it exists.</p>
-                            </div>
+                            {% endfor %}
+
                         </div>
                     </div>
                 </div>

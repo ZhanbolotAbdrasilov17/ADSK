@@ -4483,3 +4483,34 @@ height: 100%;
 #news-overlay_bg{
     background: url(static/img/banner4.jpg) no-repeat;
 }
+
+#con_clients_logo-1{
+background-image: url(../img/home/Logo1.png);
+    width: 100px;
+    height: 85px;
+}
+#con_clients_logo-2{
+background-image: url(../img/home/Logo2.png);
+    width: 120px;
+    height: 36px;
+}
+#con_clients_logo-3{
+background-image: url(../img/home/Logo3.png);
+    width: 78px;
+    height: 85px;
+}
+#con_clients_logo-4{
+background-image: url(../img/home/Logo4.png);
+    width: 120px;
+    height: 35px;
+}
+#con_clients_logo-5{
+background-image: url(../img/home/Logo5.png);
+    width: 100px;
+    height: 61px;
+}
+#con_clients_logo-6{
+background-image: url(../img/home/Logo6.png);
+    width: 120px;
+    height: 33px;
+}

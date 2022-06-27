@@ -25,8 +25,9 @@ def home(request):
     news_ = News.objects.all()
     partners = Partners.objects.all()
     quotes = Quotes.objects.all()
+    quotes_managers = ManagersQuotes.objects.all()
     context = {"employees": employees, "news": news_, 'last_four_news': news_.order_by('created_at')[:4],
-               'token': get_token(request), "partners": partners, "quotes": quotes}
+               'token': get_token(request), "partners": partners, "quotes": quotes, "quotes_managers": quotes_managers,}
     return render(request, "home.html", context)
 
 
@@ -73,7 +74,8 @@ def search_news(request):
 def employee(request):
     employee_ = Employee.objects.all()
     congresses = InternationalCongresses.objects.all()
-    context = {"employee": employee_, "congresses": congresses}
+    quotes = ManagersQuotes.objects.all()
+    context = {"employee": employee_, "congresses": congresses, "quotes": quotes, }
     return render(request, "about.html", context)
 
 
@@ -106,6 +108,7 @@ class NewsDetail(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data()
         context['texts'] = FullDescription.objects.all()
+        context['news_images'] = NewsImages.objects.all()
         return context
 
 

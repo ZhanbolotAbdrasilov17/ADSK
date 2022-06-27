@@ -48,4 +48,9 @@ class FullDescriptionTranslation(TranslationOptions):
     fields = ('text', )
 
 
+@register(ManagersQuotes)
+class ManagersQuotesTranslation(TranslationOptions):
+    fields = ('job_title', 'text' )
+
+
 

@@ -5,9 +5,33 @@
             <div class="container">
                 <div class="blog-details-desc">
                     <div class="article-content">
-                        <div class="article-image">
-                            <img src="{{news.image.url}}" alt="image">
-                            <div class="date">{{ news.date}}</div>
+<!--                        <div class="article-image">-->
+<!--                            <img src="{{news.image.url}}" alt="image">-->
+<!--                            {% for i in news_images %}-->
+<!--                            {% if i.news.id == news.id %}-->
+<!--                            <img src="{{i.images.url}}" alt="image">-->
+<!--                            {%endif%}-->
+<!--                            {% endfor %}-->
+
+
+<!--                            <div class="date">{{ news.date}}</div>-->
+<!--                        </div>-->
+                        <div class="container" style="margin-top: 15px;">
+                            <div class="con_testimonial_info">
+                                <div class="custom_nav_two">
+                                    <i class="ti-arrow-left prev" style="color: #111"></i>
+                                    <i class="ti-arrow-right next" style="color: #111"></i>
+                                </div>
+                                <div class="con_testimonial_slider">
+                                    {% for i in news_images %}
+                                    {% if i.news.id == news.id %}
+                                    <div class="testimonial_item" style="width: 100%; display: flex; justify-content: center; align-items: center">
+                                        <img width="100%" src="{{i.images.url}}" alt="image">
+                                    </div>
+                                    {%endif%}
+                                    {% endfor %}
+                                </div>
+                            </div>
                         </div>
                         <h3>{{ news.title}}</h3>
                         {% for t in texts %}

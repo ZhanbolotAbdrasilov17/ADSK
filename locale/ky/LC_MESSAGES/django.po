@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-27 02:55+0600\n"
+"POT-Creation-Date: 2022-06-27 15:13+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,16 +35,12 @@ msgid "Погрузимся в начало развития нашей комп
 msgstr "Келгиле, биздин компаниянын өнүгүүсүнүн башталышына токтололу"
 
 #: templates/about.html:41
-#, fuzzy
-#| msgid "Наши клиенты"
 msgid "Наши цели"
-msgstr "Биздин кардарлар"
+msgstr "Биздин максаттар"
 
 #: templates/about.html:49
-#, fuzzy
-#| msgid "Наше руководство"
 msgid "Лучшее качество"
-msgstr "Биздин жетекчилик"
+msgstr "Эң мыкты сапат"
 
 #: templates/about.html:59
 msgid "Быстрые решения"
@@ -55,8 +51,6 @@ msgid "Лучшее развитие"
 msgstr "Мыкты өнүктүрүү"
 
 #: templates/about.html:79
-#, fuzzy
-#| msgid "Новые технологии"
 msgid "Современные технологии"
 msgstr "Жаңы технологиялар"
 
@@ -65,20 +59,14 @@ msgid "Наше руководство"
 msgstr "Биздин жетекчилик"
 
 #: templates/about.html:158
-#, fuzzy
-#| msgid "Мы предоставим вам лучшую работу о которой вы мечтали!"
 msgid "Мы выполним работу, о которой вы мечтаете!"
 msgstr "Биз сизге сиз кыялданган эң жакшы жумушту беребиз!"
 
 #: templates/about.html:222
-#, fuzzy
-#| msgid "Наше руководство"
 msgid "Наше сотрудничество"
 msgstr "Биздин жетекчилик"
 
 #: templates/about.html:223
-#, fuzzy
-#| msgid "Почетные Клиенты"
 msgid "Почетные партнеры"
 msgstr "Ардактуу кардарлар"
 
@@ -94,9 +82,11 @@ msgstr "Дизайн"
 msgid "Подробнее"
 msgstr "Дагы"
 
+#: templates/blog.html:48
+msgid "Название"
+msgstr "Аты"
+
 #: templates/blog.html:53
-#, fuzzy
-#| msgid "Наши последние новости"
 msgid "Последние новости"
 msgstr "Биздин акыркы кабарлар"
 
@@ -286,10 +276,6 @@ msgstr "Этика"
 msgid "Правила профессионального поведения"
 msgstr "Кесиптик жүрүм-турумдун эрежелери"
 
-#: templates/our_companies.html:121
-msgid "Бесплатная консультация"
-msgstr "Акысыз консультация"
-
 #: templates/send_mail.html:5
 msgid "СДЕЛАТЬ ЗАПРОС"
 msgstr "СУРОО КОЮҢУЗ"
@@ -317,6 +303,9 @@ msgstr "Сиздин билдирүү ийгиликтүү жөнөтүлдү!"
 #| msgid "Упсс! Что-то пошло не так! Попробуйте отправить снова!"
 msgid "Упс! Что-то пошло не так! Попробуйте отправить снова!"
 msgstr "Ой! Бир жерден ката кетти! Сураныч, кайра жөнөтүп көрүңүз!"
+
+#~ msgid "Бесплатная консультация"
+#~ msgstr "Акысыз консультация"
 
 #, fuzzy
 #~| msgid "Подробнее"

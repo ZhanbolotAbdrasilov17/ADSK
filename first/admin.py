@@ -21,6 +21,12 @@ class ProjectsAdmin(TranslationAdmin):
 class QuotesAdmin(TranslationAdmin):
     pass
 
+
+@admin.register(ManagersQuotes)
+class ManagersQuotesAdmin(TranslationAdmin):
+    pass
+
+
 @admin.register(InternationalCongresses)
 class InternationalCongressesAdmin(TranslationAdmin):
     pass
@@ -65,8 +71,5 @@ class NewsAdmin(admin.ModelAdmin):
     inlines = [DescNews, ]
 
 
-
-
-# admin.site.register(Employee, EmployeeAdmin)
-
+admin.site.register(NewsImages)
 

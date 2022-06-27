@@ -62,6 +62,11 @@ class News(models.Model):
         return cls.objects.all().order_by('created_at')[:4]
 
 
+class NewsImages(models.Model):
+    news = models.ForeignKey(News, on_delete=models.CASCADE)
+    images = models.ImageField(upload_to='news-images', verbose_name='Фото')
+
+
 class FullDescription(models.Model):
     news = models.ForeignKey(News, on_delete=models.CASCADE, related_name="news_descriptions")
     text = models.TextField(verbose_name="Текст")
@@ -113,6 +118,18 @@ class Quotes(models.Model):
 
     def __str__(self):
         return self.text
+
+class ManagersQuotes(models.Model):
+    full_name = models.CharField(max_length=200, null=True, blank=True)
+    job_title = models.CharField(max_length=200, null=True, blank=True)
+    image = models.ImageField(upload_to='managers', verbose_name='Фото', blank=True, null=True)
+    text = models.CharField(max_length=200, null=True, blank=True)
+
+    def __str__(self):
+        return self.full_name
+
+
+
 
 
 

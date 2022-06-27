@@ -6,7 +6,10 @@
 
 
             <section class="banner_area">
-                <div id="news-overlay_bg" class="overlay_bg parallax-effect"></div>
+<!--                <div class="overlay_bg parallax-effect">-->
+
+<!--                </div>-->
+                <div class="overlay_bg parallax-effect" style="background: url({%static 'img/banner4.jpg'%}) no-repeat;"></div>
                 <div class="container">
                     <div class="breadcrumb_content">
 
@@ -17,6 +20,7 @@
                 <div class="container-xxl news">
                     <div class="row">
                         <div class="col-9" style="display: flex; flex-wrap: wrap">
+
                             {% for new in news %}
                         <div class="col-lg-6">
                             <div class="blog_inner">
@@ -45,7 +49,7 @@
                             <div class="blog_sidebar">
                                 <div class="widget sidebar_widget widget_search">
                                     <form action="{% url 'search' %}" method="GET" class="search-form input-group">
-                                        <input name="q" type="search" class="form-control widget_input" placeholder="Название">
+                                        <input name="q" type="search" class="form-control widget_input" placeholder="{% trans 'Название' %}">
                                         <button type="submit"><i class="fas fa-search"></i></button>
                                     </form>
                                 </div>
