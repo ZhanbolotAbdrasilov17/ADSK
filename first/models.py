@@ -3,7 +3,7 @@ from django.db import models
 from django.db.models import QuerySet
 
 
-class Employee(models.Model):
+class Sotrudniki(models.Model):
     full_name = models.CharField(max_length=200, verbose_name="ФИО")
     position = models.CharField(max_length=300, verbose_name="Должность")
     image = models.ImageField(null=True, blank=True, upload_to="doctors")
@@ -13,11 +13,11 @@ class Employee(models.Model):
 
 
 class EmDescription(models.Model):
-    employee = models.ForeignKey(Employee, on_delete=models.CASCADE, related_name="descriptions")
+    employee = models.ForeignKey(Sotrudniki, on_delete=models.CASCADE, related_name="descriptions")
     text = models.TextField(verbose_name="Описание")
 
 
-class Projects(models.Model):
+class Proekty(models.Model):
     project_name = models.CharField(max_length=200, null=True, blank=True)
 
     def __str__(self):
@@ -25,16 +25,15 @@ class Projects(models.Model):
 
 
 class Portfolio(models.Model):
-    project_name = models.ForeignKey(Projects, on_delete=models.CASCADE, related_name="projects")
+    project_name = models.ForeignKey(Proekty, on_delete=models.CASCADE, related_name="projects")
     project_title = models.CharField(max_length=200, null=True, blank=True)
     image = models.ImageField(upload_to='portfolio_images', verbose_name='Фото', blank=True, null=True)
     text = models.TextField(verbose_name="Полное описание")
 
-    def __str__(self):
-        return self.project_title
 
 
-class NewTechno(models.Model):
+
+class NovyeTehnologii(models.Model):
     project_title = models.CharField(max_length=200, null=True, blank=True, verbose_name="Название")
     text = models.TextField(verbose_name="Поле", blank=True, null=True)
     image = models.ImageField(upload_to='portfolio_images', verbose_name='Фото', blank=True, null=True)
@@ -43,7 +42,7 @@ class NewTechno(models.Model):
         return self.project_title
 
 
-class News(models.Model):
+class Novosti(models.Model):
     title = models.CharField(max_length=200, verbose_name="Новости")
     created_at = models.DateTimeField(auto_now_add=True)
     image = models.ImageField(null=True, blank=True, upload_to="news")
@@ -62,13 +61,18 @@ class News(models.Model):
         return cls.objects.all().order_by('created_at')[:4]
 
 
-class NewsImages(models.Model):
-    news = models.ForeignKey(News, on_delete=models.CASCADE)
+
+
+class KartinkiNovostey(models.Model):
+    news = models.ForeignKey(Novosti, on_delete=models.CASCADE)
     images = models.ImageField(upload_to='news-images', verbose_name='Фото')
+
+    def __str__(self):
+        return self.news
 
 
 class FullDescription(models.Model):
-    news = models.ForeignKey(News, on_delete=models.CASCADE, related_name="news_descriptions")
+    news = models.ForeignKey(Novosti, on_delete=models.CASCADE, related_name="news_descriptions")
     text = models.TextField(verbose_name="Текст")
 
 
@@ -82,11 +86,11 @@ class Partners(models.Model):
 
 
 class FullDescriptionNewTechno(models.Model):
-    techno = models.ForeignKey(NewTechno, on_delete=models.CASCADE, related_name="new_techno_description")
+    techno = models.ForeignKey(NovyeTehnologii, on_delete=models.CASCADE, related_name="new_techno_description")
     text = models.TextField(verbose_name="Текст_новых_технологий")
 
 
-class Media(models.Model):
+class Smi(models.Model):
     title = models.CharField(max_length=300, null=True)
     link = models.CharField(max_length=300, verbose_name="ссылка")
     image = models.ImageField(null=True, blank=True, upload_to="portals")
@@ -103,7 +107,7 @@ class PortFolioCompanies(models.Model):
     def __str__(self):
         return self.project_title
 
-class InternationalCongresses(models.Model):
+class MezhdunarodnyeKon(models.Model):
     title = models.CharField(max_length=200, null=True, blank=True)
     image = models.ImageField(upload_to='international', verbose_name='Фото', blank=True, null=True)
     text = models.TextField(verbose_name="Полное описание")
@@ -111,15 +115,15 @@ class InternationalCongresses(models.Model):
     def __str__(self):
         return self.title
 
-class Quotes(models.Model):
+class Tchitaty(models.Model):
     image = models.ImageField(upload_to='header', verbose_name='Фото', blank=True, null=True)
     text = models.CharField(max_length=200, null=True, blank=True)
     quote = models.CharField(max_length=200, null=True, blank=True)
 
     def __str__(self):
-        return self.text
+        return self.quote
 
-class ManagersQuotes(models.Model):
+class TchitatyMenedzherov(models.Model):
     full_name = models.CharField(max_length=200, null=True, blank=True)
     job_title = models.CharField(max_length=200, null=True, blank=True)
     image = models.ImageField(upload_to='managers', verbose_name='Фото', blank=True, null=True)
@@ -127,6 +131,23 @@ class ManagersQuotes(models.Model):
 
     def __str__(self):
         return self.full_name
+
+class VideoContent(models.Model):
+    text = models.CharField(max_length=200, null=True, blank=True)
+    image = models.ImageField(upload_to='video_content', verbose_name='Фото', blank=True, null=True)
+    video = models.CharField(max_length=300, null=True, blank=True)
+
+
+    def __str__(self):
+        return self.text
+
+class RezultatyOblastey(models.Model):
+    region = models.CharField(max_length=200, null=True, blank=True)
+    results = models.CharField(max_length=200, null=True, blank=True)
+
+    def __str__(self):
+        return self.region
+
 
 
 

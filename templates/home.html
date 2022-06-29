@@ -33,12 +33,6 @@
                 </video>
                 </div>
             </section>
-
-            <section class="con_features_area">
-                <div class="container">
-
-                </div>
-            </section>
             <section class="con_about_area">
                 <div class="container">
                     <div class="row">
@@ -58,123 +52,25 @@
                     </div>
                 </div>
             </section>
-            <section id="services" class="con_service_area sec_gap bg_color">
-                <div class="container">
-                    <div class="section_title text-center wow fadeInUp" data-wow-delay="0.2s">
-                        <h6 class="con_title_top">{% trans 'Наш сервис'%}</h6>
-                        <h2 class="con_title">{% trans 'Мы строим все'%}</h2>
-                        <p class="con_p">That ummm I'm telling Why say bleeder smashing lemon squeezy tosser,<br> cheesed off dropped.!</p>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-6 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="con_service_item">
-                                <div class="icon"><img src="/static/img/home-1/icon5.png" alt=""></div>
-                                <a href="#">
-                                    <h4>{% trans 'Архитектурный дизайн'%}</h4>
-                                </a>
-                                <p>Twit cras excuse my French matie boy grub it’s all gone to pot off his nut butty horse play blow off pardon </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-6 wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="con_service_item">
-                                <div class="icon"><img src="{% static 'img/home-1/icon6.png' %}" alt=""></div>
-                                <a href="#">
-                                    <h4>{% trans 'Управление строительством'%}</h4>
-                                </a>
-                                <p>Twit cras excuse my French matie boy grub it’s all gone to pot off his nut butty horse play blow off pardon </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-6 wow fadeInUp" data-wow-delay="0.7s">
-                            <div class="con_service_item">
-                                <div class="icon"><img src="/static/img/home-1/icon7.png" alt=""></div>
-                                <a href="#">
-                                    <h4>{% trans 'Квалифицированные инженеры'%}</h4>
-                                </a>
-                                <p>Twit cras excuse my French matie boy grub it’s all gone to pot off his nut butty horse play blow off pardon </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-6 wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="con_service_item">
-                                <div class="icon"><img src="{% static 'img/home-1/icon8.png' %}" alt=""></div>
-                                <a href="#">
-                                    <h4>{% trans 'Услуги по реконструкции'%}</h4>
-                                </a>
-                                <p>Twit cras excuse my French matie boy grub it’s all gone to pot off his nut butty horse play blow off pardon </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-6 wow fadeInUp" data-wow-delay="0.6s">
-                            <div class="con_service_item">
-                                <div class="icon"><img src="{% static 'img/home-1/icon9.png' %}" alt=""></div>
-                                <a href="#">
-                                    <h4>{% trans 'Дизайн интерьера'%}</h4>
-                                </a>
-                                <p>Twit cras excuse my French matie boy grub it’s all gone to pot off his nut butty horse play blow off pardon </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-6 wow fadeInUp" data-wow-delay="0.8s">
-                            <div class="con_service_item">
-                                <div class="icon"><img src="{% static 'img/home-1/icon10.png' %}" alt=""></div>
-                                <a href="#">
-                                    <h4>{% trans 'Подготовка к строительству и планирование'%}</h4>
-                                </a>
-                                <p>Twit cras excuse my French matie boy grub it’s all gone to pot off his nut butty horse play blow off pardon </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
             <section class="con_video_area">
-                <div id="home-overlay_bg" class="overlay_bg parallax-effect"></div>
+                {% for v in video_content %}
+                <div style="background: url('{{v.image.url}}')" class="overlay_bg parallax-effect"></div>
                 <div class="container">
                 <div class="container">
+                    
                     <div class="con_video_content">
-                        <a href="https://www.youtube.com/watch?v=sU3FkzUKHXU" class="video_btn popup-youtube wow fadeIn" data-wow-delay="0.5s">
+                        <a href="{{v.video}}" class="video_btn popup-youtube wow fadeIn" data-wow-delay="0.5s">
                             <span></span>
                         </a>
-                        <h2>{% trans 'Мы предоставим вам лучшую работу о которой вы мечтали!'%}</h2>
+                        <h2>{{ v.text}}</h2>
                     </div>
+                    
                 </div>
-            </section>
-            <section class="con_skill_area">
-                <div class="container">
-                    <div class="cons_skill_info">
-                        <div class="skill_item">
-                            <span class="counter">1150</span>
-                            <p>Талас</p>
-                        </div>
-                        <div class="skill_item">
-                            <span class="counter">348</span>
-                            <p>Чуй</p>
-                        </div>
-                        <div class="skill_item">
-                            <span class="counter">250</span>
-                            <p>Бишкек</p>
-                        </div>
-                        <div class="skill_item">
-                            <span class="counter">162</span>
-                            <p>Нарын</p>
-                        </div>
-                        <div class="skill_item">
-                            <span class="counter">30</span>
-                            <p>Иссык-Куль</p>
-                        </div>
                     </div>
-                    <div class="cons_skill_info cons_skill_info-2">
-                        <div class="skill_item">
-                            <span class="counter">1150</span>
-                            <p>Баткен</p>
-                        </div>
-                        <div class="skill_item">
-                            <span class="counter">348</span>
-                            <p>Ош</p>
-                        </div>
-                        <div class="skill_item">
-                            <span class="counter">250</span>
-                            <p>Джалал-Абад</p>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
             </section>
+            {% include 'statistic.html' %}
             <section class="con_latest_project_area bg_color">
                 <div class="container">
                     <div class="section_title text-center wow fadeInUp" data-wow-delay="0.2s">
@@ -183,68 +79,25 @@
                     </div>
                     <div id="portfolio_filter" class="portfolio_filter">
                         <div data-filter="*" class="work_portfolio_item active wow fadeInLeft" data-wow-delay="0.2s">ВСЁ</div>
-                        <div data-filter=".con" class="work_portfolio_item wow fadeInLeft" data-wow-delay="0.4s">КОНСТРУКЦИЯ</div>
-                        <div data-filter=".build" class="work_portfolio_item wow fadeInLeft" data-wow-delay="0.6s">СТРОИТЕЛЬСТВО</div>
-                        <div data-filter=".com" class="work_portfolio_item wow fadeInLeft" data-wow-delay="0.7s">КОММЕРЧЕСКИЙ</div>
-                        <div data-filter=".in" class="work_portfolio_item wow fadeInLeft" data-wow-delay="0.8s">ПРОМЫШЛЕННЫЙ</div>
-                        <div data-filter=".design" class="work_portfolio_item wow fadeInLeft" data-wow-delay="0.9s">ДИЗАЙН ИНТЕРЬЕРА</div>
+                        {% for p in projects %}
+                        <div data-filter=".{{p.id}}" class="work_portfolio_item wow fadeInLeft" data-wow-delay="0.4s">
+                            {{p.project_name}}</div>
+
+                        {%endfor%}
                     </div>
                     <div class="row portfolio_gallery" id="work-portfolio">
-                        <div class="col-lg-4 col-sm-6 portfolio_item con in">
+                        {%for p in portfolio_ %}
+                        <div class="col-lg-4 col-sm-6 portfolio_item {{p.id}}">
                             <div class="portfolio_img hover_effect">
-                                <img src="{% static 'img/home-1/project/1.jpg' %}" alt="">
+                                <img src="{{p.image.url}}" alt="">
                                 <div class="hover_content">
-                                    <h5><span>COMMERCIAL</span></h5>
-                                    <h4><span>Round Office</span></h4>
+                                    <h5><span>{{p.project_title}}</span></h5>
+                                    <h4><span>{{p.text}}</span></h4>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 portfolio_item design build">
-                            <div class="portfolio_img hover_effect">
-                                <img src="{% static 'img/home-1/project/2.jpg' %}" alt="">
-                                <div class="hover_content">
-                                    <h5><span>COMMERCIAL</span></h5>
-                                    <h4><span>Round Office</span></h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 portfolio_item com design">
-                            <div class="portfolio_img hover_effect">
-                                <img src="{% static 'img/home-1/project/3.jpg' %}" alt="">
-                                <div class="hover_content">
-                                    <h5><span>COMMERCIAL</span></h5>
-                                    <h4><span>Round Office</span></h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 portfolio_item in con">
-                            <div class="portfolio_img hover_effect">
-                                <img src="{% static 'img/home-1/project/4.jpg' %}" alt="">
-                                <div class="hover_content">
-                                    <h5><span>COMMERCIAL</span></h5>
-                                    <h4><span>Round Office</span></h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 portfolio_item design">
-                            <div class="portfolio_img hover_effect">
-                                <img src="{% static 'img/home-1/project/5.jpg' %}" alt="">
-                                <div class="hover_content">
-                                    <h5><span>COMMERCIAL</span></h5>
-                                    <h4><span>Round Office</span></h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 portfolio_item build">
-                            <div class="portfolio_img hover_effect">
-                                <img src="{% static 'img/home-1/project/6.jpg' %}" alt="">
-                                <div class="hover_content">
-                                    <h5><span>COMMERCIAL</span></h5>
-                                    <h4><span>Round Office</span></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        {%endfor%}
+                                            </div>
                     <div class="text-center">
                         <a href="{% url 'portfolio'%}" class="con_btn btn_effect">{% trans 'Посмотреть всё'%}</a>
                     </div>
@@ -373,7 +226,7 @@
                     </div>
                     <div class="row">
                             {% for new in news %}
-<!--                            {% include "last_four_news.html" %}-->
+
 
                             <div class="media latest_post_thumb wow fadeInUp" data-wow-delay="0.8s">
                                 <img src="{{new.image.url}}" alt="">

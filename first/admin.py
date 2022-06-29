@@ -4,31 +4,31 @@ from modeltranslation.admin import TranslationAdmin
 from .models import *
 
 
-@admin.register(Employee)
-class EmployeeAdmin(TranslationAdmin):
+@admin.register(Sotrudniki)
+class SotrudnikiAdmin(TranslationAdmin):
     pass
 
 
-@admin.register(NewTechno)
-class NewTechnoAdmin(TranslationAdmin):
+@admin.register(NovyeTehnologii)
+class NovyeTehnologiiAdmin(TranslationAdmin):
     pass
 
-@admin.register(Projects)
-class ProjectsAdmin(TranslationAdmin):
+@admin.register(Proekty)
+class ProektyAdmin(TranslationAdmin):
     pass
 
-@admin.register(Quotes)
-class QuotesAdmin(TranslationAdmin):
-    pass
-
-
-@admin.register(ManagersQuotes)
-class ManagersQuotesAdmin(TranslationAdmin):
+@admin.register(Tchitaty)
+class TchitatyAdmin(TranslationAdmin):
     pass
 
 
-@admin.register(InternationalCongresses)
-class InternationalCongressesAdmin(TranslationAdmin):
+@admin.register(TchitatyMenedzherov)
+class TchitatyMenedzherovAdmin(TranslationAdmin):
+    pass
+
+
+@admin.register(MezhdunarodnyeKon)
+class MezhdunarodnyeKonAdmin(TranslationAdmin):
     pass
 
 @admin.register(PortFolioCompanies)
@@ -43,16 +43,20 @@ class PartnersAdmin(TranslationAdmin):
 class PortfolioAdmin(TranslationAdmin):
     pass
 
-@admin.register(Media)
-class MediaAdmin(TranslationAdmin):
+@admin.register(Smi)
+class SmiAdmin(TranslationAdmin):
     pass
 
-@admin.register(News)
-class NewsAdmin(TranslationAdmin):
+@admin.register(Novosti)
+class NovostiAdmin(TranslationAdmin):
     pass
 
 @admin.register(FullDescription)
 class FullDescriptionAdmin(TranslationAdmin):
+    pass
+
+@admin.register(VideoContent)
+class VideoContentAdmin(TranslationAdmin):
     pass
 
 class DescEmployee(admin.TabularInline):
@@ -71,5 +75,6 @@ class NewsAdmin(admin.ModelAdmin):
     inlines = [DescNews, ]
 
 
-admin.site.register(NewsImages)
+admin.site.register(KartinkiNovostey)
+admin.site.register(RezultatyOblastey)
 

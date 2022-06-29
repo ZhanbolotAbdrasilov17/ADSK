@@ -3,6 +3,8 @@
 @Author: Md. Shahadat Hussain
 @URL: https://themeforest.net/user/droitthemes
 
+
+
 This file contains the styling for the actual template, this
 is the file you need to edit to change the look of the
 template.
@@ -42,6 +44,7 @@ Table of Content:
 /*====================================================*/
 /*=== fonts ====*/
 @import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500,600,700|Roboto:400,500");
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 /*===== color =====*/
 /*====================================================*/
 /*====================================================*/
@@ -610,6 +613,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .navbar-nav{
     margin: 0 auto;
+    font-family: 'Prata' !important;
 }
 
 .header_three .con_btn {

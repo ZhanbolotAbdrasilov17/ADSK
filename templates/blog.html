@@ -25,10 +25,9 @@
                         <div class="col-lg-6">
                             <div class="blog_inner">
                                 <article class="blog_item">
-                                    <a href="#"><img src="{{new.image.url}}" alt=""></a>
+                                    <a href="{% url 'news' new.pk %}"><img src="{{new.image.url}}" alt=""></a>
                                     <ul class="post_meta list-unstyled">
                                         <li><a href="#"><i class="far fa-calendar-alt"></i>{{ new.created_at.date}}</a></li>
-                                        <li><i class="far fa-folder"></i><a href="#">{% trans 'Конструкция' %}</a> <a href="#">Building</a></li>
                                     </ul>
                                     <a href="{% url 'news' new.pk %}">
                                         <h2 class="l_post_title">{{ new.title}}</h2>
