@@ -2525,6 +2525,7 @@ width: 590px;
 
 .portfolio_gallery .portfolio_item .portfolio_img img {
   width: 100%;
+  margin-top: 30px;
 }
 
 .portfolio_gallery .portfolio_item .portfolio_img:hover:before {
