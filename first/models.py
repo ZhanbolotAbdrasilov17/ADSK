@@ -3,7 +3,7 @@ from django.db import models
 from django.db.models import QuerySet
 
 
-class Sotrudniki(models.Model):
+class Employee(models.Model):
     full_name = models.CharField(max_length=200, verbose_name="ФИО")
     position = models.CharField(max_length=300, verbose_name="Должность")
     image = models.ImageField(null=True, blank=True, upload_to="doctors")
@@ -11,29 +11,44 @@ class Sotrudniki(models.Model):
     def __str__(self):
         return self.full_name
 
+    class Meta:
+        verbose_name = 'Сотрудники'
+        ordering = ['full_name']
+
 
 class EmDescription(models.Model):
-    employee = models.ForeignKey(Sotrudniki, on_delete=models.CASCADE, related_name="descriptions")
+    employee = models.ForeignKey(Employee, on_delete=models.CASCADE, related_name="descriptions")
     text = models.TextField(verbose_name="Описание")
 
 
-class Proekty(models.Model):
+class Projects(models.Model):
     project_name = models.CharField(max_length=200, null=True, blank=True)
 
     def __str__(self):
         return self.project_name
 
+    class Meta:
+        verbose_name = 'Проекты'
+        ordering = ['project_name']
+
 
 class Portfolio(models.Model):
-    project_name = models.ForeignKey(Proekty, on_delete=models.CASCADE, related_name="projects")
+    project_name = models.ForeignKey(Projects, on_delete=models.CASCADE, related_name="projects")
     project_title = models.CharField(max_length=200, null=True, blank=True)
     image = models.ImageField(upload_to='portfolio_images', verbose_name='Фото', blank=True, null=True)
     text = models.TextField(verbose_name="Полное описание")
 
+    def __str__(self):
+        return self.project_title
+
+    class Meta:
+        verbose_name = 'Портфолио'
+        ordering = ['project_title']
 
 
 
-class NovyeTehnologii(models.Model):
+
+class NewTechno(models.Model):
     project_title = models.CharField(max_length=200, null=True, blank=True, verbose_name="Название")
     text = models.TextField(verbose_name="Поле", blank=True, null=True)
     image = models.ImageField(upload_to='portfolio_images', verbose_name='Фото', blank=True, null=True)
@@ -41,14 +56,22 @@ class NovyeTehnologii(models.Model):
     def __str__(self):
         return self.project_title
 
+    class Meta:
+        verbose_name = 'Новое_технологии'
+        ordering = ['project_title']
 
-class Novosti(models.Model):
+
+class News(models.Model):
     title = models.CharField(max_length=200, verbose_name="Новости")
     created_at = models.DateTimeField(auto_now_add=True)
     image = models.ImageField(null=True, blank=True, upload_to="news")
 
     def __str__(self):
         return self.title
+
+    class Meta:
+        verbose_name = 'Новоcти'
+        ordering = ['title']
 
     @classmethod
     def search_news(cls, value: str) -> QuerySet:
@@ -63,17 +86,26 @@ class Novosti(models.Model):
 
 
 
-class KartinkiNovostey(models.Model):
-    news = models.ForeignKey(Novosti, on_delete=models.CASCADE)
+class NewsPictures(models.Model):
+    news = models.ForeignKey(News, on_delete=models.CASCADE)
     images = models.ImageField(upload_to='news-images', verbose_name='Фото')
 
     def __str__(self):
         return self.news
 
+    class Meta:
+        verbose_name = 'Картинки новостей'
+
+
 
 class FullDescription(models.Model):
-    news = models.ForeignKey(Novosti, on_delete=models.CASCADE, related_name="news_descriptions")
+    news = models.ForeignKey(News, on_delete=models.CASCADE, related_name="news_descriptions")
     text = models.TextField(verbose_name="Текст")
+
+    class Meta:
+        verbose_name = 'Полное описание новостей'
+
+
 
 
 class Partners(models.Model):
@@ -84,9 +116,13 @@ class Partners(models.Model):
     def __str__(self):
         return self.partner_name
 
+    class Meta:
+        verbose_name = 'Партнёры'
+
+
 
 class FullDescriptionNewTechno(models.Model):
-    techno = models.ForeignKey(NovyeTehnologii, on_delete=models.CASCADE, related_name="new_techno_description")
+    techno = models.ForeignKey(NewTechno, on_delete=models.CASCADE, related_name="new_techno_description")
     text = models.TextField(verbose_name="Текст_новых_технологий")
 
 
@@ -98,6 +134,10 @@ class Smi(models.Model):
     def __str__(self):
         return self.title
 
+    class Meta:
+        verbose_name = 'СМИ о нас'
+        ordering = ['title']
+
 
 class PortFolioCompanies(models.Model):
     project_title = models.CharField(max_length=200, null=True, blank=True)
@@ -107,7 +147,10 @@ class PortFolioCompanies(models.Model):
     def __str__(self):
         return self.project_title
 
-class MezhdunarodnyeKon(models.Model):
+    class Meta:
+        verbose_name = 'Портфолио компаний'
+
+class InternationalCongresses(models.Model):
     title = models.CharField(max_length=200, null=True, blank=True)
     image = models.ImageField(upload_to='international', verbose_name='Фото', blank=True, null=True)
     text = models.TextField(verbose_name="Полное описание")
@@ -115,7 +158,11 @@ class MezhdunarodnyeKon(models.Model):
     def __str__(self):
         return self.title
 
-class Tchitaty(models.Model):
+    class Meta:
+        verbose_name = 'Международные конгрессы'
+        ordering = ['title']
+
+class Quotes(models.Model):
     image = models.ImageField(upload_to='header', verbose_name='Фото', blank=True, null=True)
     text = models.CharField(max_length=200, null=True, blank=True)
     quote = models.CharField(max_length=200, null=True, blank=True)
@@ -123,7 +170,11 @@ class Tchitaty(models.Model):
     def __str__(self):
         return self.quote
 
-class TchitatyMenedzherov(models.Model):
+    class Meta:
+        verbose_name = 'Цитаты'
+        ordering = ['quote']
+
+class ManagersQuotes(models.Model):
     full_name = models.CharField(max_length=200, null=True, blank=True)
     job_title = models.CharField(max_length=200, null=True, blank=True)
     image = models.ImageField(upload_to='managers', verbose_name='Фото', blank=True, null=True)
@@ -131,6 +182,10 @@ class TchitatyMenedzherov(models.Model):
 
     def __str__(self):
         return self.full_name
+
+    class Meta:
+        verbose_name = 'Цитаты менеджеров'
+        ordering = ['full_name']
 
 class VideoContent(models.Model):
     text = models.CharField(max_length=200, null=True, blank=True)
@@ -141,12 +196,19 @@ class VideoContent(models.Model):
     def __str__(self):
         return self.text
 
+    class Meta:
+        verbose_name = 'Видео контент'
+
+
 class RezultatyOblastey(models.Model):
     region = models.CharField(max_length=200, null=True, blank=True)
     results = models.CharField(max_length=200, null=True, blank=True)
 
     def __str__(self):
         return self.region
+
+    class Meta:
+        verbose_name = 'Результаты областей'
 
 
 

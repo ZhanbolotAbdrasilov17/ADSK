@@ -4,31 +4,31 @@ from modeltranslation.admin import TranslationAdmin
 from .models import *
 
 
-@admin.register(Sotrudniki)
-class SotrudnikiAdmin(TranslationAdmin):
+@admin.register(Employee)
+class EmployeeAdmin(TranslationAdmin):
     pass
 
 
-@admin.register(NovyeTehnologii)
-class NovyeTehnologiiAdmin(TranslationAdmin):
+@admin.register(NewTechno)
+class NewTechnoAdmin(TranslationAdmin):
     pass
 
-@admin.register(Proekty)
-class ProektyAdmin(TranslationAdmin):
+@admin.register(Projects)
+class ProjectsAdmin(TranslationAdmin):
     pass
 
-@admin.register(Tchitaty)
-class TchitatyAdmin(TranslationAdmin):
-    pass
-
-
-@admin.register(TchitatyMenedzherov)
-class TchitatyMenedzherovAdmin(TranslationAdmin):
+@admin.register(Quotes)
+class QuotesAdmin(TranslationAdmin):
     pass
 
 
-@admin.register(MezhdunarodnyeKon)
-class MezhdunarodnyeKonAdmin(TranslationAdmin):
+@admin.register(ManagersQuotes)
+class ManagersQuotesAdmin(TranslationAdmin):
+    pass
+
+
+@admin.register(InternationalCongresses)
+class InternationalCongressesAdmin(TranslationAdmin):
     pass
 
 @admin.register(PortFolioCompanies)
@@ -47,8 +47,8 @@ class PortfolioAdmin(TranslationAdmin):
 class SmiAdmin(TranslationAdmin):
     pass
 
-@admin.register(Novosti)
-class NovostiAdmin(TranslationAdmin):
+@admin.register(News)
+class NewsAdmin(TranslationAdmin):
     pass
 
 @admin.register(FullDescription)
@@ -75,6 +75,6 @@ class NewsAdmin(admin.ModelAdmin):
     inlines = [DescNews, ]
 
 
-admin.site.register(KartinkiNovostey)
+admin.site.register(NewsPictures)
 admin.site.register(RezultatyOblastey)
 

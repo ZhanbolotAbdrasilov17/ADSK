@@ -21,11 +21,11 @@ def appeal(request):
 
 
 def home(request):
-    employees = Sotrudniki.objects.all()
-    news_ = Novosti.objects.all()
+    employees = Employee.objects.all()
+    news_ = News.objects.all()
     partners = Partners.objects.all()
-    quotes = Tchitaty.objects.all()
-    quotes_managers = TchitatyMenedzherov.objects.all()
+    quotes = Quotes.objects.all()
+    quotes_managers = ManagersQuotes.objects.all()
     video_content = VideoContent.objects.all()
     results = RezultatyOblastey.objects.all()
     oblast1 = RezultatyOblastey.objects.get(id=1)
@@ -36,7 +36,7 @@ def home(request):
     oblast6 = RezultatyOblastey.objects.get(id=6)
     oblast7 = RezultatyOblastey.objects.get(id=7)
     oblast8 = RezultatyOblastey.objects.get(id=8)
-    projects = Proekty.objects.all()
+    projects = Projects.objects.all()
     portfolio_ = Portfolio.objects.all()
     context = {"employees": employees, "news": news_, 'last_four_news': news_.order_by('created_at')[:4],
                'token': get_token(request), "partners": partners, "quotes": quotes,
@@ -55,7 +55,7 @@ def our_companies(request):
 
 
 def portfolio(request):
-    projects = Proekty.objects.all()
+    projects = Projects.objects.all()
     portfolio_ = Portfolio.objects.all()
     context = {"projects": projects, "portfolio": portfolio_}
     return render(request, "portfolio.html", context)
@@ -82,9 +82,9 @@ def search_news(request):
 
     _news = None
     if query is not None:
-        _news = Novosti.search_news(query)
+        _news = News.search_news(query)
     if not _news or query is None:
-        _news = Novosti.objects.all()
+        _news = News.objects.all()
     return render(request, "blog.html", {'news': _news, 'last_four_news': Novosti.last_four_news()})
 
 
@@ -95,9 +95,9 @@ def search_news(request):
 
 
 def employee(request):
-    employee_ = Sotrudniki.objects.all()
-    congresses = MezhdunarodnyeKon.objects.all()
-    quotes = TchitatyMenedzherov.objects.all()
+    employee_ = Employee.objects.all()
+    congresses = InternationalCongresses.objects.all()
+    quotes = ManagersQuotes.objects.all()
     oblast1 = RezultatyOblastey.objects.get(id=1)
     oblast2 = RezultatyOblastey.objects.get(id=2)
     oblast3 = RezultatyOblastey.objects.get(id=3)
@@ -116,7 +116,7 @@ def employee(request):
 
 
 class EmployeeDetail(DetailView):
-    model = Sotrudniki
+    model = Employee
     template_name = "team-detail.html"
     context_object_name = 'employees'
     pk_url_kwarg = 'employees_id'
@@ -128,15 +128,15 @@ class EmployeeDetail(DetailView):
 
 
 def news(request):
-    newses = Novosti.objects.all()
-    new_techno = NovyeTehnologii.objects.all()
+    newses = News.objects.all()
+    new_techno = NewTechno.objects.all()
     media_news = Smi.objects.all()
     context = {"news": newses, 'last_four_news': Novosti.last_four_news(), "new_techno": new_techno, "media_news": media_news}
     return render(request, "blog.html", context)
 
 
 class NewsDetail(DetailView):
-    model = Novosti
+    model = News
     template_name = "blog-details.html"
     context_object_name = 'news'
     pk_url_kwarg = 'news_id'
@@ -144,7 +144,7 @@ class NewsDetail(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data()
         context['texts'] = FullDescription.objects.all()
-        context['news_images'] = KartinkiNovostey.objects.all()
+        context['news_images'] = NewsPictures.objects.all()
         return context
 
 

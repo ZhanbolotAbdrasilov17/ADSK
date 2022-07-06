@@ -2,17 +2,17 @@ from modeltranslation.translator import register, TranslationOptions
 from .models import *
 
 
-@register(Sotrudniki)
-class SotrudnikiTranslation(TranslationOptions):
+@register(Employee)
+class EmployeeTranslation(TranslationOptions):
     fields = ('position', )
 
 
-@register(NovyeTehnologii)
-class NovyeTehnologiiTranslation(TranslationOptions):
+@register(NewTechno)
+class NewTechnoTranslation(TranslationOptions):
     fields = ('project_title', 'text')
 
-@register(Proekty)
-class ProektyTranslation(TranslationOptions):
+@register(Projects)
+class ProjectsTranslation(TranslationOptions):
     fields = ('project_name',)
 
 @register(Portfolio)
@@ -31,16 +31,16 @@ class SmiTranslation(TranslationOptions):
 class PortFolioCompaniesTranslation(TranslationOptions):
     fields = ('project_title', 'text')
 
-@register(MezhdunarodnyeKon)
-class MezhdunarodnyeKonTranslation(TranslationOptions):
+@register(InternationalCongresses)
+class InternationalCongressesTranslation(TranslationOptions):
     fields = ('title', 'text')
 
-@register(Tchitaty)
-class TchitatyTranslation(TranslationOptions):
+@register(Quotes)
+class QuotesTranslation(TranslationOptions):
     fields = ('quote',)
 
-@register(Novosti)
-class NovostiTranslation(TranslationOptions):
+@register(News)
+class NewsTranslation(TranslationOptions):
     fields = ('title', )
 
 @register(FullDescription)
@@ -48,8 +48,8 @@ class FullDescriptionTranslation(TranslationOptions):
     fields = ('text', )
 
 
-@register(TchitatyMenedzherov)
-class TchitatyMenedzherovTranslation(TranslationOptions):
+@register(ManagersQuotes)
+class ManagersQuotesTranslation(TranslationOptions):
     fields = ('job_title', 'text', )
 
 @register(VideoContent)
