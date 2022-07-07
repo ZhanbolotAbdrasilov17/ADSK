@@ -263,9 +263,6 @@
 	});
 
 //	YouTubeVideo
-$('.slider__video').click(function(){
-    $('#mainVideo')[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
-});
 
 $('.header_background-video-close').click(function(){
     $('#mainVideo')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
