@@ -85,7 +85,7 @@ def search_news(request):
         _news = News.search_news(query)
     if not _news or query is None:
         _news = News.objects.all()
-    return render(request, "blog.html", {'news': _news, 'last_four_news': Novosti.last_four_news()})
+    return render(request, "blog.html", {'news': _news, 'last_four_news': News.last_four_news()})
 
 
 # def get(self, request, *args, **kwargs):
@@ -131,7 +131,7 @@ def news(request):
     newses = News.objects.all()
     new_techno = NewTechno.objects.all()
     media_news = Smi.objects.all()
-    context = {"news": newses, 'last_four_news': Novosti.last_four_news(), "new_techno": new_techno, "media_news": media_news}
+    context = {"news": newses, 'last_four_news': News.last_four_news(), "new_techno": new_techno, "media_news": media_news}
     return render(request, "blog.html", context)
 
 
